@@ -1,0 +1,36 @@
+a {
+    cursor: pointer;
+}
+
+.dn {
+    display: none;
+}
+
+.h200 {
+    height: 200px;
+}
+
+.page-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+.page-title a {
+    color: black;
+    opacity: .8;
+}
+
+.m-20 {
+    margin: 0 20px;
+}
+
+.wc {
+    color: white
+}
+
+td a {
+    color: black;
+    margin: 0 10px;
+}
+

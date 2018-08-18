@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~materialize-css/dist/css/materialize.min.css";
+
+@font-face {
+    font-family: 'ArnoPro-Subhead';
+    src: url('assets/fonts/arno-pro/ArnoPro-Subhead.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'ArnoPro-SmText';
+    src: url('assets/fonts/arno-pro/ArnoPro-SmText.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'ArnoPro-SmbdSubhead';
+    src: url('assets/fonts/arno-pro/ArnoPro-SmbdSubhead.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'ArnoPro-ItalicSmText';
+    src: url('assets/fonts/arno-pro/ArnoPro-ItalicSmText.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'ArnoPro-Caption';
+    src: url('assets/fonts/arno-pro/ArnoPro-Caption.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'Hilandars';
+    src: url('assets/fonts/Hilandar/HilandarCUcs.ttf')
+}
+
+i {
+    font-family: ArnoPro-ItalicSmText;
+}
+
+b {
+    font-family: ArnoPro-Caption;
+}
+
+ins {
+    color: #007398;
+}

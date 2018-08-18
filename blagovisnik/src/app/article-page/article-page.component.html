@@ -1,0 +1,85 @@
+<div class="container">
+  <div class="page-title">
+    <h4>
+      <a routerLink="/admin">Статті</a>
+      <i class="material-icons">keyboard_arrow_right</i>
+      {{ isNew ? 'Додати' : 'Редагувати' }} статтю
+    </h4>
+    <span>
+      <button *ngIf="!isNew" class="btn btn-small red" (click)="deleteArticle()">
+        <i class="material-icons">delete</i>
+      </button>
+    </span>
+  </div>
+
+  <div class="row">
+    <form class="col s12 l6" [formGroup]="form" (ngSubmit)="onSubmit()">
+      <div class="input-field">
+        <input formControlName="author" id="author" type="text">
+        <label for="author">Автор</label>
+      </div>
+
+      <div class="input-field">
+        <input pattern="[1-9]*" formControlName="number" id="number" type="text"
+               [ngClass]="{ 'invalid' : form.get('number').invalid && form.get('number').touched }">
+        <label for="number">Номер</label>
+        <span class="helper-text red-text" *ngIf="form.get('number').invalid && form.get('number').touched">
+        <span *ngIf="form.get('number').errors['required']">
+          Номер повинен бути зазначений.
+        </span>
+        <span *ngIf="form.get('number').errors['pattern']">
+          Дані повинні бути числом.
+        </span>
+      </span>
+      </div>
+
+      <div class="input-field">
+        <input formControlName="title" id="title" type="text"
+               [ngClass]="{ 'invalid' : form.get('title').invalid && form.get('title').touched }">
+        <label for="title">Назва</label>
+        <span class="helper-text red-text" *ngIf="form.get('title').invalid && form.get('title').touched">
+        <span *ngIf="form.get('title').errors['required']">
+          Назва повинна бути зазначена.
+        </span>
+      </span>
+      </div>
+
+      <div class="input-field">
+        <input formControlName="pages" id="pages" type="text">
+        <label for="pages">Сторінки</label>
+      </div>
+
+      <div class="input-field">
+        <textarea formControlName="summary"  id="summary" class="materialize-textarea" #textArea></textarea>
+        <label for="summary">Анотація</label>
+      </div>
+
+      <div class="input-field">
+        <textarea formControlName="summary_en"  id="summary_en" class="materialize-textarea" #textAreaEn></textarea>
+        <label for="summary_en">Summary</label>
+      </div>
+
+      <div class="input-field">
+        <input formControlName="key_words" id="key_words" type="text">
+        <label for="key_words">Ключові слова</label>
+      </div>
+
+      <div class="file-field input-field">
+        <div class="btn">
+          <span>Загрузити документ</span>
+          <input [disabled]="docValid" (change)="onFileUpload($event)" type="file" #inputFile>
+        </div>
+        <div class="file-path-wrapper">
+          <input  formControlName="file" class="file-path validate" type="text">
+        </div>
+      </div>
+
+      <div>
+        <button type="submit" class="waves-effect waves-light btn" [disabled]="form.invalid || form.disabled || validFile">
+          Зберегти
+        </button>
+      </div>
+    </form>
+  </div>
+
+</div>
