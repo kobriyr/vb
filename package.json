@@ -3,13 +3,13 @@
   "version": "4.1.0",
   "adonis-version": "4.1.0",
   "description": "The fullstack application boilerplate for Adonisjs",
-  "main": "dist/blagovisnik",
+  "main": "index.js",
   "engines": {
     "node": "10.4.1",
     "npm": "6.1.0"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "cross-env NODE_ENV=production node server.js",
     "test": "node ace test"
   },
   "keywords": [
