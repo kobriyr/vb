@@ -43,4 +43,4 @@ Route.get('public/pdf/:name', ( { request, response } ) => {
 
 Route.any('*', ({ response }) => {
   return response.download('blagovisnik/dist/blagovisnik')
-}
+});
