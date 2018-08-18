@@ -40,3 +40,7 @@ Route.group(() => {
 Route.get('public/pdf/:name', ( { request, response } ) => {
   response.download(`public/pdf/${request.params.name}`);
 });
+
+Route.any('*', ({ response }) => {
+  return response.download('blagovisnik/dist/blagovisnik/index.html')
+});
