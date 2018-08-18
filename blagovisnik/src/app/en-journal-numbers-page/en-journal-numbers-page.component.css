@@ -1,0 +1,24 @@
+ul.collapsible div.collapsible-header {
+  flex-direction: column;
+}
+
+ul.collapsible div.collapsible-header i {
+  width: auto;
+  font-size: initial;
+}
+
+ul.collapsible a {
+  color: #333333;
+}
+
+ul.collapsible a:hover {
+  color: #bd1015;
+}
+a.link-article {
+  display: block;
+  cursor: pointer;
+}
+
+.article-summary {
+  font-family: ArnoPro-ItalicSmText;
+}

@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="page-title">
+    <h4>
+      <a routerLink="/admin">Випуски</a>
+      <i class="material-icons">keyboard_arrow_right</i>
+      <span>Випуск {{ tom.number }}</span>
+    </h4>
+    <span>
+      <a class="btn btn-small blue m-20" href="admin/tom/edit/{{ tom.id }}">
+        <i class="material-icons wc">edit</i>
+      </a>
+      <button class="btn btn-small red m-20" (click)="deleteTom()">
+        <i class="material-icons">delete</i>
+      </button>
+    </span>
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+      <table class="striped" *ngIf="tom.articles.length > 0; else empty">
+        <thead>
+        <tr>
+          <th>№</th>
+          <th>Автор</th>
+          <th>Назва</th>
+          <th>Дії</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr *ngFor="let article of tom.articles; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ article.author }}</td>
+          <td>{{ article.title }}</td>
+          <td>
+            <a routerLink="/admin/tom/{{ tom.id }}/article/{{ article.id }}"><i class="material-icons color-black">create</i></a>
+            <a (click)="deleteArticle(article.id)" ><i class="material-icons color-black">delete</i></a>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+      <a class="waves-effect waves-light btn-small color-orange left" href="/admin/tom/{{ tom.id }}/article/create"><i class="material-icons right">add</i>Додати статтю</a>
+    </div>
+  </div>
+</div>
+
+<ng-template #empty>
+  <div class="center">У Вас не додано жодної статті.</div>
+</ng-template>
+

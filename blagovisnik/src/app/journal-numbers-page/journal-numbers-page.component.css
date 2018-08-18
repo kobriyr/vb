@@ -1,0 +1,16 @@
+ul.collapsible div.collapsible-header {
+    flex-direction: column;
+}
+
+ul.collapsible div.collapsible-header i {
+    width: auto;
+    font-size: initial;
+}
+
+ul.collapsible a {
+    color: #333333;
+}
+
+ul.collapsible a:hover {
+    color: #bd1015;
+}

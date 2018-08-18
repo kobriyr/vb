@@ -1,0 +1,21 @@
+<ul class="collapsible popout" #collapsible>
+  <li *ngFor="let tom of toms">
+    <div class="collapsible-header"><b>№ {{ tom.number }}, {{ tom.year }}</b>
+      <i>{{ tom.description }}</i></div>
+    <div class="collapsible-body">
+      <div class="article-info" *ngFor="let article of tom.articles">
+        <a href="{{ article.id }}" class="link-article"> {{article.number}}.
+          <b>{{ article.author }} {{ article.title}} – С. {{ article.pages }}</b>
+        </a>
+        <div class="article-key-words">Ключові слова: {{article.key_words}}</div>
+        <div class="article-summary">Анотація: {{article.summary}}</div>
+      </div>
+      <a href="{{ tom.document }}">
+        <i class="material-icons">insert_drive_file</i>
+        <b>Скачати електронний варіант журналу</b>
+      </a>
+    </div>
+  </li>
+</ul>
+
+

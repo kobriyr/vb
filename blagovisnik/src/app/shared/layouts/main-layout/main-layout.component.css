@@ -1,0 +1,275 @@
+.page-flexbox-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+    background-color: #f1f1f1;
+}
+
+.nav-extended {
+    background-color: #b14a01;
+}
+
+.nav-extended .nav-wrapper {
+    min-height: 120px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+.brand-gerb {
+    height: 90px;
+    width: 80px;
+    background-image: url('/assets/images/gerb.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    float:left;
+    margin-top: 15px;
+}
+
+.brand-disc {
+    font-size: 20px;
+    font-family: ArnoPro-Subhead;
+    line-height: 1.2;
+    color: white;
+}
+
+.brand-title {
+    font-size: 36px;
+    font-family: Hilandars;
+    line-height: 1.2;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    color: white;
+}
+
+.nav-content{
+    min-height: 50px;
+    background-color: #737373;
+    color: white;
+}
+
+.main-menu, .main-menu li, .main-menu li a {
+    min-height: 50px;
+    font-family: ArnoPro-Subhead;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+.row {
+    margin-bottom: 0;
+    display: flex;
+  justify-content: center;
+
+}
+
+.main-menu
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.text-info {
+    margin: 40px auto;
+    font-family: ArnoPro-SmText;
+    font-size: 18px;
+    color: #505050;
+    background-color: white;
+    padding: 40px;
+}
+
+.link-active {
+    border-bottom: 4px solid #b14a01;
+}
+
+.page-footer {
+    padding-top: 0;
+    background-color: #737373;
+    font-family: ArnoPro-SmText;
+    font-size: 15px;
+
+}
+
+.container {
+    width: 90%;
+    max-width: initial;
+}
+
+.lang-block {
+    width: 40px;
+    height: 60px;
+
+
+}
+
+.lang {
+    display: flex;
+    height: 50%;
+    line-height: 1;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+}
+
+.lang:first-child {
+    border-bottom: 1px solid white;
+}
+
+.lang:last-child {
+    border-top: 1px solid white;
+}
+
+.lang:hover {
+background-color: #007398;
+    border: 2px solid #007398;
+}
+
+.sb-search {
+  position: absolute;
+  width: 0%;
+  min-width: 50px;
+  height: 50px;
+  right: 0;
+  overflow: hidden;
+  -webkit-transition: width 0.3s;
+  -moz-transition: width 0.3s;
+  transition: width 0.3s;
+  -webkit-backface-visibility: hidden;
+}
+
+.sb-search-input {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  border: none;
+  outline: none;
+  background: #737373 !important;
+  width: 100%;
+  height: 50px !important;
+  margin: 0;
+  z-index: 10;
+  font-family: inherit;
+  font-size: 20px;
+  color: #2c3e50;
+  text-indent: 20px;
+
+}
+
+input[type="search"].sb-search-input {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+.sb-search-input::-webkit-input-placeholder {
+  color: white;
+}
+
+.sb-search-input:-moz-placeholder {
+  color: white;
+}
+
+.sb-search-input::-moz-placeholder {
+  color: white;
+}
+
+.sb-search-input:-ms-input-placeholder {
+  color: white;
+}
+
+.sb-icon-search,
+.sb-search-submit  {
+  width: 50px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sb-search-submit {
+  background: #fff; /* IE needs this */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
+  filter: alpha(opacity=0); /* IE 5-7 */
+  opacity: 0;
+  color: transparent;
+  color:red;
+  border: none;
+  outline: none;
+  z-index: -1;
+}
+
+.sb-icon-search {
+  color: #fff;
+  background: #e67e22;
+  z-index: 90;
+  font-size: 22px;
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.sb-icon-search i {
+  line-height: 50px;
+  height: 50px;
+}
+
+.sb-icon-search:before {
+  content: "";
+}
+
+.sb-search.sb-search-open,
+.no-js .sb-search {
+  width: 100%;
+}
+
+.sb-search.sb-search-open .sb-icon-search,
+.no-js .sb-search .sb-icon-search {
+  background: #da6d0d;
+  color: #fff;
+  z-index: 11;
+}
+
+.sb-search.sb-search-open .sb-search-submit,
+.no-js .sb-search .sb-search-submit {
+  /*    z-index: 90;*/
+}
+
+.wrap-search {
+  display: none;
+  position: relative;
+  width: 100%;
+  background-color: white;
+}
+
+.wrap-search ul {
+  margin: 0;
+}
+ .wrap-search ul a{
+   color: #b14a01;
+   font-family: ArnoPro-SmText;
+ }
+
+ .admin-link {
+   color: #b14a01;
+   display: block;
+   float: left;
+   padding-right: 5px;
+ }
+
+.admin-link i {
+  font-size: 16px;
+}
