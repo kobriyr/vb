@@ -16,7 +16,7 @@ module.exports = {
     | limit
     |--------------------------------------------------------------------------
     |
-    | Defines the limit of JSON that can be sent by the client. If payload
+    | Defines the limit of JSON that can be sent by the blagovisnik. If payload
     | is over 1mb it will not be processed.
     |
     */

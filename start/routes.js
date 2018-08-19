@@ -14,6 +14,7 @@
 */
 
 const Route = use('Route');
+const Helpers = use('Helpers');
 
 Route.group(() => {
     Route.post('/login', 'AuthController.login')
@@ -41,6 +42,4 @@ Route.get('public/pdf/:name', ( { request, response } ) => {
   response.download(`public/pdf/${request.params.name}`);
 });
 
-Route.any('*', ({ response }) => {
-  return response.download('blagovisnik/dist/blagovisnik')
-});
+Route.any('*', ({response}) => response.download(Helpers.publicPath('main.html')));
