@@ -9,10 +9,8 @@
     "npm": "6.1.0"
   },
   "scripts": {
-    "start": "nodemon server.js",
-    "test": "node ace test",
-    "client-install": "npm install --prefix blagovisnik",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTUIN=false npm run client-install && npm run build --prefix blagovisnik"
+    "start": "node server.js",
+    "test": "node ace test"
   },
   "keywords": [
     "adonisjs",
