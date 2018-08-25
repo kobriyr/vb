@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".author-article {\n  font-family: ArnoPro-SmbdSubhead;\n  margin-bottom: 30px;\n}\n\n.title-article {\n  font-size: 36px;\n  font-family: ArnoPro-SmbdSubhead;\n}\n\n.key-words-article {\n  margin-bottom: 10px;\n}\n\n.summary-article {\n  margin-bottom: 10px;\n  font-family: ArnoPro-ItalicSmText;\n}\n\n.summary-en-article {\n  margin-bottom: 10px;\n}\n\n.link-article {\n\n}\n\n.article-info {\n  font-size: 24px;\n  font-family: ArnoPro-SmText;\n}\n\n.btn-article {\n  background-color: #007398;\n  margin: 0 10px;\n}\n"
+module.exports = ".author-article {\n  font-family: ArnoPro-SmbdSubhead;\n  margin-bottom: 30px;\n}\n\n.title-article {\n  font-size: 36px;\n  font-family: ArnoPro-SmbdSubhead;\n}\n\n.key-words-article {\n  margin-bottom: 10px;\n}\n\n.summary-article {\n  margin-bottom: 10px;\n  font-family: ArnoPro-ItalicSmText;\n}\n\n.summary-en-article {\n  margin-bottom: 10px;\n}\n\n.link-article {\n\n}\n\n.article-info {\n  font-size: 20px;\n  font-family: ArnoPro-SmText;\n}\n\n.btn-article {\n  background-color: #007398;\n  margin: 0 10px;\n}\n"
 
 /***/ }),
 
@@ -41,7 +41,7 @@ module.exports = ".author-article {\n  font-family: ArnoPro-SmbdSubhead;\n  marg
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"article-info\">\n  <div *ngIf=\"article.title\" class=\"title-article\">{{ article.title }}</div>\n  <div *ngIf=\"article.author\" class=\"author-article\">{{ article.author }}</div>\n  <div *ngIf=\"article.key_words\" class=\"key-words-article\">Ключові слова: {{ article.key_words }}</div>\n  <div *ngIf=\"article.summary\" class=\"summary-article\">Анотація: {{ article.summary }}</div>\n  <div *ngIf=\"article.summary_en\" class=\"summary-en-article\">Summary: {{ article.summary_en }}</div>\n  <div *ngIf=\"article.document\" class=\"link-article\">\n    <a href=\"{{ article.document }}\" class=\"waves-effect waves-light btn btn-article\">\n      Переглянути статтю\n    </a>\n    <a target=\"_self\"\n       href=\"{{ article.document }}\"\n       download=\"{{ docName }}\"\n       class=\"waves-effect waves-light btn btn-article\">\n      Скачати статтю\n    </a>\n  </div>\n</div>\n\n"
+module.exports = "<div class=\"article-info\">\n  <div *ngIf=\"article.title\" class=\"title-article\">{{ article.title }}</div>\n  <div *ngIf=\"article.author\" class=\"author-article\">{{ article.author }}</div>\n  <div *ngIf=\"article.key_words\" class=\"key-words-article\">Ключові слова: {{ article.key_words }}</div>\n  <div *ngIf=\"article.summary\" class=\"summary-article\">Анотація: {{ article.summary }}</div>\n  <div *ngIf=\"article.document\" class=\"link-article\">\n    <a href=\"{{ article.document }}\" class=\"waves-effect waves-light btn btn-article\">\n      Переглянути статтю\n    </a>\n    <a target=\"_self\"\n       href=\"{{ article.document }}\"\n       download=\"{{ docName }}\"\n       class=\"waves-effect waves-light btn btn-article\">\n      Скачати статтю\n    </a>\n  </div>\n</div>\n\n"
 
 /***/ }),
 
@@ -214,12 +214,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _tom_page_show_tom_page_show_tom_page_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./tom-page/show-tom-page/show-tom-page.component */ "./src/app/tom-page/show-tom-page/show-tom-page.component.ts");
 /* harmony import */ var _article_page_article_page_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./article-page/article-page.component */ "./src/app/article-page/article-page.component.ts");
 /* harmony import */ var _about_article_page_about_article_page_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./about-article-page/about-article-page.component */ "./src/app/about-article-page/about-article-page.component.ts");
+/* harmony import */ var _en_about_article_page_en_about_article_page_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./en-about-article-page/en-about-article-page.component */ "./src/app/en-about-article-page/en-about-article-page.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -256,8 +258,16 @@ var routes = [
             { path: 'tom/:id', component: _tom_page_show_tom_page_show_tom_page_component__WEBPACK_IMPORTED_MODULE_22__["ShowTomPageComponent"] },
             { path: 'tom/:tom/article/create', component: _article_page_article_page_component__WEBPACK_IMPORTED_MODULE_23__["ArticlePageComponent"] },
             { path: 'tom/:tom/article/:id', component: _article_page_article_page_component__WEBPACK_IMPORTED_MODULE_23__["ArticlePageComponent"] }
-        ]
-    },
+        ] },
+    { path: 'en', component: _shared_layouts_en_main_layout_en_main_layout_component__WEBPACK_IMPORTED_MODULE_13__["EnMainLayoutComponent"], children: [
+            { path: 'about', component: _en_about_page_en_about_page_component__WEBPACK_IMPORTED_MODULE_14__["EnAboutPageComponent"] },
+            { path: 'editorial-board', component: _en_editorial_board_page_en_editorial_board_page_component__WEBPACK_IMPORTED_MODULE_15__["EnEditorialBoardPageComponent"] },
+            { path: 'for-authors', component: _en_for_authors_page_en_for_authors_page_component__WEBPACK_IMPORTED_MODULE_16__["EnForAuthorsPageComponent"] },
+            { path: 'journal-numbers', component: _en_journal_numbers_page_en_journal_numbers_page_component__WEBPACK_IMPORTED_MODULE_17__["EnJournalNumbersPageComponent"] },
+            { path: 'reviewing', component: _en_reviewing_page_en_reviewing_page_component__WEBPACK_IMPORTED_MODULE_18__["EnReviewingPageComponent"] },
+            { path: '', component: _en_main_page_en_main_page_component__WEBPACK_IMPORTED_MODULE_19__["EnMainPageComponent"] },
+            { path: ':id', component: _en_about_article_page_en_about_article_page_component__WEBPACK_IMPORTED_MODULE_25__["EnAboutArticlePageComponent"] }
+        ] },
     { path: '', component: _shared_layouts_main_layout_main_layout_component__WEBPACK_IMPORTED_MODULE_6__["MainLayoutComponent"], children: [
             { path: 'about', component: _about_page_about_page_component__WEBPACK_IMPORTED_MODULE_7__["AboutPageComponent"] },
             { path: 'editorial-board', component: _editorial_board_page_editorial_board_page_component__WEBPACK_IMPORTED_MODULE_9__["EditorialBoardPageComponent"] },
@@ -266,14 +276,6 @@ var routes = [
             { path: 'reviewing', component: _reviewing_page_reviewing_page_component__WEBPACK_IMPORTED_MODULE_12__["ReviewingPageComponent"] },
             { path: '', component: _main_page_main_page_component__WEBPACK_IMPORTED_MODULE_8__["MainPageComponent"] },
             { path: ':id', component: _about_article_page_about_article_page_component__WEBPACK_IMPORTED_MODULE_24__["AboutArticlePageComponent"] }
-        ] },
-    { path: 'en', component: _shared_layouts_en_main_layout_en_main_layout_component__WEBPACK_IMPORTED_MODULE_13__["EnMainLayoutComponent"], children: [
-            { path: 'about', component: _en_about_page_en_about_page_component__WEBPACK_IMPORTED_MODULE_14__["EnAboutPageComponent"] },
-            { path: 'editorial-board', component: _en_editorial_board_page_en_editorial_board_page_component__WEBPACK_IMPORTED_MODULE_15__["EnEditorialBoardPageComponent"] },
-            { path: 'for-authors', component: _en_for_authors_page_en_for_authors_page_component__WEBPACK_IMPORTED_MODULE_16__["EnForAuthorsPageComponent"] },
-            { path: 'journal-numbers', component: _en_journal_numbers_page_en_journal_numbers_page_component__WEBPACK_IMPORTED_MODULE_17__["EnJournalNumbersPageComponent"] },
-            { path: 'reviewing', component: _en_reviewing_page_en_reviewing_page_component__WEBPACK_IMPORTED_MODULE_18__["EnReviewingPageComponent"] },
-            { path: '', component: _en_main_page_en_main_page_component__WEBPACK_IMPORTED_MODULE_19__["EnMainPageComponent"] }
         ] }
 ];
 var AppRoutingModule = /** @class */ (function () {
@@ -407,12 +409,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _article_page_article_page_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./article-page/article-page.component */ "./src/app/article-page/article-page.component.ts");
 /* harmony import */ var _search_pipe__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./search.pipe */ "./src/app/search.pipe.ts");
 /* harmony import */ var _about_article_page_about_article_page_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./about-article-page/about-article-page.component */ "./src/app/about-article-page/about-article-page.component.ts");
+/* harmony import */ var _en_about_article_page_en_about_article_page_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./en-about-article-page/en-about-article-page.component */ "./src/app/en-about-article-page/en-about-article-page.component.ts");
+/* harmony import */ var _search_en_pipe__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./search-en.pipe */ "./src/app/search-en.pipe.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -472,7 +478,9 @@ var AppModule = /** @class */ (function () {
                 _tom_page_show_tom_page_show_tom_page_component__WEBPACK_IMPORTED_MODULE_26__["ShowTomPageComponent"],
                 _article_page_article_page_component__WEBPACK_IMPORTED_MODULE_27__["ArticlePageComponent"],
                 _search_pipe__WEBPACK_IMPORTED_MODULE_28__["SearchPipe"],
-                _about_article_page_about_article_page_component__WEBPACK_IMPORTED_MODULE_29__["AboutArticlePageComponent"]
+                _about_article_page_about_article_page_component__WEBPACK_IMPORTED_MODULE_29__["AboutArticlePageComponent"],
+                _en_about_article_page_en_about_article_page_component__WEBPACK_IMPORTED_MODULE_30__["EnAboutArticlePageComponent"],
+                _search_en_pipe__WEBPACK_IMPORTED_MODULE_31__["SearchEnPipe"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -514,7 +522,7 @@ module.exports = "a {\n  cursor: pointer;\n}\n\n.dn {\n  display: none;\n}\n\n.h
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"page-title\">\n    <h4>\n      <a routerLink=\"/admin\">Статті</a>\n      <i class=\"material-icons\">keyboard_arrow_right</i>\n      {{ isNew ? 'Додати' : 'Редагувати' }} статтю\n    </h4>\n    <span>\n      <button *ngIf=\"!isNew\" class=\"btn btn-small red\" (click)=\"deleteArticle()\">\n        <i class=\"material-icons\">delete</i>\n      </button>\n    </span>\n  </div>\n\n  <div class=\"row\">\n    <form class=\"col s12 l6\" [formGroup]=\"form\" (ngSubmit)=\"onSubmit()\">\n      <div class=\"input-field\">\n        <input formControlName=\"author\" id=\"author\" type=\"text\">\n        <label for=\"author\">Автор</label>\n      </div>\n\n      <div class=\"input-field\">\n        <input pattern=\"[1-9]*\" formControlName=\"number\" id=\"number\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('number').invalid && form.get('number').touched }\">\n        <label for=\"number\">Номер</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('number').invalid && form.get('number').touched\">\n        <span *ngIf=\"form.get('number').errors['required']\">\n          Номер повинен бути зазначений.\n        </span>\n        <span *ngIf=\"form.get('number').errors['pattern']\">\n          Дані повинні бути числом.\n        </span>\n      </span>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"title\" id=\"title\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('title').invalid && form.get('title').touched }\">\n        <label for=\"title\">Назва</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('title').invalid && form.get('title').touched\">\n        <span *ngIf=\"form.get('title').errors['required']\">\n          Назва повинна бути зазначена.\n        </span>\n      </span>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"pages\" id=\"pages\" type=\"text\">\n        <label for=\"pages\">Сторінки</label>\n      </div>\n\n      <div class=\"input-field\">\n        <textarea formControlName=\"summary\"  id=\"summary\" class=\"materialize-textarea\" #textArea></textarea>\n        <label for=\"summary\">Анотація</label>\n      </div>\n\n      <div class=\"input-field\">\n        <textarea formControlName=\"summary_en\"  id=\"summary_en\" class=\"materialize-textarea\" #textAreaEn></textarea>\n        <label for=\"summary_en\">Summary</label>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"key_words\" id=\"key_words\" type=\"text\">\n        <label for=\"key_words\">Ключові слова</label>\n      </div>\n\n      <div class=\"file-field input-field\">\n        <div class=\"btn\">\n          <span>Загрузити документ</span>\n          <input [disabled]=\"docValid\" (change)=\"onFileUpload($event)\" type=\"file\" #inputFile>\n        </div>\n        <div class=\"file-path-wrapper\">\n          <input  formControlName=\"file\" class=\"file-path validate\" type=\"text\">\n        </div>\n      </div>\n\n      <div>\n        <button type=\"submit\" class=\"waves-effect waves-light btn\" [disabled]=\"form.invalid || form.disabled || validFile\">\n          Зберегти\n        </button>\n      </div>\n    </form>\n  </div>\n\n</div>\n"
+module.exports = "<div class=\"container\">\n  <div class=\"page-title\">\n    <h4>\n      <a routerLink=\"/admin\">Статті</a>\n      <i class=\"material-icons\">keyboard_arrow_right</i>\n      {{ isNew ? 'Додати' : 'Редагувати' }} статтю\n    </h4>\n    <span>\n      <button *ngIf=\"!isNew\" class=\"btn btn-small red\" (click)=\"deleteArticle()\">\n        <i class=\"material-icons\">delete</i>\n      </button>\n    </span>\n  </div>\n\n  <div class=\"row\">\n    <form class=\"col s12 l6\" [formGroup]=\"form\" (ngSubmit)=\"onSubmit()\">\n\n      <div class=\"input-field\">\n        <input pattern=\"[1-9]*\" formControlName=\"number\" id=\"number\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('number').invalid && form.get('number').touched }\">\n        <label for=\"number\">Номер</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('number').invalid && form.get('number').touched\">\n        <span *ngIf=\"form.get('number').errors['required']\">\n          Номер повинен бути зазначений.\n        </span>\n        <span *ngIf=\"form.get('number').errors['pattern']\">\n          Дані повинні бути числом.\n        </span>\n      </span>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"author\" id=\"author\" type=\"text\">\n        <label for=\"author\">Автор</label>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"author_en\" id=\"author_en\" type=\"text\">\n        <label for=\"author\">Author</label>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"title\" id=\"title\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('title').invalid && form.get('title').touched }\">\n        <label for=\"title\">Назва</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('title').invalid && form.get('title').touched\">\n        <span *ngIf=\"form.get('title').errors['required']\">\n          Назва повинна бути зазначена.\n        </span>\n      </span>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"title_en\" id=\"title_en\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('title_en').invalid && form.get('title_en').touched }\">\n        <label for=\"title\">Title</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('title_en').invalid && form.get('title_en').touched\">\n        <span *ngIf=\"form.get('title_en').errors['required']\">\n          Title повинен бути зазначений.\n        </span>\n      </span>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"pages\" id=\"pages\" type=\"text\">\n        <label for=\"pages\">Сторінки</label>\n      </div>\n\n      <div class=\"input-field\">\n        <textarea formControlName=\"summary\"  id=\"summary\" class=\"materialize-textarea\" #textArea></textarea>\n        <label for=\"summary\">Анотація</label>\n      </div>\n\n      <div class=\"input-field\">\n        <textarea formControlName=\"summary_en\"  id=\"summary_en\" class=\"materialize-textarea\" #textAreaEn></textarea>\n        <label for=\"summary_en\">Summary</label>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"key_words\" id=\"key_words\" type=\"text\">\n        <label for=\"key_words\">Ключові слова</label>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"key_words_en\" id=\"key_words_en\" type=\"text\">\n        <label for=\"key_words\">Key words</label>\n      </div>\n\n      <div class=\"input-field\">\n        <textarea formControlName=\"references\"  id=\"references\" class=\"materialize-textarea\" #textAreaRef></textarea>\n        <label for=\"summary\">Список літератури</label>\n      </div>\n\n      <div class=\"file-field input-field\">\n        <div class=\"btn\">\n          <span>Загрузити документ</span>\n          <input [disabled]=\"docValid\" (change)=\"onFileUpload($event)\" type=\"file\" #inputFile>\n        </div>\n        <div class=\"file-path-wrapper\">\n          <input  formControlName=\"file\" class=\"file-path validate\" type=\"text\">\n        </div>\n      </div>\n\n      <div>\n        <button type=\"submit\" class=\"waves-effect waves-light btn\" [disabled]=\"form.invalid || form.disabled || validFile\">\n          Зберегти\n        </button>\n      </div>\n    </form>\n  </div>\n\n</div>\n"
 
 /***/ }),
 
@@ -564,13 +572,17 @@ var ArticlePageComponent = /** @class */ (function () {
     ArticlePageComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.form = new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroup"]({
-            author: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](null),
             number: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](null, _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required),
+            author: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](null),
+            author_en: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](null),
             title: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](null, _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required),
+            title_en: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](null, _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required),
             pages: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](null),
             key_words: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](null),
+            key_words_en: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](null),
             summary: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](null),
             summary_en: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](null),
+            references: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](null),
             file: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](null)
         });
         this.form.disable();
@@ -589,17 +601,23 @@ var ArticlePageComponent = /** @class */ (function () {
             if (article) {
                 _this.article = article;
                 _this.form.patchValue({
-                    author: article.author,
                     number: article.number,
+                    author: article.author,
+                    author_en: article.author_en,
                     title: article.title,
+                    title_en: article.title_en,
                     pages: article.pages,
                     key_words: article.key_words,
+                    key_words_en: article.key_words_en,
                     summary: article.summary,
                     summary_en: article.summary_en,
+                    references: article.references,
                     file: article.document
                 });
                 _shared_classes_materialize_service__WEBPACK_IMPORTED_MODULE_6__["MaterializeService"].updateTextInputs();
                 _shared_classes_materialize_service__WEBPACK_IMPORTED_MODULE_6__["MaterializeService"].textareaAuto(_this.textAreaRef);
+                _shared_classes_materialize_service__WEBPACK_IMPORTED_MODULE_6__["MaterializeService"].textareaAuto(_this.textAreaEnRef);
+                _shared_classes_materialize_service__WEBPACK_IMPORTED_MODULE_6__["MaterializeService"].textareaAuto(_this.textAreaRefRef);
             }
             _this.form.enable();
         }, function (error) {
@@ -611,10 +629,10 @@ var ArticlePageComponent = /** @class */ (function () {
         var obs$;
         this.form.disable();
         if (this.isNew) {
-            obs$ = this.articleService.create(this.tom, this.form.value.author, this.form.value.number, this.form.value.title, this.form.value.pages, this.form.value.key_words, this.form.value.summary, this.form.value.summary_en, this.file);
+            obs$ = this.articleService.create(this.tom, this.form.value.author, this.form.value.author_en, this.form.value.number, this.form.value.title, this.form.value.title_en, this.form.value.pages, this.form.value.key_words, this.form.value.key_words_en, this.form.value.summary, this.form.value.summary_en, this.form.value.references, this.file);
         }
         else {
-            obs$ = this.articleService.update(this.article.id, this.form.value.author, this.form.value.number, this.form.value.title, this.form.value.pages, this.form.value.key_words, this.form.value.summary, this.form.value.summary_en, this.file);
+            obs$ = this.articleService.update(this.article.id, this.form.value.author, this.form.value.author_en, this.form.value.number, this.form.value.title, this.form.value.title_en, this.form.value.pages, this.form.value.key_words, this.form.value.key_words_en, this.form.value.summary, this.form.value.summary_en, this.form.value.references, this.file);
         }
         obs$.subscribe(function (article) {
             _this.article = article;
@@ -664,6 +682,10 @@ var ArticlePageComponent = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('textAreaEn'),
         __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
     ], ArticlePageComponent.prototype, "textAreaEnRef", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('textAreaRef'),
+        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
+    ], ArticlePageComponent.prototype, "textAreaRefRef", void 0);
     __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('inputFile'),
         __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
@@ -752,6 +774,99 @@ var EditorialBoardPageComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], EditorialBoardPageComponent);
     return EditorialBoardPageComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/en-about-article-page/en-about-article-page.component.css":
+/*!***************************************************************************!*\
+  !*** ./src/app/en-about-article-page/en-about-article-page.component.css ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".author-article {\n  font-family: ArnoPro-SmbdSubhead;\n  margin-bottom: 30px;\n}\n\n.title-article {\n  font-size: 36px;\n  font-family: ArnoPro-SmbdSubhead;\n}\n\n.key-words-article {\n  margin-bottom: 10px;\n}\n\n.summary-article {\n  margin-bottom: 10px;\n  font-family: ArnoPro-ItalicSmText;\n}\n\n.summary-en-article {\n  margin-bottom: 10px;\n}\n\n.link-article {\n\n}\n\n.article-info {\n  font-size: 24px;\n  font-family: ArnoPro-SmText;\n}\n\n.btn-article {\n  background-color: #007398;\n  margin: 0 10px;\n}\n"
+
+/***/ }),
+
+/***/ "./src/app/en-about-article-page/en-about-article-page.component.html":
+/*!****************************************************************************!*\
+  !*** ./src/app/en-about-article-page/en-about-article-page.component.html ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"article-info\">\n  <div *ngIf=\"article.title_en\" class=\"title-article\">{{ article.title_en }}</div>\n  <div *ngIf=\"article.author_en\" class=\"author-article\">{{ article.author_en }}</div>\n  <div *ngIf=\"article.key_words_en\" class=\"key-words-article\">Key words: {{ article.key_words_en }}</div>\n  <div *ngIf=\"article.summary_en\" class=\"summary-en-article\">Summary: {{ article.summary_en }}</div>\n  <div *ngIf=\"article.document\" class=\"link-article\">\n    <a href=\"{{ article.document }}\" class=\"waves-effect waves-light btn btn-article\">\n      View article\n    </a>\n    <a target=\"_self\"\n       href=\"{{ article.document }}\"\n       download=\"{{ docName }}\"\n       class=\"waves-effect waves-light btn btn-article\">\n      Download the article\n    </a>\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/en-about-article-page/en-about-article-page.component.ts":
+/*!**************************************************************************!*\
+  !*** ./src/app/en-about-article-page/en-about-article-page.component.ts ***!
+  \**************************************************************************/
+/*! exports provided: EnAboutArticlePageComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EnAboutArticlePageComponent", function() { return EnAboutArticlePageComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _shared_services_article_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../shared/services/article.service */ "./src/app/shared/services/article.service.ts");
+/* harmony import */ var _node_modules_rxjs_internal_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/rxjs/internal/operators */ "./node_modules/rxjs/internal/operators/index.js");
+/* harmony import */ var _node_modules_rxjs_internal_operators__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_rxjs_internal_operators__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var _shared_classes_materialize_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../shared/classes/materialize.service */ "./src/app/shared/classes/materialize.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var EnAboutArticlePageComponent = /** @class */ (function () {
+    function EnAboutArticlePageComponent(router, articleService) {
+        this.router = router;
+        this.articleService = articleService;
+    }
+    EnAboutArticlePageComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.router.params
+            .pipe(Object(_node_modules_rxjs_internal_operators__WEBPACK_IMPORTED_MODULE_3__["switchMap"])(function (params) {
+            if (params['id']) {
+                return _this.articleService.getById(params['id']);
+            }
+            return Object(rxjs__WEBPACK_IMPORTED_MODULE_4__["of"])(null);
+        }))
+            .subscribe(function (article) {
+            if (article) {
+                _this.article = article;
+                _this.docName = article.document.substr(11);
+            }
+        }, function (error) {
+            _shared_classes_materialize_service__WEBPACK_IMPORTED_MODULE_5__["MaterializeService"].toast(error.error.message);
+        });
+    };
+    EnAboutArticlePageComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-en-about-article-page',
+            template: __webpack_require__(/*! ./en-about-article-page.component.html */ "./src/app/en-about-article-page/en-about-article-page.component.html"),
+            styles: [__webpack_require__(/*! ./en-about-article-page.component.css */ "./src/app/en-about-article-page/en-about-article-page.component.css")]
+        }),
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"],
+            _shared_services_article_service__WEBPACK_IMPORTED_MODULE_2__["ArticleService"]])
+    ], EnAboutArticlePageComponent);
+    return EnAboutArticlePageComponent;
 }());
 
 
@@ -965,7 +1080,7 @@ module.exports = "ul.collapsible div.collapsible-header {\n  flex-direction: col
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ul class=\"collapsible popout\" #collapsible>\n  <li *ngFor=\"let tom of toms\">\n    <div class=\"collapsible-header\"><b>№ {{ tom.number }}, {{ tom.year }}</b>\n      <i>{{ tom.description }}</i></div>\n    <div class=\"collapsible-body\">\n      <div class=\"article-info\" *ngFor=\"let article of tom.articles\">\n        <a href=\"{{ article.id }}\" class=\"link-article\"> {{article.number}}.\n          <b>{{ article.author }} {{ article.title}} – С. {{ article.pages }}</b>\n        </a>\n        <div class=\"article-key-words\">Ключові слова: {{article.key_words}}</div>\n        <div class=\"article-summary\">Анотація: {{article.summary}}</div>\n      </div>\n      <a href=\"{{ tom.document }}\">\n        <i class=\"material-icons\">insert_drive_file</i>\n        <b>Скачати електронний варіант журналу</b>\n      </a>\n    </div>\n  </li>\n</ul>\n\n\n"
+module.exports = "<ul class=\"collapsible popout\" #collapsible>\n  <li *ngFor=\"let tom of toms\">\n    <div class=\"collapsible-header\"><b>№ {{ tom.number }}, {{ tom.year }}</b>\n      <i>{{ tom.description_en }}</i></div>\n    <div class=\"collapsible-body\">\n      <div class=\"article-info\" *ngFor=\"let article of tom.articles\">\n        <a href=\"en/{{ article.id }}\" class=\"link-article\"> {{article.number}}.\n          <b>{{ article.author_en }} {{ article.title_en}} – С. {{ article.pages }}</b>\n        </a>\n        <div class=\"article-key-words\">Key words: {{ article.key_words_en }}</div>\n        <div class=\"article-summary\">Summary: {{ article.summary_en }}</div>\n      </div>\n      <a href=\"{{ tom.document }}\">\n        <i class=\"material-icons\">insert_drive_file</i>\n        <b>\n          Download the electronic version of the magazine\n        </b>\n      </a>\n    </div>\n  </li>\n</ul>\n\n\n"
 
 /***/ }),
 
@@ -1231,7 +1346,7 @@ var ForAuthorsPageComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "ul.collapsible div.collapsible-header {\n    flex-direction: column;\n}\n\nul.collapsible div.collapsible-header i {\n    width: auto;\n    font-size: initial;\n}\n\nul.collapsible a {\n    color: #333333;\n}\n\nul.collapsible a:hover {\n    color: #bd1015;\n}"
+module.exports = "ul.collapsible div.collapsible-header {\n  flex-direction: column;\n}\n\nul.collapsible div.collapsible-header i {\n  width: auto;\n  font-size: initial;\n}\n\nul.collapsible a {\n  color: #333333;\n}\n\nul.collapsible a:hover {\n  color: #bd1015;\n}\n\na.link-article {\n  display: block;\n  cursor: pointer;\n}\n\n.article-summary {\n  font-family: ArnoPro-ItalicSmText;\n}\n"
 
 /***/ }),
 
@@ -1242,7 +1357,7 @@ module.exports = "ul.collapsible div.collapsible-header {\n    flex-direction: c
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ul class=\"collapsible popout\" #collapsible>\n  <li>\n    <div class=\"collapsible-header\"><b>№ 1, 2013</b> <i>(Волинський благовісник: богословсько-історичний науковий журнал Волинської православної богословської академії Української Православної Церкви Київського Патріархату. – Луцьк: Видавництво Волинської православної богословської академії EIKΩN, 2013. – №1. – 288 с. )</i></div>\n    <div class=\"collapsible-body\">\n      <p>1. Титул.</p>\n      <p>2. Зміст.</p>\n      <p>3. Михаїл (Зінкевич), митрополит. «Слово про закон і благодать» митрополита Іларіона: сакральний вимір Руської державності. – С. 9-12.</p>\n      <p>4. Лозовицький В., свящ. Порушення Богом встановленої природи гармонії людських сімейних стосунків в одностатевому шлюбі. – С. 13-30.</p>\n      <p>5. Тишкевич Б. Порівняльно-богословський аналіз пастирського душпіклування в православ'ї, католицизмі та протестантизмі. – С. 31-40.</p>\n      <p>6. Цап'юк М., прот. Формування еклезіологічної доктрини у донікейський період. – С. 41-49.</p>\n      <p>7. Сацик І. Генеза терміну «апокатастасіс» у ранньохристиянській традиції до часів Орігена. – С. 51-64.</p>\n      <p>8. Швець І., прот. Праці Йосифа Флавія як джерело біблійної ісагогіки. – С. 65-70.</p>\n      <p>9. Гринів Б., прот. Воздвиження Чесного і Животворчого Хреста Господнього: подія свята та еортологічна динаміка. – С. 71-76.</p>\n      <p>10. Клочак В., прот. Типікон: проблема уставу та узгодження його із сучасною богослужбовою практикою. – С. 77-81.</p>\n      <p>11. Беспалов С. Значення діяльності святителя Іларіона, митрополита Київського, в утвердженні самостійності Української Церкви. – С. 83-88.</p>\n      <p>12. Волянюк Т., прот. Православні священнослужителі в культурно-освітньому просторі Волині другої половини 30-х рр. ХХ ст.: вектори діяльності, результати праці. – С. 89-98</p>\n      <p>13. Диба Ю. Батьківщина Малковичів – «страна своя» преподобного Варлаама Печерського. – С. 99-112.</p>\n      <p>14. Лотоцький В., прот. Поширення Християнства у Північному Причорномор'ї та Криму в ІІ-VIII ст. – С. 113-130.</p>\n      <p>15. Рожко В. Методологія церковно-історичних досліджень (з наукового досвіду автора). – С. 131-145.</p>\n      <p>16. Черенюк Я., свящ. Передумови реформи вищого церковного управління Російської Православної Церкви на початку  XVIII ст. – С. 147-153.</p>\n      <p>17. Вакін В., свящ. Спроби скликання VIII Вселенського Собору. – С. 155-160.</p>\n      <p>18. Франків Д., ієромонах. «Українське питання» і VIII Вселенський Собор. – С. 161-177.</p>\n      <p>19. Пушко В., прот. Питання канонічного статусу православної діаспори в контексті VIII Вселенського собору. – С. 179-184.</p>\n      <p>20. Марченко К., ігумен. Місія Православної проповіді в сучасному глобалізованому світі. – С. 185-196.</p>\n      <p>21. Хромяк А., свящ. Згубний вплив астрології та магії на православного християнина. – С. 197-206.</p>\n      <p>22. Дрозд В., прот. Арсен Річинський – волинський церковний діяч. – С. 207-220.</p>\n      <p>23. Цап М., прот. Митрополит Іоан (Боднарчук) і третє відродження УАПЦ та проголошення Київського Патріархату. – С. 221-232.</p>\n      <p>24. Кучинко М. Писемні та археологічні свідчення про Ісуса Христа. – С. 233-241.</p>\n      <p>25. Обухович Л. Тростянецька Чудотворна ікона Богородиці Одигітрії. – С. 242-249.</p>\n      <p>26. Скиба І., прот. Сучасний погляд на походження кирилиці та глаголиці. – С. 251-255.</p>\n      <p>27. Романова О. Історія перекладу Біблії англійською мовою. – С. 257-262.</p>\n      <p>28. Хоміч М. Рідна мова – життя духовного основа. – С. 263-269.</p>\n      <p>29. Михалевич В., прот. Душпастирська діяльність у духовно-моральному вихованні молоді: актуальність та проблематика. – С. 271-277.</p>\n      <p>30. Ротченкова Н. Формування духовної культури особистості. – С. 279-284.</p>\n      <a href=\"/assets/documents/bg/VB_1.pdf\"><i class=\"material-icons\">insert_drive_file</i><b>Скачати електронний варіант журналу</b></a>\n    </div>\n  </li>\n  <li>\n    <div class=\"collapsible-header\"><b>№ 2, 2014</b> <i>(Волинський благовісник: богословсько-історичний науковий журнал Волинської православної богословської академії Української Православної Церкви Київського Патріархату. – Луцьк: Видавництво Волинської православної богословської академії EIKΩN, 2014. – №2. – 368 с. )</i></div>\n    <div class=\"collapsible-body\">\n      <p>1. Титул.</p>\n      <p>2. Зміст.</p>\n      <p>3. Лозовицький В., cвящ. Узаконення беззаконня: штрих до розуміння ідеології встановлення «руского міра» за допомогою загарбницької братовбивчої війни. – С. 9-24.</p>\n      <p>4. Стеблина П., свящ. Світоглядно-богословські ідеї св. Юстина Філософа. С. – 25-38.</p>\n      <p>5. Хромяк А., свящ. Християнський погляд на земні блага. – С. 39-48.</p>\n      <p>6. Стецько В. Наративний аналіз дослідження Святого Письма. – С. 49-62.</p>\n      <p>7. Клочак В., прот. Богослужіння Православної Церкви як вираження правильного вчення. – С. 63-71.</p>\n      <p>8. Хомин Л., прот. Релігія Древнього Риму. – С. 73-84.</p>\n      <p>9. Скиба І., прот. Наслідки Берестейської унії для Православної Волині в перші післяунійні десятиліття. – С. 85-93.</p>\n      <p>10. Цап М., прот. Волинське православне духовенство в Першій світовій війні. – С. 95-108.</p>\n      <p>11. Черенюк Я., свящ. Український церковно-визвольний рух після падіння самодержавства та ліквідація синодального управління РПЦ. – С. 109-123.</p>\n      <p>12. Черенюк С., протодиякон. Товариство Петра Могили на Волині в 30-их роках ХХ століття. – С. 125-135.</p>\n      <p>13. Мартинов Н., ієромонах. Війни Візантії за імператора Юстиніана: спроба аналізу. – С. 137-145.</p>\n      <p>14. Черняк М., свящ. Агафій Міринейський – історик і поет. – С. 147-156.</p>\n      <p>15. Вакін В., прот. Компетенція духовної влади Константинопольських Патріархів щодо Київської митрополії. – С.157-170.</p>\n      <p>16. Марченко К., ігумен. Православність проповіді. – С. 171-186.</p>\n      <p>17. Вінцукевич П. Релігія та психоаналіз. – С. 187-206.</p>\n      <p>18. Ямчук П. Штучне відродження антихристиянського культу ідолопоклонства в ХХ ст. та його українська духовно-філософська альтернатива. – С. 207-222.</p>\n      <p>19. Беспалов С., свящ. Роль та значення діяльності святителя Петра Могили в житті Української Православної Церкви. – С. 223-230.</p>\n      <p>20. Варварук Т., прот. Релігія в житті і творчості Тараса Шевченка. – С. 231-240.</p>\n      <p>21. Бистрицька Е. Митрополит Діонісій (Валединський) і питання автокефального статусу Польської Православної Церкви у документах Ради у справах РПЦ. – С. 241-257.</p>\n      <p>22. Кучинко М. Місіонерська діяльність апостола Павла у світлі археології. – С. 259-266.</p>\n      <p>23. Чайка В. Історико-культурний феномен української духовної музики та її виховний вплив на становлення особистості. – С. 267-274.</p>\n      <p>24. Тоцька О., Маласпіна В. Архієрейський хор «Оранта»: багатовекторність мистецької діяльності. – С. 275-283.</p>\n      <p>25. Головей В. Богословський дискурс Преображення та його вплив на іконопис православної традиції. – С. 285-295.</p>\n      <p>26. Обухович Л. Богослів'я символів і метафор в образотворенні Перванчівських празникових ікон. – С. 297-308.</p>\n      <p>27. Гнатюк А. Рідна мова – шлях до Бога. – С. 309-324.</p>\n      <p>28. Яровий С., архімандрит, Лозовицький В., свящ. Виправдання вірою. – С. 325-338.</p>\n      <p>29. Громик О, дияк.,Беспалов С., свящ. Початки чернецтва на Святій Горі Афон. – С. 339-353.</p>\n      <p>30. Фульмес В., Цап М., прот. Митрополит Анатолій (Дублянський) – засновник та редактор журналу «Рідна Церква». – С. 355-364.</p>\n      <a href=\"/assets/documents/bg/VB_2.pdf\"><i class=\"material-icons\">insert_drive_file</i><b>Скачати електронний варіант журналу</b></a>\n    </div>\n  </li>\n  <li>\n    <div class=\"collapsible-header\"><b>№ 3, 2015</b> <i>(Волинський благовісник: богословсько-історичний науковий журнал Волинської православної богословської академії Української Православної Церкви Київського Патріархату. – Луцьк: Видавництво Волинської православної богословської академії EIKΩN, 2015. – №3. – 368 с.)</i></div>\n    <div class=\"collapsible-body\">\n      <p>1. Титул.</p>\n      <p>2. Зміст.</p>\n      <p>3. Заплетнюк Є., прот. Проблематика Таїнства Хрещення в працях протопресвітера Олександра Шмемана [The issues of the Sacrament of Baptism in Protopresbyter Alexander Schmemann’s works]. – С. 13-24.</p>\n      <p>4. Лозовицький В., прот., Штокало В., свящ. Хрест Христовий та його несення в життєвому подвигу християнства (до 1000-ліття мученицької смерті князів-страстотерпців Бориса й Гліба) [Cross of Christ and its bearing in the life feat of a Christian (dedicated to the 1000 anniversary of the martyrdom death of the princes-passion endurances Borys and Hlib)]. – С. 25-38.</p>\n      <p>5. Тишкевич Б. Розкриття вчення про седмичне число Таїнств в Священному Писанні та древніх Отців і Вчителів Церкви[Exposure of the doctrine about the sevenfold number of Sacraments in the Holy Writing and the ancient Fathers and the Teachers of Church]. – С. 39-54.</p>\n      <p>6. Клочак В., прот. Молитва Церкви за спочилих:богословський, історичний, літургічний огляд питання [Prayer of the Church for the dead: theological, historical, liturgical rev. of the question]. – С. 55-66.</p>\n      <p>7. Борщевич В. Волинська єпархія 1917-1919 рр.: церковно-демократичний та національний виміри [The Volyn diocese 1917-1919: church-democratic and national measuring]. – С. 67-78.</p>\n      <p>8. Булига І. Православні конфесії в системі державно-церковних змін на Волині завершального періоду Другої світової війни [Orthodox confessions in the system of State-Church changes in Volyn’ of the final period of the World War II]. – С. 79-86.</p>\n      <p>9. Горбик С., прот. Переклад та видання творів святителя Іоана Золотоустого в Київській православній митрополії (XI-XVII ст.) [Translation and publication of works of saint Ioan Zolotoustui in Kyiv Orthodox metropolis (IX-XVII centuries)]. – С. 87-94.</p>\n      <p>10. Скакальська І. Освітянська праця православних священиків на Волині у міжвоєнний період ХХ ст. [Educationa work of orthodox priest in Volyn in the interwar period of the ХХ century]. – С. 95-102.</p>\n      <p>11. Стоколос Н. До питання специфіки церковно-релігійного життя в Україні на завершальному етапі другої світової війни [To the question of the specificity of the Church and religious life in Ukraine in the final stage of the Second World War]. – С. 103-114.</p>\n      <p>12. Черенюк Я., свящ. Визнання Святійшого Урядуючого Синоду Російської Православної Церкви двома Східними Патріархами [Recognition of the Holy Governmental Synod of the Russian Orthodox Church by the two Eastern Patriarchs]. – С. 115-126.</p>\n      <p>13. Головей В. Богословсько-догматичне обгрунтування іконописного мистецтва у ранньовізантійській патристиці IV-V ст. [The theological and dogmatic justification of icon art in the early Byzantine patristic of the IV-V centuries]. – С. 127-136.</p>\n      <p>14. Вакін В., прот. Українська канонічна спадщина: Собор 1274 року у Володимирі на Клязьмі [Ukrainian canonical heritage: Ecumenical Council of 1274 in Volodymyr on Kliazma]. – С. 137-150.</p>\n      <p>15. Хромяк А., свящ. Порівняльний аналіз православного та мусульманського шлюбу [A comparative analysis of the orthodox and muslim marriage]. – С. 151-158.</p>\n      <p>16. Кобрій Р., свящ. Християнські основи творчості професора Дж. Р. Толкіна [Christian foundations of creativity Professor J. R. R. Tolkien]. – С. 159-172.</p>\n      <p>17. Преловська І. Єпископ Марко Грушевський – очільник Волинської округи УАПЦ (до 150-ліття з дня народження [Bishop Mark Hrushevskii – the head of Volyn diocese UAOC (by his 150th anniversary)]. – С. 173-187.</p>\n      <p>18. Цап М., прот. Протоієрей Олексій Моргаєвський і його служіння в Жидичині [Archpriest Oleksii Morhaievskyi and his service in Zhydychyn]. – С. 188-204.</p>\n      <p>19. Обухович Л. Ікона \"Ісус Христос – Господь Вседержитель\" 1894 р. зі Свято-Троїцького собору м. Луцька [The icon «Jesus Christ – the Lord Almighty» of 1894 from the Holy Trinity Cathedral in Lutsk]. – С. 205-212.</p>\n      <p>20. Жулинський М. Апостольська місія Тараса Шевченка та ідеали слов'янської єдності [Apostolic mission of Taras Shevchenko and ideals of slavic unity]. – С. 213-240.</p>\n      <p>21. Хоміч М. Роль духовних письменників у становленні української літератури XVI-XVII ст. [The role of spiritual writers in the development of Ukrainian literature of the XVI‑XVII century]. – С. 241-254.</p>\n      <p>22. Беспалов С., свящ. Значення духовності для сучасного українського суспільства [The value of spirituality for the modern Ukrainian society]. – С. 255-260.</p>\n      <p>23. Мініч А. Християнство в пошуках відповіді: проблеми соціально-етичної доктрини [Christianity in search of answers: problems of socio-ethical doctrine]. – С. 261-280.</p>\n      <p>24. Павленко П. \"Русский мир\" як ідеологія російського неоімперіалізму: українські реалії [«Russian World» as ideology of Russian neo-imperialism: Ukrainian realities]. – С. 281-286.</p>\n      <p>25. Романова О. Християнське віровчення як основа формування патріотичної позиції кожного свідомого громадянина [Christian dogmas as the basis of the patriotic position forming of the every conscious citizen]. – С. 287-292.</p>\n      <p>26. Тоцька О. Симфонія церковно-державних стосунків у сфері підготовки студентської молоді до подружнього життя [Symphony of church-state relations in the preparing of students to marriage]. – С. 293-300.</p>\n      <p>27. Филипович Л. Актуальність міжрелігійного діалогу в сучасній Україні [Relevange of the interreligious dialogue in modern Ukraine]. – С. 301-306.</p>\n      <p>28. Яроцький П. Основоположні чинники встановлення католицько-православного екуменічного діалогу [Fundamental factors for establishment of the Catholic-Orthodox ecumenical dialogue]. – С. 307-324.</p>\n      <p>29. Левицький В., прот., Цап'юк М., прот. Святий Іриней Ліонський – церковний письменник, апологет християнського віровчення [Saint Irenaeus of Lyon is an ecclesiastical writer, apologist of Christian dogma]. – С. 325-334.</p>\n      <p>30. Панащук С., Беспалов С., свящ. Інституалізаційні норми екзорцизму [Institualizational norms of exorcism]. – С. 335-340.</p>\n      <p>31. Сирко В., Лозовицький В., прот. Вода у Священному Переданні та богослужбовому використанні Новозавітньої Церкви [Water in the Sacramental Tradition and the divine service use of the N. Test. Church]. – С. 341-355.</p>\n      <a href=\"/assets/documents/bg/VB_3.pdf\"><i class=\"material-icons\">insert_drive_file</i><b>Скачати електронний варіант журналу</b></a>\n    </div>\n  </li>\n  <li>\n    <div class=\"collapsible-header\"><b>№ 4, 2016</b> <i>(Волинський благовісник: богословсько-історичний науковий журнал Волинської православної богословської академії Української Православної Церкви Київського Патріархату. – Луцьк: Видавництво Волинської православної богословської академії EIKΩN, 2016. – №4. – 352 с. )</i></div>\n    <div class=\"collapsible-body\">\n      <p>1. Титул.</p>\n      <p>2. Зміст.</p>\n      <p>3. Беспалов С., свящ. Духовність як формуюча складова особистості людини [Spiritual as a formative component of a personality]. – С.13-22.</p>\n      <p>4. Хромяк А, свящ. Важливість і життєва необхідність духовного керівництва для православного християнина на шляху до Царства Небесного [The importance and vital need of a spiritual guidance to the Orthodox Christian on the way to the kingdom of heaven]. – С. 23-30.</p>\n      <p>5. Стецько В. Прихованість Бога та теорія ігор [Hiddenness of God and Game Theory]. – С. 31-42.</p>\n      <p>6. Диба Ю. Корсунські \"капища\" Володимира Святославовича [Wolodymyr Sviatoslavovych’s  Corsun  «temples»]. – С. 43-76.</p>\n      <p>7. Петрович В., Стрільчук Л. Церковні з'їзди на Волині 20-30 рр.  ХХ ст. [Religious Conferences in Volhynia in 20–30-ies of the 20th century]. – С.77-84.</p>\n      <p>8. Романова О. Історичні передумови заснування Луцького Хрестовоздвиженського братства як осередку консолідації православ'я на теренах Західної України [Historical preconditions which promoted the foundation of Lutsk Exaltation of the Cross Brotherhood as a center of Orthodoxy Consolidation in Western Ukraine]. – С. 85-90.</p>\n      <p>9. Рубан М., дияк., Татаринов С. Експропріація церковних цінностей та ліквідація храмів на теренах Бахмутського краю в 1920-х рр. [The Expropriation of the Church Property and Liquidation of the Temples in Bahmutskiy Region in the 1920]. – С. 91-96.</p>\n      <p>10. Черенюк Я., свящ. Спроба церковних реформ в Російській Православній Церкві на початку ХХ ст. [Attempt of Church reforms in the Russian Orthodox Church in the early twentieth century]. – С. 97-118.</p>\n      <p>11. Шваб Л. У пошуках \"доброї старовини\": українська суспільно-релігійна думка поунійної доби [In Search of «the Good oldness»:Ukrainian social and religious thought in post union days]. – С.119-134.</p>\n      <p>12. Вакін В., прот. Соборні діяння дев'яностих років XVI ст. як орган вищого церковного управління Київської митрополії [Concillar  Activities in the Nineties XVI as the Higher Authority of the Church Management in Kyiv Metropolis]. – С. 135-148.</p>\n      <p>13. Борщевич В. Участь архієпископа Олексія (Громадського) у розбудові Польської Автокефальної Православної Церкви [Participation Archbishop Olexij (Gromadskyj) in the development of the Polish Autocephalous Orthodox Church]. – С. 149-166.</p>\n      <p>14. Скиба І., прот. Владика Полікарп (Сікорський) та українське православ'я на Волині в період радянської окупації 1939-1941рр. [Bishop Polycarp (Sikorskyj) and Volyn Ukrainian Orthodox Church during the Soviet occupation of 1939-1941]. – С. 167-176.</p>\n      <p>15. Фульмес В., дияк. Погляди митрополита Анатолія (Дублянського) щодо майбутнього Помісної Української Православної Церкви [The views of the Metropolitan Anatolia (Dublyansky) to the future of the Local Ukrainian Orthodox Church]. – С. 177-184.</p>\n      <p>16. Кучинко М. Історико-культурний розвиток Святої Землі в часи царювання Ірода Великого [Historical and Cultural Development of the Holy Land during Irod the Great’s reign]. – С. 185-192.</p>\n      <p>17. Маласпіна В. До питання \"церковного\" виконання богослужбових пісне співів [On the issue “ecclesiastic” performance of liturgical chants]. – С. 193-200.</p>\n      <p>18. Шабала Я. Православна сакральна архітектура в контексті історико-культурної спадщини Волині [Orthodox sacral architecture in the context of historical and cultural heritage of Volyn]. – С. 201-208.</p>\n      <p>19. Хоміч М. Образ священнослужителя в духовній спадщині Святих Отців та в українській художній літературі [The image of the priest in the spiritual heritage of the holy fathers and Ukrainian literature]. – С. 209-226.</p>\n      <p>20. Петрович В., Чарікова І. Православний аспект у соціально-виховній роботі з дітьми та молоддю в громаді [Orthodox aspect of the social and educational work with children and youth in the community]. – С. 227-234.</p>\n      <p>21. Тоцька О. Обов'язки та права духовних дітей [Responsibilities and rights of spiritual children]. – С. 235-242.</p>\n      <p>22. Ямчук П. Духовність, релігія та масова культура в добу постмодерну [Spirituality, religion and popular culture in the postmodern day]. – С. 243-262.</p>\n      <p>23. Яровий С., архімандрит. Україна: кроки до гомодиктатури(аналітичний огляд) [Ukraine: steps to homodictatorship (analytical overview)]. – С. 263-286.</p>\n      <p>24. Дідух Р., Цап М., прот. Діяльність Капеланської служби Волинської єпархії Київського патріархату у сфері медицини [The Role of Chaplain Activity of Volyn Kyiv Patriarchy Diocese in the Sphere of Medicine]. – С. 287-294.</p>\n      <p>25. Антоній (Махота), митрополит, Лозовицький В., прот. Свідчення Священного Писання про межі (границі) Церкви [Testimony of the Holy Scripture about the Boundaries of the Church]. – С. 295-304.</p>\n      <p>26. Малярчук В., Вакін В., прот. Роль Вселенських соборів в управлінні Православною Церквою [The  Role of Ecumenical Councils in Orthodox Church Management]. – С. 305-314.</p>\n      <p>27. Царик М., Матфей (Шевчук), єпископ. Чернечі ордени Католицької Церкви та їхня діяльність в Україні [Monk Catholic  Orders and their Activity in Ukraine]. – С. 315-326.</p>\n      <p>28. Боровий І., прот., Цап'юк М., прот. Сотеріологія святителя Феофана Затворника в контексті святоотцівського вчення про спасіння [Soteriology by St. Theophan the Recluse in the Context of Patristic Doctrine of Salvation]. – С. 327-338.</p>\n      <a href=\"/assets/documents/bg/VB_4.pdf\"><i class=\"material-icons\">insert_drive_file</i><b>Скачати електронний варіант журналу</b></a>\n    </div>\n  </li>\n  <li>\n    <div class=\"collapsible-header\"><b>№ 5, 2017</b> <i>(Волинський благовісник: богословсько-історичний науковий журнал Волинської православної богословської академії Української Православної Церкви Київського Патріархату. – Луцьк: Видавництво Волинської православної богословської академії EIKΩN, 2017. – №5. – 368 с.)</i></div>\n    <div class=\"collapsible-body\">\n      <p>1. Титул.</p>\n      <p>2. Зміст.</p>\n      <p>3. Беспалов С., прот. Значення благодатної допомоги Божої в таємниці спасіння [The significance of God's gracious help in the mystery of salvation]. – С. 15-28.</p>\n      <p>4. Лозовицький В., прот. Осягнення людиною внутрішнього спокою та зовнішнього миру через подвиг християнської смиренномудрості [The person's perception of inner peace and outer peace through the feat of Christian humility]. – С.  29-43.</p>\n      <p>5. Тишкевич Б. Православно-богословський аналіз основ римо-католицького вчення про священство [Orthodox theological analysis of the foundations of the Roman Catholic doctrine of the priesthood]. – С.  45-56.</p>\n      <p>6. Стецько В. Церква як місце зустрічі людини з Богом (Мф. 16:16-19) [The Church as the place of meeting for the person with God (Matt. 16: 16-19) ]. – С. 57-73.</p>\n      <p>7. Хромяк А., свящ. Питання про деякі неточності в Синодальному перекладі Біблії [The question of some inaccuracies in the Synodal translation of the Bible]. – С. 75-83.</p>\n      <p>8. Клочак В., прот. Чин освячення мира та його історія в Київській митрополії [The consecration of Chrism and its history in the Kyivan Church]. – С. 85-95.</p>\n      <p>9. Диба Ю. Джерела до ранньої історії Володимирської єпархії [Sources to the early history of the Vladimir Diocese]. – С. 97-118.</p>\n      <p>10. Сацький П. Основні чинники кризи релігійної свідомості українського суспільства у період революції 1917-1921 рр. [The main factors of the crisis of religious consciousness of Ukrainian society during the period of revolution (1917-1921) ]. – С. 119-125.</p>\n      <p>11. Скакальська І. Церковно-громадський часопис \"Церква і нарід\" за 1936 р.: висвітлення діяльності національної еліти [Church and community chaospiris «The Church and people» for 1936: lighting the activities of the national elite]. – С. 127-134.</p>\n      <p>12. Рубан М., дияк., Татаринов С. Старообрядці Донбасу XVIII – початку ХХ ст.: історико-конфесійний аспект The Old belivers of Donbas from XVIII to the beginning of XX century: historical and confessional aspect]. – С. 135-143.</p>\n      <p>13. Черенюк Я., свящ. Участь Київських митрополитів у засіданнях Святійшого Урядуючого Синоду Російської Православної Церкви [Participation of the Kyiv Metropolitan in the meetings of the Holy Governmental Synod of the Russian Orthodox Church]. – С. 145-164.</p>\n      <p>14. Головей В. Теорія символічного образу у візантійському богослів'ї VI-VII ст. The Theory of Symbolic Image in Byzantine Theology of the VI-VII th centuries]. – С. 165-178.</p>\n      <p>15. Вакін В., прот. Українська канонічна спадщина: Київський собор 1640 року [Ukrainian canonical heritage: Kiev Council in 1640]. – С. 179-187.</p>\n      <p>16. Вінцукевич П. Пам'ятка інтелігентам-богошукачам: псевдоцерковність Богородичного центру [Memo to the God-seeker intellectuals: pseudo-church of Theotokos centre]. – С. 189-209.</p>\n      <p>17. Фульмес В., свящ. Архієпископ Херсонський і Одеський Димитрій (Ковальницький) – випускник Волинської духовної семінарії [Archbishop of  Kherson and Odessa Dimitry (Kovalnytsky) – a graduate of the Volyn Theological  Seminary]. – С. 210-219.</p>\n      <p>18. Цап М., прот. Протоієрей Петро Ткач в історії Заборольської парафії \"Собор Пресвятої Богородиці\" [Archipriest Peter Tkach in the history of Zaborol parish «Cathedral of the Blessed Virgin» ]. – С. 220-237.</p>\n      <p>19. Кучинко М. Ассирійсько-вавилонське поневолення та полон євреїв у світлі Біблії та археології [Assyrian-Babylonian enslavement and full of Jews in the light of the Bible and archeology]. – С. 239-245.</p>\n      <p>20. Хоміч М. Особливості богословського (конфесійного) стилю сучасної української літературної мови в богослужбовій практиці УПЦ КП [Features of theological (confessional) style of the modern Ukrainian literary language in the liturgical practice of the UOC-KP]. – С. 247-262.</p>\n      <p>21. Дідух Р., Цап М., прот. Роль засобів масової інформації в Православній Церкві та їхній вплив на суспільство [The role of mass media in the Orthodox Church and their influence in the society]. – С.  263-276.</p>\n      <p>22. Кобрій Р., свящ. Діяльність Константинопольського Патріарха Варфоломія І у сфері захисту довкілля [Activities of Constantinople Patriarch Bartholomew I. in the field of environmental protection]. – С. 277-283.</p>\n      <p>23. Кочерга Є. Здоров'я особистості в сучасних умовах та православна психотерапія [Health of the person in modern conditions and Orthodox psychotherapy]. – С. 285-292.</p>\n      <p>24. Кузін В., дияк. Постколоніальна критика як культурна практика [Postcolonial criticism as a cultural practice]. – С. 293-319.</p>\n      <p>25. Яроцький П. Релігійний, соціально-політичний, культурно-цивілізаційний вимір Європейської Реформації та особливості її сприйняття в Україні [Religious, sociopolitical, cultural and civilizational dimension of the European Reformation and peculiarities of its perception in Ukraine]. – С. 321-336.</p>\n      <p>26. Шеремета І., свящ., Цап'юк М., прот. Вплив античної філософської думки на творчість мужів апостольських [The influence of antique philosophical opinions on the work of the apostolic men]. – С. 337-344.</p>\n      <p>27. Качан А., ієромонах, Зборовський І., ієромонах. Проповідницько-гомілетична творчість українського православного духовенства в ХІХ ст. [Preaching-homiletical work of the ukrainian orthodox clergy in the XIX century]. – С. 345-354.</p>\n      <a href=\"/assets/documents/bg/VB_5.pdf\"><i class=\"material-icons\">insert_drive_file</i><b>Скачати електронний варіант журналу</b></a>\n    </div>\n  </li>\n</ul>"
+module.exports = "<ul class=\"collapsible popout\" #collapsible>\n  <li *ngFor=\"let tom of toms\">\n    <div class=\"collapsible-header\"><b>№ {{ tom.number }}, {{ tom.year }}</b>\n      <i>{{ tom.description }}</i></div>\n    <div class=\"collapsible-body\">\n      <div class=\"article-info\" *ngFor=\"let article of tom.articles\">\n        <a href=\"{{ article.id }}\" class=\"link-article\"> {{article.number}}.\n          <b>{{ article.author }} {{ article.title}} – С. {{ article.pages }}</b>\n        </a>\n        <div class=\"article-key-words\">Ключові слова: {{ article.key_words }}</div>\n        <div class=\"article-summary\">Анотація: {{ article.summary }}</div>\n      </div>\n      <a href=\"{{ tom.document }}\">\n        <i class=\"material-icons\">insert_drive_file</i>\n        <b>\n          Скачати електронний варіан журналу\n        </b>\n      </a>\n    </div>\n  </li>\n</ul>\n\n\n"
 
 /***/ }),
 
@@ -1258,6 +1373,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "JournalNumbersPageComponent", function() { return JournalNumbersPageComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _shared_classes_materialize_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../shared/classes/materialize.service */ "./src/app/shared/classes/materialize.service.ts");
+/* harmony import */ var _shared_services_toms_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../shared/services/toms.service */ "./src/app/shared/services/toms.service.ts");
+/* harmony import */ var _shared_services_article_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../shared/services/article.service */ "./src/app/shared/services/article.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1269,10 +1387,21 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
+
+
+
 var JournalNumbersPageComponent = /** @class */ (function () {
-    function JournalNumbersPageComponent() {
+    function JournalNumbersPageComponent(tomsService, articleServise, route) {
+        this.tomsService = tomsService;
+        this.articleServise = articleServise;
+        this.route = route;
     }
     JournalNumbersPageComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.tomsService.getAll()
+            .subscribe(function (res) {
+            _this.toms = res;
+        }, function (err) { return _shared_classes_materialize_service__WEBPACK_IMPORTED_MODULE_1__["MaterializeService"].toast(err.error.message); });
     };
     JournalNumbersPageComponent.prototype.ngAfterViewInit = function () {
         _shared_classes_materialize_service__WEBPACK_IMPORTED_MODULE_1__["MaterializeService"].collapsible(this.collapsibleRef, { inDuration: 1000, outDuration: 1000 });
@@ -1287,7 +1416,9 @@ var JournalNumbersPageComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./journal-numbers-page.component.html */ "./src/app/journal-numbers-page/journal-numbers-page.component.html"),
             styles: [__webpack_require__(/*! ./journal-numbers-page.component.css */ "./src/app/journal-numbers-page/journal-numbers-page.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_shared_services_toms_service__WEBPACK_IMPORTED_MODULE_2__["TomsService"],
+            _shared_services_article_service__WEBPACK_IMPORTED_MODULE_3__["ArticleService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]])
     ], JournalNumbersPageComponent);
     return JournalNumbersPageComponent;
 }());
@@ -1523,6 +1654,55 @@ var ReviewingPageComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/search-en.pipe.ts":
+/*!***********************************!*\
+  !*** ./src/app/search-en.pipe.ts ***!
+  \***********************************/
+/*! exports provided: SearchEnPipe */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SearchEnPipe", function() { return SearchEnPipe; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var SearchEnPipe = /** @class */ (function () {
+    function SearchEnPipe() {
+    }
+    SearchEnPipe.prototype.transform = function (value, args) {
+        if (!value)
+            return null;
+        if (!args)
+            return value;
+        args = args.toLowerCase();
+        return value.filter(function (item) {
+            var query = [];
+            query.push(item.author_en);
+            query.push(item.title_en);
+            query.push(item.key_words_en);
+            query.push(item.sumary_en);
+            query.push(item.reference);
+            return JSON.stringify(query).toLowerCase().includes(args);
+        });
+    };
+    SearchEnPipe = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Pipe"])({
+            name: 'searchEn'
+        })
+    ], SearchEnPipe);
+    return SearchEnPipe;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/search.pipe.ts":
 /*!********************************!*\
   !*** ./src/app/search.pipe.ts ***!
@@ -1556,7 +1736,7 @@ var SearchPipe = /** @class */ (function () {
             query.push(item.title);
             query.push(item.key_words);
             query.push(item.sumary);
-            query.push(item.summary_en);
+            query.push(item.reference);
             return JSON.stringify(query).toLowerCase().includes(args);
         });
     };
@@ -1803,7 +1983,7 @@ var AuthLayoutComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".page-flexbox-wrapper {\n    display: flex;\n    min-height: 100vh;\n    flex-direction: column;\n}\n\nmain {\n    flex: 1 0 auto;\n    background-color: #f1f1f1;\n}\n\n.nav-extended {\n    background-color: #e9711c;\n}\n\n.nav-extended .nav-wrapper {\n    min-height: 120px;\n    flex-direction: row;\n    justify-content: space-between;\n    padding-left: 20px;\n}\n\n.brand-gerb {\n    height: 90px;\n    width: 80px;\n    background-image: url(\"/assets/images/gerb_01-01 prozor.png\");\n    background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center center;\n    float:left;\n    margin-top: 15px;\n}\n\n.brand-disc {\n    font-size: 20px;\n    font-family: ArnoPro-Subhead;\n    line-height: 1.2;\n    color: white;\n}\n\n.brand-title {\n    font-size: 36px;\n    font-family: Hilandars;\n    line-height: 1.2;\n    text-transform: uppercase;\n    padding-bottom: 5px;\n    color: white;\n}\n\n.nav-content{\n    min-height: 50px;\n    background-color: #737373;\n    color: white;\n}\n\n.main-menu, .main-menu li, .main-menu li a {\n    min-height: 50px;\n    font-family: ArnoPro-Subhead;\n    font-size: 18px;\n    color: white;\n}\n\n.row {\n    margin-bottom: 0;\n}\n\n.main-menu\n{\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n}\n\n.text-info {\n    margin: 40px auto;\n    font-family: ArnoPro-SmText;\n    font-size: 18px;\n    color: #505050;\n    background-color: white;\n    padding: 40px;\n}\n\n.link-active {\n    border-bottom: 4px solid #e9711c;\n}\n\n.page-footer {\n    padding-top: 0;\n    background-color: #737373;\n    font-family: ArnoPro-SmText;\n    font-size: 15px;\n\n}\n\n.container {\n    width: 90%;\n    max-width: initial;\n}\n\n.lang-block {\n    width: 40px;\n    height: 60px;\n\n\n}\n\n.lang {\n    display: flex;\n    height: 50%;\n    line-height: 1;\n    justify-content: center;\n    align-items: center;\n    border: 2px solid white;\n}\n\n.lang:first-child {\n    border-bottom: 1px solid white;\n}\n\n.lang:last-child {\n    border-top: 1px solid white;\n}\n\n.lang:hover {\n    background-color: #007398;\n    border: 2px solid #007398;\n}\n"
+module.exports = ".page-flexbox-wrapper {\n  display: flex;\n  min-height: 100vh;\n  flex-direction: column;\n}\n\nmain {\n  flex: 1 0 auto;\n  background-color: #f1f1f1;\n}\n\n.nav-extended {\n  background-color: #b14a01;\n}\n\n.nav-extended .nav-wrapper {\n  min-height: 120px;\n  flex-direction: row;\n  justify-content: space-between;\n  padding-left: 20px;\n}\n\n.brand-gerb {\n  height: 90px;\n  width: 80px;\n  background-image: url('/assets/images/gerb.jpg');\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center center;\n  float:left;\n  margin-top: 15px;\n}\n\n.brand-disc {\n  font-size: 20px;\n  font-family: ArnoPro-Subhead;\n  line-height: 1.2;\n  color: white;\n}\n\n.brand-title {\n  font-size: 36px;\n  font-family: Hilandars;\n  line-height: 1.2;\n  text-transform: uppercase;\n  padding-bottom: 5px;\n  color: white;\n}\n\n.nav-content{\n  min-height: 50px;\n  background-color: #737373;\n  color: white;\n}\n\n.main-menu, .main-menu li, .main-menu li a {\n  min-height: 50px;\n  font-family: ArnoPro-Subhead;\n  font-size: 18px;\n  color: white;\n  text-align: center;\n}\n\n.row {\n  margin-bottom: 0;\n  display: flex;\n  justify-content: center;\n\n}\n\n.main-menu\n{\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n\n.text-info {\n  margin: 40px auto;\n  font-family: ArnoPro-SmText;\n  font-size: 18px;\n  color: #505050;\n  background-color: white;\n  padding: 40px;\n}\n\n.link-active {\n  border-bottom: 4px solid #b14a01;\n}\n\n.page-footer {\n  padding-top: 0;\n  background-color: #737373;\n  font-family: ArnoPro-SmText;\n  font-size: 15px;\n\n}\n\n.container {\n  width: 90%;\n  max-width: initial;\n}\n\n.lang-block {\n  width: 40px;\n  height: 60px;\n\n\n}\n\n.lang {\n  display: flex;\n  height: 50%;\n  line-height: 1;\n  justify-content: center;\n  align-items: center;\n  border: 2px solid white;\n}\n\n.lang:first-child {\n  border-bottom: 1px solid white;\n}\n\n.lang:last-child {\n  border-top: 1px solid white;\n}\n\n.lang:hover {\n  background-color: #007398;\n  border: 2px solid #007398;\n}\n\n.sb-search {\n  position: absolute;\n  width: 0%;\n  min-width: 50px;\n  height: 50px;\n  right: 0;\n  overflow: hidden;\n  transition: width 0.3s;\n  -webkit-backface-visibility: hidden;\n}\n\n.sb-search-input {\n  position: absolute;\n  top: 0;\n  right: 0px;\n  border: none;\n  outline: none;\n  background: #737373 !important;\n  width: 100%;\n  height: 50px !important;\n  margin: 0;\n  z-index: 10;\n  font-family: inherit;\n  font-size: 20px;\n  color: #2c3e50;\n  text-indent: 20px;\n\n}\n\ninput[type=\"search\"].sb-search-input {\n  -webkit-appearance: none;\n  -webkit-border-radius: 0;\n}\n\n.sb-search-input::-webkit-input-placeholder {\n  color: white;\n}\n\n.sb-search-input:-moz-placeholder {\n  color: white;\n}\n\n.sb-search-input::-moz-placeholder {\n  color: white;\n}\n\n.sb-search-input:-ms-input-placeholder {\n  color: white;\n}\n\n.sb-icon-search,\n.sb-search-submit  {\n  width: 50px;\n  height: 50px;\n  display: block;\n  position: absolute;\n  right: 0;\n  top: 0;\n  padding: 0;\n  margin: 0;\n  line-height: 50px;\n  text-align: center;\n  cursor: pointer;\n}\n\n.sb-search-submit {\n  background: #fff; /* IE needs this */\n  -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)\"; /* IE 8 */\n  filter: alpha(opacity=0); /* IE 5-7 */\n  opacity: 0;\n  color: transparent;\n  color:red;\n  border: none;\n  outline: none;\n  z-index: -1;\n}\n\n.sb-icon-search {\n  color: #fff;\n  background: #e67e22;\n  z-index: 90;\n  font-size: 22px;\n  font-family: 'icomoon';\n  speak: none;\n  font-style: normal;\n  font-weight: normal;\n  font-variant: normal;\n  text-transform: none;\n  -webkit-font-smoothing: antialiased;\n}\n\n.sb-icon-search i {\n  line-height: 50px;\n  height: 50px;\n}\n\n.sb-icon-search:before {\n  content: \"\";\n}\n\n.sb-search.sb-search-open,\n.no-js .sb-search {\n  width: 100%;\n}\n\n.sb-search.sb-search-open .sb-icon-search,\n.no-js .sb-search .sb-icon-search {\n  background: #da6d0d;\n  color: #fff;\n  z-index: 11;\n}\n\n.sb-search.sb-search-open .sb-search-submit,\n.no-js .sb-search .sb-search-submit {\n  /*    z-index: 90;*/\n}\n\n.wrap-search {\n  display: none;\n  position: relative;\n  width: 100%;\n  background-color: white;\n}\n\n.wrap-search ul {\n  margin: 0;\n}\n\n.wrap-search ul a{\n  color: #b14a01;\n  font-family: ArnoPro-SmText;\n}\n\n.admin-link {\n  color: #b14a01;\n  display: block;\n  float: left;\n  padding-right: 5px;\n}\n\n.admin-link i {\n  font-size: 16px;\n}\n"
 
 /***/ }),
 
@@ -1814,7 +1994,7 @@ module.exports = ".page-flexbox-wrapper {\n    display: flex;\n    min-height: 1
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"page-flexbox-wrapper\">\n  <nav class=\"nav-extended\">\n    <div class=\"container\">\n      <a routerLink=\"/\"><div class=\"brand-gerb\"></div></a>\n      <div class=\"nav-wrapper valign-wrapper\">\n        <div class=\"brand-text\">\n          <div class=\"brand-title\">«Волинський благовісник»</div>\n          <div class=\"brand-disc\">щорічний богословсько-історичний науковий журнал<br/>\n            Волинської православної богословської академії УПЦ КП</div>\n        </div>\n        <div class=\"lang-block\">\n          <a routerLink=\"/en\" class=\"lang\">EN</a>\n          <a routerLink=\"/\" class=\"lang\">UA</a>\n        </div>\n      </div>\n    </div>\n    <div class=\"nav-content\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <ul class=\"main-menu\">\n            <li><a routerLink=\"/en/about\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">Про журнал</a></li>\n            <li><a routerLink=\"/en/editorial-board\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">Редакційна колегія</a></li>\n            <li><a routerLink=\"/en/for-authors\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">Авторам</a></li>\n            <li><a routerLink=\"/en/journal-numbers\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">Номери журналу</a></li>\n            <li><a routerLink=\"/en/reviewing\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">Етика публікацій та процедура рецензування</a></li>\n          </ul>\n        </div>\n      </div>\n    </div>\n  </nav>\n  <main>\n    <div class=\"container text-info\">\n      <router-outlet></router-outlet>\n    </div>\n\n  </main>\n\n  <footer class=\"page-footer\">\n    <div class=\"footer-copyright\">\n      <div class=\"container\">\n        © 2018 Волинська православна богословська академія.\n      </div>\n    </div>\n  </footer>\n</div>\n"
+module.exports = "<div class=\"page-flexbox-wrapper\">\n  <nav class=\"nav-extended\">\n    <div class=\"container\">\n      <a routerLink=\"/\"><div class=\"brand-gerb\"></div></a>\n      <div class=\"nav-wrapper valign-wrapper\">\n        <div class=\"brand-text\">\n          <div class=\"brand-title\">«Волинський благовісник»</div>\n          <div class=\"brand-disc\">\n            annual theological and historical scientific journal<br/>\n            Volyn Orthodox Theological Academy of the UOC-KP</div>\n        </div>\n        <div class=\"lang-block\">\n          <a routerLink=\"/en\" class=\"lang\">EN</a>\n          <a routerLink=\"/\" class=\"lang\">UA</a>\n        </div>\n      </div>\n    </div>\n    <div class=\"nav-content\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <ul class=\"main-menu\">\n            <li><a routerLink=\"/en/about\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">About the Journal</a></li>\n            <li><a routerLink=\"/en/editorial-board\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">Editorial Board</a></li>\n            <li><a routerLink=\"/en/for-authors\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">For authors</a></li>\n            <li><a routerLink=\"/en/journal-numbers\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">Archives</a></li>\n            <li><a routerLink=\"/en/reviewing\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">Publication Ethics</a></li>\n          </ul>\n          <div id=\"sb-search\" class=\"sb-search \" >\n                <form>\n                    <input class=\"sb-search-input \" [(ngModel)]=\"query\" placeholder=\"Enter your search term...\" type=\"search\" value=\"\" name=\"search\" id=\"search\" autocomplete=\"off\">\n                    <input class=\"sb-search-submit\" type=\"submit\"  value=\"\">\n                    <span class=\"sb-icon-search\"><i class=\"material-icons\">search</i></span>\n                </form>\n          </div>\n        </div>\n      </div>\n    </div>\n  </nav>\n\n  <div class=\"wrap-search\">\n    <ul class=\"collection\">\n      <a href=\"en/{{ article.id }}\" class=\"collection-item\" *ngFor=\"let article of articles | searchEn: query\">\n        {{article.author_en}}{{article.title_en}}\n      </a>\n    </ul>\n  </div>\n\n  <main>\n    <div class=\"container text-info\">\n      <router-outlet></router-outlet>\n    </div>\n\n  </main>\n\n  <footer class=\"page-footer\">\n    <div class=\"footer-copyright\">\n      <div class=\"container\">\n        <a href=\"/admin\" class=\"admin-link\"><i class=\"material-icons\">laptop_mac</i></a>© 2018 Volyn Orthodox Theology Academy. (The site is in developer mode)\n      </div>\n    </div>\n  </footer>\n</div>\n"
 
 /***/ }),
 
@@ -1829,6 +2009,10 @@ module.exports = "<div class=\"page-flexbox-wrapper\">\n  <nav class=\"nav-exten
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EnMainLayoutComponent", function() { return EnMainLayoutComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _services_article_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/article.service */ "./src/app/shared/services/article.service.ts");
+/* harmony import */ var _classes_materialize_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../classes/materialize.service */ "./src/app/shared/classes/materialize.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1839,10 +2023,56 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
+
 var EnMainLayoutComponent = /** @class */ (function () {
-    function EnMainLayoutComponent() {
+    function EnMainLayoutComponent(articleService) {
+        this.articleService = articleService;
+        this.query = '';
     }
     EnMainLayoutComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.articleService.getAll()
+            .subscribe(function (res) {
+            _this.articles = res;
+        }, function (err) { return _classes_materialize_service__WEBPACK_IMPORTED_MODULE_3__["MaterializeService"].toast(err.error.message); });
+        var submitIcon = jquery__WEBPACK_IMPORTED_MODULE_1__('.sb-icon-search');
+        var submitInput = jquery__WEBPACK_IMPORTED_MODULE_1__('.sb-search-input');
+        var searchBox = jquery__WEBPACK_IMPORTED_MODULE_1__('.sb-search');
+        var menuUl = jquery__WEBPACK_IMPORTED_MODULE_1__('.main-menu');
+        var list = jquery__WEBPACK_IMPORTED_MODULE_1__('.wrap-search');
+        var main = jquery__WEBPACK_IMPORTED_MODULE_1__('.text-info');
+        var isOpen = false;
+        jquery__WEBPACK_IMPORTED_MODULE_1__(document).mouseup(function () {
+            if (isOpen) {
+                submitInput.val('');
+                jquery__WEBPACK_IMPORTED_MODULE_1__('.sb-search-submit').css('z-index', '-999');
+                submitIcon.click();
+            }
+        });
+        submitIcon.mouseup(function () {
+            return false;
+        });
+        searchBox.mouseup(function () {
+            return false;
+        });
+        submitIcon.click(function () {
+            if (!isOpen) {
+                searchBox.addClass('sb-search-open');
+                menuUl.hide();
+                main.hide();
+                list.show();
+                isOpen = true;
+            }
+            else {
+                searchBox.removeClass('sb-search-open');
+                menuUl.show();
+                main.show();
+                list.hide();
+                isOpen = false;
+            }
+        });
     };
     EnMainLayoutComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -1850,7 +2080,7 @@ var EnMainLayoutComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./en-main-layout.component.html */ "./src/app/shared/layouts/en-main-layout/en-main-layout.component.html"),
             styles: [__webpack_require__(/*! ./en-main-layout.component.css */ "./src/app/shared/layouts/en-main-layout/en-main-layout.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_services_article_service__WEBPACK_IMPORTED_MODULE_2__["ArticleService"]])
     ], EnMainLayoutComponent);
     return EnMainLayoutComponent;
 }());
@@ -1877,7 +2107,7 @@ module.exports = ".page-flexbox-wrapper {\n    display: flex;\n    min-height: 1
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"page-flexbox-wrapper\">\n<nav class=\"nav-extended\">\n        <div class=\"container\">\n            <a routerLink=\"/\"><div class=\"brand-gerb hide-on-small-only\"></div></a>\n            <div class=\"nav-wrapper valign-wrapper\">\n                <div class=\"brand-text\">\n                    <div class=\"brand-title\">«Волинський благовісник»</div>\n                    <div class=\"brand-disc\">щорічний богословсько-історичний науковий журнал<br/>\n                        Волинської православної богословської академії УПЦ КП</div>\n                </div>\n                <div class=\"lang-block\">\n                    <a routerLink=\"/en\" class=\"lang\">EN</a>\n                    <a routerLink=\"/\" class=\"lang\">UA</a>\n                </div>\n            </div>\n        </div>\n        <div class=\"nav-content\">\n            <div class=\"container\">\n                <div class=\"row\">\n                    <ul class=\"main-menu\">\n                        <li><a routerLink=\"/about\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">Про журнал</a></li>\n                        <li><a routerLink=\"/editorial-board\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">Редакційна колегія</a></li>\n                        <li><a routerLink=\"/for-authors\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">Авторам</a></li>\n                        <li><a routerLink=\"/journal-numbers\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">Номери журналу</a></li>\n                        <li><a routerLink=\"/reviewing\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">Етика публікацій та процедура рецензування</a></li>\n                    </ul>\n                  <div id=\"sb-search\" class=\"sb-search \" >\n                        <form>\n                            <input class=\"sb-search-input \" [(ngModel)]=\"query\" placeholder=\"Enter your search term...\" type=\"search\" value=\"\" name=\"search\" id=\"search\" autocomplete=\"off\">\n                            <input class=\"sb-search-submit\" type=\"submit\"  value=\"\">\n                            <span class=\"sb-icon-search\"><i class=\"material-icons\">search</i></span>\n                        </form>\n                  </div>\n                </div>\n            </div>\n        </div>\n    </nav>\n    <div class=\"wrap-search\">\n      <ul class=\"collection\">\n        <a href=\"/{{ article.id }}\" class=\"collection-item\" *ngFor=\"let article of articles | search: query\">\n          {{article.author}}{{article.title}}\n        </a>\n      </ul>\n    </div>\n\n<main>\n    <div class=\"container text-info\">\n        <router-outlet></router-outlet>\n    </div>\n\n</main>\n\n    <footer class=\"page-footer\">\n        <div class=\"footer-copyright\">\n            <div class=\"container\">\n                <a href=\"/admin\" class=\"admin-link\"><i class=\"material-icons\">laptop_mac</i></a>© 2018 Волинська православна богословська академія.\n            </div>\n        </div>\n    </footer>\n</div>\n"
+module.exports = "<div class=\"page-flexbox-wrapper\">\n<nav class=\"nav-extended\">\n        <div class=\"container\">\n            <a routerLink=\"/\"><div class=\"brand-gerb hide-on-small-only\"></div></a>\n            <div class=\"nav-wrapper valign-wrapper\">\n                <div class=\"brand-text\">\n                    <div class=\"brand-title\">«Волинський благовісник»</div>\n                    <div class=\"brand-disc\">щорічний богословсько-історичний науковий журнал<br/>\n                        Волинської православної богословської академії УПЦ КП</div>\n                </div>\n                <div class=\"lang-block\">\n                    <a routerLink=\"/en\" class=\"lang\">EN</a>\n                    <a routerLink=\"/\" class=\"lang\">UA</a>\n                </div>\n            </div>\n        </div>\n        <div class=\"nav-content\">\n            <div class=\"container\">\n                <div class=\"row\">\n                    <ul class=\"main-menu\">\n                        <li><a routerLink=\"/about\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">Про журнал</a></li>\n                        <li><a routerLink=\"/editorial-board\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">Редакційна колегія</a></li>\n                        <li><a routerLink=\"/for-authors\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">Авторам</a></li>\n                        <li><a routerLink=\"/journal-numbers\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">Номери журналу</a></li>\n                        <li><a routerLink=\"/reviewing\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">Публікацій етика</a></li>\n                    </ul>\n                    <div id=\"sb-search\" class=\"sb-search \" >\n                          <form>\n                              <input class=\"sb-search-input \" [(ngModel)]=\"query\" placeholder=\"Введіть дані для пошуку ...\" type=\"search\" value=\"\" name=\"search\" id=\"search\" autocomplete=\"off\">\n                              <input class=\"sb-search-submit\" type=\"submit\"  value=\"\">\n                              <span class=\"sb-icon-search\"><i class=\"material-icons\">search</i></span>\n                          </form>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </nav>\n    <div class=\"wrap-search\">\n      <ul class=\"collection\">\n        <a href=\"/{{ article.id }}\" class=\"collection-item\" *ngFor=\"let article of articles | search: query\">\n          {{article.author}}{{article.title}}\n        </a>\n      </ul>\n    </div>\n\n<main>\n    <div class=\"container text-info\">\n        <router-outlet></router-outlet>\n    </div>\n\n</main>\n\n    <footer class=\"page-footer\">\n        <div class=\"footer-copyright\">\n            <div class=\"container\">\n                <a href=\"/admin\" class=\"admin-link\"><i class=\"material-icons\">laptop_mac</i></a>© 2018 Волинська православна богословська академія. (Сайт знаходиться в режимі розробки)\n            </div>\n        </div>\n    </footer>\n</div>\n"
 
 /***/ }),
 
@@ -2080,10 +2310,13 @@ var ArticleService = /** @class */ (function () {
         return this.http.get("/api/articles/" + id);
     };
     // @ts-ignore
-    ArticleService.prototype.create = function (tom, author, number, title, pages, key_words, summary, summary_en, file) {
+    ArticleService.prototype.create = function (tom, author, author_en, number, title, title_en, pages, key_words, key_words_en, summary, summary_en, references, file) {
         var fd = new FormData();
         if (author) {
             fd.append('author', author);
+        }
+        if (author_en) {
+            fd.append('author_en', author_en);
         }
         if (pages) {
             fd.append('pages', pages);
@@ -2091,11 +2324,17 @@ var ArticleService = /** @class */ (function () {
         if (key_words) {
             fd.append('key_words', key_words);
         }
+        if (key_words_en) {
+            fd.append('key_words_en', key_words_en);
+        }
         if (summary) {
             fd.append('summary', summary);
         }
         if (summary_en) {
             fd.append('summary_en', summary_en);
+        }
+        if (summary_en) {
+            fd.append('references', references);
         }
         if (file) {
             fd.append('file', file, file.name);
@@ -2103,13 +2342,17 @@ var ArticleService = /** @class */ (function () {
         fd.append('tom', tom);
         fd.append('number', number);
         fd.append('title', title);
+        fd.append('title_en', title_en);
         return this.http.post('api/articles', fd);
     };
     // @ts-ignore
-    ArticleService.prototype.update = function (id, author, number, title, pages, key_words, summary, summary_en, file) {
+    ArticleService.prototype.update = function (id, author, author_en, number, title, title_en, pages, key_words, key_words_en, summary, summary_en, references, file) {
         var fd = new FormData();
         if (author) {
             fd.append('author', author);
+        }
+        if (author_en) {
+            fd.append('author_en', author_en);
         }
         if (pages) {
             fd.append('pages', pages);
@@ -2117,17 +2360,24 @@ var ArticleService = /** @class */ (function () {
         if (key_words) {
             fd.append('key_words', key_words);
         }
+        if (key_words_en) {
+            fd.append('key_words_en', key_words_en);
+        }
         if (summary) {
             fd.append('summary', summary);
         }
         if (summary_en) {
             fd.append('summary_en', summary_en);
         }
+        if (summary_en) {
+            fd.append('references', references);
+        }
         if (file) {
             fd.append('file', file, file.name);
         }
         fd.append('number', number);
         fd.append('title', title);
+        fd.append('title_en', title_en);
         return this.http.put("api/articles/" + id, fd);
     };
     ArticleService.prototype.delete = function (id) {
@@ -2247,26 +2497,30 @@ var TomsService = /** @class */ (function () {
     TomsService.prototype.getById = function (id) {
         return this.http.get("/api/toms/" + id);
     };
-    TomsService.prototype.create = function (name, number, year, description, file) {
+    TomsService.prototype.create = function (name, name_en, number, year, description, description_en, file) {
         var fd = new FormData();
         if (file) {
             fd.append('file', file, file.name);
         }
         fd.append('name', name);
+        fd.append('name_en', name_en);
         fd.append('number', number);
         fd.append('year', year);
         fd.append('description', description);
+        fd.append('description_en', description_en);
         return this.http.post('api/toms', fd);
     };
-    TomsService.prototype.update = function (id, name, number, year, description, file) {
+    TomsService.prototype.update = function (id, name, name_en, number, year, description, description_en, file) {
         var fd = new FormData();
         if (file) {
             fd.append('file', file, file.name);
         }
         fd.append('name', name);
+        fd.append('name_en', name_en);
         fd.append('number', number);
         fd.append('year', year);
         fd.append('description', description);
+        fd.append('description_en', description_en);
         return this.http.put("api/toms/" + id, fd);
     };
     TomsService.prototype.delete = function (id) {
@@ -2303,7 +2557,7 @@ module.exports = "a {\n    cursor: pointer;\n}\n\n.dn {\n    display: none;\n}\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"page-title\">\n    <h4>\n      <a routerLink=\"/admin\">Випуски</a>\n      <i class=\"material-icons\">keyboard_arrow_right</i>\n      {{ isNew ? 'Додати' : 'Редагувати' }} випуск\n    </h4>\n    <span>\n      <button *ngIf=\"!isNew\" class=\"btn btn-small red\" (click)=\"deleteTom()\">\n        <i class=\"material-icons\">delete</i>\n      </button>\n    </span>\n  </div>\n\n  <div class=\"row\">\n    <form class=\"col s12 l6\" [formGroup]=\"form\" (ngSubmit)=\"onSubmit()\">\n      <div class=\"input-field\">\n        <input formControlName=\"name\" id=\"name\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('name').invalid && form.get('name').touched }\">\n        <label for=\"name\">Назва</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('name').invalid && form.get('name').touched\">\n        <span *ngIf=\"form.get('name').errors['required']\">\n          Назва повинна бути зазначена.\n        </span>\n      </span>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"number\" id=\"number\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('number').invalid && form.get('number').touched }\">\n        <label for=\"number\">Номер</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('number').invalid && form.get('number').touched\">\n        <span *ngIf=\"form.get('number').errors['required']\">\n          Номер повинен бути зазначений.\n        </span>\n      </span>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"year\" id=\"year\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('year').invalid && form.get('year').touched }\">\n        <label for=\"year\">Рік</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('year').invalid && form.get('year').touched\">\n        <span *ngIf=\"form.get('year').errors['required']\">\n          Рік повинен бути зазначений.\n        </span>\n      </span>\n      </div>\n\n      <div class=\"input-field\">\n      <textarea formControlName=\"description\"  id=\"description\" class=\"materialize-textarea\"\n                [ngClass]=\"{ 'invalid' : form.get('description').invalid && form.get('description').touched }\"\n                #textArea></textarea>\n        <label for=\"description\">Опис</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('description').invalid && form.get('description').touched\">\n        <span *ngIf=\"form.get('description').errors['required']\">\n          Опис журналу повинен бути введений.\n        </span>\n      </span>\n      </div>\n\n      <div class=\"file-field input-field\">\n        <div class=\"btn\">\n          <span>Загрузити документ</span>\n          <input [disabled]=\"docValid\" (change)=\"onFileUpload($event)\" type=\"file\" #inputFile>\n        </div>\n        <div class=\"file-path-wrapper\">\n          <input  formControlName=\"file\" class=\"file-path validate\" type=\"text\">\n        </div>\n      </div>\n\n      <div>\n        <button type=\"submit\" class=\"waves-effect waves-light btn\" [disabled]=\"form.invalid || form.disabled || validFile\">\n          Зберегти\n        </button>\n      </div>\n    </form>\n  </div>\n\n</div>\n"
+module.exports = "<div class=\"container\">\n  <div class=\"page-title\">\n    <h4>\n      <a routerLink=\"/admin\">Випуски</a>\n      <i class=\"material-icons\">keyboard_arrow_right</i>\n      {{ isNew ? 'Додати' : 'Редагувати' }} випуск\n    </h4>\n    <span>\n      <button *ngIf=\"!isNew\" class=\"btn btn-small red\" (click)=\"deleteTom()\">\n        <i class=\"material-icons\">delete</i>\n      </button>\n    </span>\n  </div>\n\n  <div class=\"row\">\n    <form class=\"col s12 l6\" [formGroup]=\"form\" (ngSubmit)=\"onSubmit()\">\n      <div class=\"input-field\">\n        <input formControlName=\"name\" id=\"name\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('name').invalid && form.get('name').touched }\">\n        <label for=\"name\">Назва</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('name').invalid && form.get('name').touched\">\n          <span *ngIf=\"form.get('name').errors['required']\">\n            Назва повинна бути зазначена.\n          </span>\n        </span>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"name_en\" id=\"name_en\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('name_en').invalid && form.get('name_en').touched }\">\n        <label for=\"name\">Title</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('name_en').invalid && form.get('name_en').touched\">\n          <span *ngIf=\"form.get('name_en').errors['required']\">\n            Title повинен бути зазначений.\n          </span>\n        </span>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"number\" id=\"number\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('number').invalid && form.get('number').touched }\">\n        <label for=\"number\">Номер</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('number').invalid && form.get('number').touched\">\n        <span *ngIf=\"form.get('number').errors['required']\">\n          Номер повинен бути зазначений.\n        </span>\n      </span>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"year\" id=\"year\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('year').invalid && form.get('year').touched }\">\n        <label for=\"year\">Рік</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('year').invalid && form.get('year').touched\">\n        <span *ngIf=\"form.get('year').errors['required']\">\n          Рік повинен бути зазначений.\n        </span>\n      </span>\n      </div>\n\n      <div class=\"input-field\">\n        <textarea formControlName=\"description\"  id=\"description\" class=\"materialize-textarea\"\n                  [ngClass]=\"{ 'invalid' : form.get('description').invalid && form.get('description').touched }\"\n                  #textArea>\n        </textarea>\n        <label for=\"description\">Опис</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('description').invalid && form.get('description').touched\">\n          <span *ngIf=\"form.get('description').errors['required']\">\n            Опис журналу повинен бути введений.\n          </span>\n        </span>\n      </div>\n\n      <div class=\"input-field\">\n        <textarea formControlName=\"description_en\"  id=\"description_en\" class=\"materialize-textarea\"\n                  [ngClass]=\"{ 'invalid' : form.get('description_en').invalid && form.get('description_en').touched }\"\n                  #textAreaEn>\n        </textarea>\n        <label for=\"description\">Description</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('description_en').invalid && form.get('description_en').touched\">\n          <span *ngIf=\"form.get('description_en').errors['required']\">\n            Description журналу повинен бути введений.\n          </span>\n        </span>\n      </div>\n\n      <div class=\"file-field input-field\">\n        <div class=\"btn\">\n          <span>Загрузити документ</span>\n          <input [disabled]=\"docValid\" (change)=\"onFileUpload($event)\" type=\"file\" #inputFile>\n        </div>\n        <div class=\"file-path-wrapper\">\n          <input  formControlName=\"file\" class=\"file-path validate\" type=\"text\">\n        </div>\n      </div>\n\n      <div>\n        <button type=\"submit\" class=\"waves-effect waves-light btn\" [disabled]=\"form.invalid || form.disabled || validFile\">\n          Зберегти\n        </button>\n      </div>\n    </form>\n  </div>\n\n</div>\n"
 
 /***/ }),
 
@@ -2353,9 +2607,11 @@ var FormTomPageComponent = /** @class */ (function () {
         var _this = this;
         this.form = new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroup"]({
             name: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](null, _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required),
+            name_en: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](null, _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required),
             number: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](null, _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required),
             year: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](null, _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required),
             description: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](null, _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required),
+            description_en: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](null, _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required),
             file: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](null)
         });
         this.form.disable();
@@ -2372,13 +2628,16 @@ var FormTomPageComponent = /** @class */ (function () {
                 _this.tom = tom;
                 _this.form.patchValue({
                     name: tom.name,
+                    name_en: tom.name_en,
                     number: tom.number,
                     description: tom.description,
+                    description_en: tom.description_en,
                     year: tom.year,
                     file: tom.document
                 });
                 _shared_classes_materialize_service__WEBPACK_IMPORTED_MODULE_6__["MaterializeService"].updateTextInputs();
                 _shared_classes_materialize_service__WEBPACK_IMPORTED_MODULE_6__["MaterializeService"].textareaAuto(_this.textAreaRef);
+                _shared_classes_materialize_service__WEBPACK_IMPORTED_MODULE_6__["MaterializeService"].textareaAuto(_this.textAreaEnRef);
             }
             _this.form.enable();
         }, function (error) {
@@ -2390,10 +2649,10 @@ var FormTomPageComponent = /** @class */ (function () {
         var obs$;
         this.form.disable();
         if (this.isNew) {
-            obs$ = this.tomsService.create(this.form.value.name, this.form.value.number, this.form.value.year, this.form.value.description, this.file);
+            obs$ = this.tomsService.create(this.form.value.name, this.form.value.name_en, this.form.value.number, this.form.value.year, this.form.value.description, this.form.value.description_en, this.file);
         }
         else {
-            obs$ = this.tomsService.update(this.tom.id, this.form.value.name, this.form.value.number, this.form.value.year, this.form.value.description, this.file);
+            obs$ = this.tomsService.update(this.tom.id, this.form.value.name, this.form.value.name_en, this.form.value.number, this.form.value.year, this.form.value.description, this.form.value.description_en, this.file);
         }
         obs$.subscribe(function (tom) {
             _this.tom = tom;
@@ -2439,6 +2698,10 @@ var FormTomPageComponent = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('textArea'),
         __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
     ], FormTomPageComponent.prototype, "textAreaRef", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('textAreaEn'),
+        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
+    ], FormTomPageComponent.prototype, "textAreaEnRef", void 0);
     __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('inputFile'),
         __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
@@ -2594,7 +2857,7 @@ module.exports = ".collection a {\n    color: #b14a01;\n}\n\n.color-orange {\n  
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <h4 class=\"center-align\">Випуски журналу</h4>\n  <div class=\"row\">\n    <div class=\"collection\">\n      <a *ngFor=\"let tom of toms;\" href=\"admin/tom/{{ tom.id }}\" class=\"collection-item\">\n        <span class=\"badge\">1</span>\n        {{ tom.name + '. Випуск ' + tom.number }}\n      </a>\n    </div>\n  </div>\n  <a class=\"waves-effect waves-light btn-small color-orange left\" href=\"/admin/tom/create\"><i class=\"material-icons right\">add</i>Додати випуск</a>\n</div>\n"
+module.exports = "<div class=\"container\">\n  <h4 class=\"center-align\">Випуски журналу</h4>\n  <div class=\"row\">\n    <div class=\"collection\">\n      <a *ngFor=\"let tom of toms;\" href=\"admin/tom/{{ tom.id }}\" class=\"collection-item\">\n        {{ tom.name + '. Випуск ' + tom.number }}\n      </a>\n    </div>\n  </div>\n  <a class=\"waves-effect waves-light btn-small color-orange left\" href=\"/admin/tom/create\"><i class=\"material-icons right\">add</i>Додати випуск</a>\n</div>\n"
 
 /***/ }),
 

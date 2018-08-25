@@ -32,12 +32,15 @@ class TomController {
     async store ({ request, response }) {
         const tom = new Tom();
 
-        const { name, number, year, description } = request.body;
+        const { name, name_en, number, year, description, description_en } = request.body;
 
         tom.name = name;
+        tom.name_en = name_en;
         tom.number = number;
         tom.year = year;
         tom.description = description;
+        tom.description_en = description_en;
+
 
         if (request.file('file')) {
             const file = request.file('file');
@@ -57,12 +60,14 @@ class TomController {
     async update({ params, request, response }) {
         const tom = await Tom.find(params.id);
 
-        const { name, number, year, description } = request.body;
+        const { name, name_en, number, year, description, description_en } = request.body;
 
         tom.name = name;
+        tom.name_en = name_en;
         tom.number = number;
         tom.year = year;
         tom.description = description;
+        tom.description_en = description_en;
 
         if (request.file('file')) {
             const file = request.file('file');

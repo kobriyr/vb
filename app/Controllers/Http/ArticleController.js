@@ -19,16 +19,21 @@ class ArticleController {
   }
 
   async store ({ request, response }) {
-    const { tom, author, number, title, pages, key_words, summary, summary_en } = request.body;
+    const { tom, author, author_en, number, title, title_en, pages,
+      key_words, key_words_en, summary, summary_en, references } = request.body;
     const article = new Article();
 
-    article.author = author;
     article.number = number;
+    article.author = author;
+    article.author_en = author_en;
     article.title = title;
+    article.title_en = title_en;
     article.pages = pages;
     article.key_words = key_words;
+    article.key_words_en = key_words_en;
     article.summary = summary;
     article.summary_en = summary_en;
+    article.references = references;
 
     if (request.file('file')) {
       const file = request.file('file');
@@ -49,15 +54,20 @@ class ArticleController {
   async update({ params, request, response }) {
     const article = await Article.find(params.id);
 
-    const { author, number, title, pages, key_words, summary, summary_en } = request.body;
+    const { author, author_en, number, title, title_en, pages,
+      key_words, key_words_en, summary, summary_en, references } = request.body;
 
-    article.author = author;
     article.number = number;
+    article.author = author;
+    article.author_en = author_en;
     article.title = title;
+    article.title_en = title_en;
     article.pages = pages;
     article.key_words = key_words;
+    article.key_words_en = key_words_en;
     article.summary = summary;
     article.summary_en = summary_en;
+    article.references = references;
 
     if (request.file('file')) {
       const file = request.file('file');
