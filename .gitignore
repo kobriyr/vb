@@ -5,7 +5,7 @@ node_modules
 tmp
 
 #Upload pdf files
-/public/pdf/*
+/public/pdf
 
 # Environment variables, never commit this file
 .env
