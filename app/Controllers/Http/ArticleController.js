@@ -20,7 +20,7 @@ class ArticleController {
 
   async store ({ request, response }) {
     const { tom, author, author_en, number, title, title_en, pages,
-      key_words, key_words_en, summary, summary_en, references } = request.body;
+      key_words, key_words_en, summary, summary_en, references, document } = request.body;
     const article = new Article();
 
     article.number = number;
@@ -34,16 +34,7 @@ class ArticleController {
     article.summary = summary;
     article.summary_en = summary_en;
     article.references = references;
-
-    if (request.file('file')) {
-      const file = request.file('file');
-
-      await file.move('public/pdf', {
-        name: `${Date.now()}_${file.clientName}`
-      });
-
-      article.document = `public/pdf/${file.fileName}`
-    }
+    article.document = `public/pdf/${document}.pdf`;
 
     await article.save();
     await article.toms().attach(tom);
@@ -55,7 +46,7 @@ class ArticleController {
     const article = await Article.find(params.id);
 
     const { author, author_en, number, title, title_en, pages,
-      key_words, key_words_en, summary, summary_en, references } = request.body;
+      key_words, key_words_en, summary, summary_en, references, document } = request.body;
 
     article.number = number;
     article.author = author;
@@ -68,20 +59,7 @@ class ArticleController {
     article.summary = summary;
     article.summary_en = summary_en;
     article.references = references;
-
-    if (request.file('file')) {
-      const file = request.file('file');
-
-      if (article.document) {
-        await removeFile(`./${article.document}`);
-      }
-
-      await file.move('public/pdf', {
-        name: `${Date.now()}_${file.clientName}`
-      });
-
-      article.document = `public/pdf/${file.fileName}`
-    }
+    article.document = document;
 
     await article.save();
 
@@ -90,10 +68,6 @@ class ArticleController {
 
   async delete ({ params, response }) {
     const article = await Article.find(params.id);
-
-    if (article.document) {
-      await removeFile(`./${article.document}`);
-    }
 
     await article.delete();
 

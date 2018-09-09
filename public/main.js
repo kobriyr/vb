@@ -525,7 +525,7 @@ module.exports = "a {\n  cursor: pointer;\n}\n\n.dn {\n  display: none;\n}\n\n.h
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"page-title\">\n    <h4>\n      <a routerLink=\"/admin\">Статті</a>\n      <i class=\"material-icons\">keyboard_arrow_right</i>\n      {{ isNew ? 'Додати' : 'Редагувати' }} статтю\n    </h4>\n    <span>\n      <button *ngIf=\"!isNew\" class=\"btn btn-small red\" (click)=\"deleteArticle()\">\n        <i class=\"material-icons\">delete</i>\n      </button>\n    </span>\n  </div>\n\n  <div class=\"row\">\n    <form class=\"col s12 l6\" [formGroup]=\"form\" (ngSubmit)=\"onSubmit()\">\n\n      <div class=\"input-field\">\n        <input pattern=\"[1-9]*\" formControlName=\"number\" id=\"number\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('number').invalid && form.get('number').touched }\">\n        <label for=\"number\">Номер</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('number').invalid && form.get('number').touched\">\n        <span *ngIf=\"form.get('number').errors['required']\">\n          Номер повинен бути зазначений.\n        </span>\n        <span *ngIf=\"form.get('number').errors['pattern']\">\n          Дані повинні бути числом.\n        </span>\n      </span>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"author\" id=\"author\" type=\"text\">\n        <label for=\"author\">Автор</label>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"author_en\" id=\"author_en\" type=\"text\">\n        <label for=\"author\">Author</label>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"title\" id=\"title\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('title').invalid && form.get('title').touched }\">\n        <label for=\"title\">Назва</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('title').invalid && form.get('title').touched\">\n        <span *ngIf=\"form.get('title').errors['required']\">\n          Назва повинна бути зазначена.\n        </span>\n      </span>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"title_en\" id=\"title_en\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('title_en').invalid && form.get('title_en').touched }\">\n        <label for=\"title\">Title</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('title_en').invalid && form.get('title_en').touched\">\n        <span *ngIf=\"form.get('title_en').errors['required']\">\n          Title повинен бути зазначений.\n        </span>\n      </span>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"pages\" id=\"pages\" type=\"text\">\n        <label for=\"pages\">Сторінки</label>\n      </div>\n\n      <div class=\"input-field\">\n        <textarea formControlName=\"summary\"  id=\"summary\" class=\"materialize-textarea\" #textArea></textarea>\n        <label for=\"summary\">Анотація</label>\n      </div>\n\n      <div class=\"input-field\">\n        <textarea formControlName=\"summary_en\"  id=\"summary_en\" class=\"materialize-textarea\" #textAreaEn></textarea>\n        <label for=\"summary_en\">Summary</label>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"key_words\" id=\"key_words\" type=\"text\">\n        <label for=\"key_words\">Ключові слова</label>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"key_words_en\" id=\"key_words_en\" type=\"text\">\n        <label for=\"key_words\">Key words</label>\n      </div>\n\n      <div class=\"input-field\">\n        <textarea formControlName=\"references\"  id=\"references\" class=\"materialize-textarea\" #textAreaRef></textarea>\n        <label for=\"summary\">Список літератури</label>\n      </div>\n\n      <div class=\"file-field input-field\">\n        <div class=\"btn\">\n          <span>Загрузити документ</span>\n          <input [disabled]=\"docValid\" (change)=\"onFileUpload($event)\" type=\"file\" #inputFile>\n        </div>\n        <div class=\"file-path-wrapper\">\n          <input  formControlName=\"file\" class=\"file-path validate\" type=\"text\">\n        </div>\n      </div>\n\n      <div>\n        <button type=\"submit\" class=\"waves-effect waves-light btn\" [disabled]=\"form.invalid || form.disabled || validFile\">\n          Зберегти\n        </button>\n      </div>\n    </form>\n  </div>\n</div>\n"
+module.exports = "<div class=\"container\">\n  <div class=\"page-title\">\n    <h4>\n      <a routerLink=\"/admin\">Статті</a>\n      <i class=\"material-icons\">keyboard_arrow_right</i>\n      {{ isNew ? 'Додати' : 'Редагувати' }} статтю\n    </h4>\n    <span>\n      <button *ngIf=\"!isNew\" class=\"btn btn-small red\" (click)=\"deleteArticle()\">\n        <i class=\"material-icons\">delete</i>\n      </button>\n    </span>\n  </div>\n\n  <div class=\"row\">\n    <form class=\"col s12 l6\" [formGroup]=\"form\" (ngSubmit)=\"onSubmit()\">\n\n      <div class=\"input-field\">\n        <input pattern=\"[1-9]*\" formControlName=\"number\" id=\"number\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('number').invalid && form.get('number').touched }\">\n        <label for=\"number\">Номер</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('number').invalid && form.get('number').touched\">\n        <span *ngIf=\"form.get('number').errors['required']\">\n          Номер повинен бути зазначений.\n        </span>\n        <span *ngIf=\"form.get('number').errors['pattern']\">\n          Дані повинні бути числом.\n        </span>\n      </span>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"author\" id=\"author\" type=\"text\">\n        <label for=\"author\">Автор</label>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"author_en\" id=\"author_en\" type=\"text\">\n        <label for=\"author\">Author</label>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"title\" id=\"title\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('title').invalid && form.get('title').touched }\">\n        <label for=\"title\">Назва</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('title').invalid && form.get('title').touched\">\n        <span *ngIf=\"form.get('title').errors['required']\">\n          Назва повинна бути зазначена.\n        </span>\n      </span>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"title_en\" id=\"title_en\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('title_en').invalid && form.get('title_en').touched }\">\n        <label for=\"title\">Title</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('title_en').invalid && form.get('title_en').touched\">\n        <span *ngIf=\"form.get('title_en').errors['required']\">\n          Title повинен бути зазначений.\n        </span>\n      </span>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"pages\" id=\"pages\" type=\"text\">\n        <label for=\"pages\">Сторінки</label>\n      </div>\n\n      <div class=\"input-field\">\n        <textarea formControlName=\"summary\"  id=\"summary\" class=\"materialize-textarea\" #textArea></textarea>\n        <label for=\"summary\">Анотація</label>\n      </div>\n\n      <div class=\"input-field\">\n        <textarea formControlName=\"summary_en\"  id=\"summary_en\" class=\"materialize-textarea\" #textAreaEn></textarea>\n        <label for=\"summary_en\">Summary</label>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"key_words\" id=\"key_words\" type=\"text\">\n        <label for=\"key_words\">Ключові слова</label>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"key_words_en\" id=\"key_words_en\" type=\"text\">\n        <label for=\"key_words\">Key words</label>\n      </div>\n\n      <div class=\"input-field\">\n        <textarea formControlName=\"references\" id=\"references\" class=\"materialize-textarea\" #textAreaRef></textarea>\n        <label for=\"summary\">Список літератури</label>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"document\" id=\"document\" type=\"text\" />\n        <label for=\"document\">Документ</label>\n      </div>\n\n      <div>\n        <button type=\"submit\" class=\"waves-effect waves-light btn\" [disabled]=\"form.invalid || form.disabled\">\n          Зберегти\n        </button>\n      </div>\n    </form>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -570,7 +570,6 @@ var ArticlePageComponent = /** @class */ (function () {
         this.route = route;
         this.isNew = true;
         this.tom = null;
-        this.validFile = false;
     }
     ArticlePageComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -586,7 +585,7 @@ var ArticlePageComponent = /** @class */ (function () {
             summary: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](null),
             summary_en: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](null),
             references: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](null),
-            file: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](null)
+            document: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](null)
         });
         this.form.disable();
         this.router.params
@@ -614,7 +613,8 @@ var ArticlePageComponent = /** @class */ (function () {
                     key_words_en: article.key_words_en,
                     summary: article.summary,
                     summary_en: article.summary_en,
-                    references: article.references
+                    references: article.references,
+                    document: article.document
                 });
                 _shared_classes_materialize_service__WEBPACK_IMPORTED_MODULE_6__["MaterializeService"].updateTextInputs();
                 _shared_classes_materialize_service__WEBPACK_IMPORTED_MODULE_6__["MaterializeService"].textareaAuto(_this.textAreaRef);
@@ -631,10 +631,10 @@ var ArticlePageComponent = /** @class */ (function () {
         var obs$;
         this.form.disable();
         if (this.isNew) {
-            obs$ = this.articleService.create(this.tom, this.form.value.author, this.form.value.author_en, this.form.value.number, this.form.value.title, this.form.value.title_en, this.form.value.pages, this.form.value.key_words, this.form.value.key_words_en, this.form.value.summary, this.form.value.summary_en, this.form.value.references, this.file);
+            obs$ = this.articleService.create(this.tom, this.form.value.author, this.form.value.author_en, this.form.value.number, this.form.value.title, this.form.value.title_en, this.form.value.pages, this.form.value.key_words, this.form.value.key_words_en, this.form.value.summary, this.form.value.summary_en, this.form.value.references, this.form.value.document);
         }
         else {
-            obs$ = this.articleService.update(this.article.id, this.form.value.author, this.form.value.author_en, this.form.value.number, this.form.value.title, this.form.value.title_en, this.form.value.pages, this.form.value.key_words, this.form.value.key_words_en, this.form.value.summary, this.form.value.summary_en, this.form.value.references, this.file);
+            obs$ = this.articleService.update(this.article.id, this.form.value.author, this.form.value.author_en, this.form.value.number, this.form.value.title, this.form.value.title_en, this.form.value.pages, this.form.value.key_words, this.form.value.key_words_en, this.form.value.summary, this.form.value.summary_en, this.form.value.references, this.form.value.document);
         }
         obs$.subscribe(function (article) {
             _this.article = article;
@@ -644,29 +644,6 @@ var ArticlePageComponent = /** @class */ (function () {
             _shared_classes_materialize_service__WEBPACK_IMPORTED_MODULE_6__["MaterializeService"].toast(error.error.message);
             _this.form.enable();
         });
-    };
-    ArticlePageComponent.prototype.onFileUpload = function (event) {
-        var file = event.target.files[0];
-        if (file.size > 25 * 1024 * 1024) {
-            _shared_classes_materialize_service__WEBPACK_IMPORTED_MODULE_6__["MaterializeService"].toast('Розмір файлу перевищує 25 Mb. Виберіть інший файл.');
-            this.validFile = true;
-        }
-        else {
-            if (file.type === 'application/pdf') {
-                var filetypes = /pdf|doc|docx|xls|xlsx|wps/;
-                if (filetypes.test(file.name.split('.')[1].toLowerCase())) {
-                    this.validFile = false;
-                    this.file = file;
-                }
-                else {
-                    _shared_classes_materialize_service__WEBPACK_IMPORTED_MODULE_6__["MaterializeService"].toast('Тип файлу не pdf. Завантежте інший файл.');
-                }
-            }
-            else {
-                _shared_classes_materialize_service__WEBPACK_IMPORTED_MODULE_6__["MaterializeService"].toast('Завантажте файл в pdf форматі.');
-                this.validFile = true;
-            }
-        }
     };
     ArticlePageComponent.prototype.deleteArticle = function () {
         var _this = this;
@@ -2355,7 +2332,7 @@ var ArticleService = /** @class */ (function () {
         return this.http.get("/api/articles/" + id);
     };
     // @ts-ignore
-    ArticleService.prototype.create = function (tom, author, author_en, number, title, title_en, pages, key_words, key_words_en, summary, summary_en, references, file) {
+    ArticleService.prototype.create = function (tom, author, author_en, number, title, title_en, pages, key_words, key_words_en, summary, summary_en, references, document) {
         var fd = new FormData();
         if (author) {
             fd.append('author', author);
@@ -2381,8 +2358,8 @@ var ArticleService = /** @class */ (function () {
         if (summary_en) {
             fd.append('references', references);
         }
-        if (file) {
-            fd.append('file', file, file.name);
+        if (document) {
+            fd.append('document', document);
         }
         fd.append('tom', tom);
         fd.append('number', number);
@@ -2391,7 +2368,7 @@ var ArticleService = /** @class */ (function () {
         return this.http.post('api/articles', fd);
     };
     // @ts-ignore
-    ArticleService.prototype.update = function (id, author, author_en, number, title, title_en, pages, key_words, key_words_en, summary, summary_en, references, file) {
+    ArticleService.prototype.update = function (id, author, author_en, number, title, title_en, pages, key_words, key_words_en, summary, summary_en, references, document) {
         var fd = new FormData();
         if (author) {
             fd.append('author', author);
@@ -2417,8 +2394,8 @@ var ArticleService = /** @class */ (function () {
         if (summary_en) {
             fd.append('references', references);
         }
-        if (file) {
-            fd.append('file', file, file.name);
+        if (document) {
+            fd.append('document', document);
         }
         fd.append('number', number);
         fd.append('title', title);
@@ -2602,7 +2579,7 @@ module.exports = "a {\n    cursor: pointer;\n}\n\n.dn {\n    display: none;\n}\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"page-title\">\n    <h4>\n      <a routerLink=\"/admin\">Випуски</a>\n      <i class=\"material-icons\">keyboard_arrow_right</i>\n      {{ isNew ? 'Додати' : 'Редагувати' }} випуск\n    </h4>\n    <span>\n      <button *ngIf=\"!isNew\" class=\"btn btn-small red\" (click)=\"deleteTom()\">\n        <i class=\"material-icons\">delete</i>\n      </button>\n    </span>\n  </div>\n\n  <div class=\"row\">\n    <form class=\"col s12 l6\" [formGroup]=\"form\" (ngSubmit)=\"onSubmit()\">\n      <div class=\"input-field\">\n        <input formControlName=\"name\" id=\"name\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('name').invalid && form.get('name').touched }\">\n        <label for=\"name\">Назва</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('name').invalid && form.get('name').touched\">\n          <span *ngIf=\"form.get('name').errors['required']\">\n            Назва повинна бути зазначена.\n          </span>\n        </span>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"name_en\" id=\"name_en\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('name_en').invalid && form.get('name_en').touched }\">\n        <label for=\"name\">Title</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('name_en').invalid && form.get('name_en').touched\">\n          <span *ngIf=\"form.get('name_en').errors['required']\">\n            Title повинен бути зазначений.\n          </span>\n        </span>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"number\" id=\"number\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('number').invalid && form.get('number').touched }\">\n        <label for=\"number\">Номер</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('number').invalid && form.get('number').touched\">\n        <span *ngIf=\"form.get('number').errors['required']\">\n          Номер повинен бути зазначений.\n        </span>\n      </span>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"year\" id=\"year\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('year').invalid && form.get('year').touched }\">\n        <label for=\"year\">Рік</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('year').invalid && form.get('year').touched\">\n        <span *ngIf=\"form.get('year').errors['required']\">\n          Рік повинен бути зазначений.\n        </span>\n      </span>\n      </div>\n\n      <div class=\"input-field\">\n        <textarea formControlName=\"description\"  id=\"description\" class=\"materialize-textarea\"\n                  [ngClass]=\"{ 'invalid' : form.get('description').invalid && form.get('description').touched }\"\n                  #textArea>\n        </textarea>\n        <label for=\"description\">Опис</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('description').invalid && form.get('description').touched\">\n          <span *ngIf=\"form.get('description').errors['required']\">\n            Опис журналу повинен бути введений.\n          </span>\n        </span>\n      </div>\n\n      <div class=\"input-field\">\n        <textarea formControlName=\"description_en\"  id=\"description_en\" class=\"materialize-textarea\"\n                  [ngClass]=\"{ 'invalid' : form.get('description_en').invalid && form.get('description_en').touched }\"\n                  #textAreaEn>\n        </textarea>\n        <label for=\"description\">Description</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('description_en').invalid && form.get('description_en').touched\">\n          <span *ngIf=\"form.get('description_en').errors['required']\">\n            Description журналу повинен бути введений.\n          </span>\n        </span>\n      </div>\n\n      <div class=\"file-field input-field\">\n        <div class=\"btn\">\n          <span>Загрузити документ</span>\n          <input [disabled]=\"docValid\" (change)=\"onFileUpload($event)\" type=\"file\" #inputFile>\n        </div>\n        <div class=\"file-path-wrapper\">\n          <input  formControlName=\"file\" class=\"file-path validate\" type=\"text\">\n        </div>\n      </div>\n\n      <div>\n        <button type=\"submit\" class=\"waves-effect waves-light btn\" [disabled]=\"form.invalid || form.disabled || validFile\">\n          Зберегти\n        </button>\n      </div>\n    </form>\n  </div>\n\n</div>\n"
+module.exports = "<div class=\"container\">\n  <div class=\"page-title\">\n    <h4>\n      <a routerLink=\"/admin\">Випуски</a>\n      <i class=\"material-icons\">keyboard_arrow_right</i>\n      {{ isNew ? 'Додати' : 'Редагувати' }} випуск\n    </h4>\n    <span>\n      <button *ngIf=\"!isNew\" class=\"btn btn-small red\" (click)=\"deleteTom()\">\n        <i class=\"material-icons\">delete</i>\n      </button>\n    </span>\n  </div>\n\n  <div class=\"row\">\n    <form class=\"col s12 l6\" [formGroup]=\"form\" (ngSubmit)=\"onSubmit()\">\n      <div class=\"input-field\">\n        <input formControlName=\"name\" id=\"name\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('name').invalid && form.get('name').touched }\">\n        <label for=\"name\">Назва</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('name').invalid && form.get('name').touched\">\n          <span *ngIf=\"form.get('name').errors['required']\">\n            Назва повинна бути зазначена.\n          </span>\n        </span>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"name_en\" id=\"name_en\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('name_en').invalid && form.get('name_en').touched }\">\n        <label for=\"name\">Title</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('name_en').invalid && form.get('name_en').touched\">\n          <span *ngIf=\"form.get('name_en').errors['required']\">\n            Title повинен бути зазначений.\n          </span>\n        </span>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"number\" id=\"number\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('number').invalid && form.get('number').touched }\">\n        <label for=\"number\">Номер</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('number').invalid && form.get('number').touched\">\n        <span *ngIf=\"form.get('number').errors['required']\">\n          Номер повинен бути зазначений.\n        </span>\n      </span>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"year\" id=\"year\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('year').invalid && form.get('year').touched }\">\n        <label for=\"year\">Рік</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('year').invalid && form.get('year').touched\">\n        <span *ngIf=\"form.get('year').errors['required']\">\n          Рік повинен бути зазначений.\n        </span>\n      </span>\n      </div>\n\n      <div class=\"input-field\">\n        <textarea formControlName=\"description\"  id=\"description\" class=\"materialize-textarea\"\n                  [ngClass]=\"{ 'invalid' : form.get('description').invalid && form.get('description').touched }\"\n                  #textArea>\n        </textarea>\n        <label for=\"description\">Опис</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('description').invalid && form.get('description').touched\">\n          <span *ngIf=\"form.get('description').errors['required']\">\n            Опис журналу повинен бути введений.\n          </span>\n        </span>\n      </div>\n\n      <div class=\"input-field\">\n        <textarea formControlName=\"description_en\"  id=\"description_en\" class=\"materialize-textarea\"\n                  [ngClass]=\"{ 'invalid' : form.get('description_en').invalid && form.get('description_en').touched }\"\n                  #textAreaEn>\n        </textarea>\n        <label for=\"description\">Description</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('description_en').invalid && form.get('description_en').touched\">\n          <span *ngIf=\"form.get('description_en').errors['required']\">\n            Description журналу повинен бути введений.\n          </span>\n        </span>\n      </div>\n\n\n\n      <div class=\"file-field input-field\">\n        <div class=\"btn\">\n          <span>Загрузити документ</span>\n          <input [disabled]=\"docValid\" (change)=\"onFileUpload($event)\" type=\"file\" #inputFile>\n        </div>\n        <div class=\"file-path-wrapper\">\n          <input  formControlName=\"file\" class=\"file-path validate\" type=\"text\">\n        </div>\n      </div>\n\n      <div>\n        <button type=\"submit\" class=\"waves-effect waves-light btn\" [disabled]=\"form.invalid || form.disabled || validFile\">\n          Зберегти\n        </button>\n      </div>\n    </form>\n  </div>\n\n</div>\n"
 
 /***/ }),
 
