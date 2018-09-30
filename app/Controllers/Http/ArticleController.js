@@ -1,9 +1,6 @@
 'use strict'
 
 const Article = use('App/Models/Article');
-const Helpers = use('Helpers');
-const fs = use('fs');
-const removeFile = Helpers.promisify(fs.unlink);
 
 class ArticleController {
   async index({ response }) {

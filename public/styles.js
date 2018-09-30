@@ -539,7 +539,7 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/fill/projects/vb/src/styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! /home/fill/Documents/project/vb/src/styles.css */"./src/styles.css");
 
 
 /***/ })
