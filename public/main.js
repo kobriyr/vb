@@ -665,10 +665,6 @@ var ArticlePageComponent = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('textAreaRef'),
         __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
     ], ArticlePageComponent.prototype, "textAreaRefRef", void 0);
-    __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('inputFile'),
-        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
-    ], ArticlePageComponent.prototype, "inputFileRef", void 0);
     ArticlePageComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-article-page',
@@ -2529,10 +2525,10 @@ var TomsService = /** @class */ (function () {
     TomsService.prototype.getById = function (id) {
         return this.http.get("/api/toms/" + id);
     };
-    TomsService.prototype.create = function (name, name_en, number, year, description, description_en, file) {
+    TomsService.prototype.create = function (name, name_en, number, year, description, description_en, document) {
         var fd = new FormData();
-        if (file) {
-            fd.append('file', file, file.name);
+        if (document) {
+            fd.append('document', document);
         }
         fd.append('name', name);
         fd.append('name_en', name_en);
@@ -2542,10 +2538,10 @@ var TomsService = /** @class */ (function () {
         fd.append('description_en', description_en);
         return this.http.post('api/toms', fd);
     };
-    TomsService.prototype.update = function (id, name, name_en, number, year, description, description_en, file) {
+    TomsService.prototype.update = function (id, name, name_en, number, year, description, description_en, document) {
         var fd = new FormData();
-        if (file) {
-            fd.append('file', file, file.name);
+        if (document) {
+            fd.append('document', document);
         }
         fd.append('name', name);
         fd.append('name_en', name_en);
@@ -2589,7 +2585,7 @@ module.exports = "a {\n    cursor: pointer;\n}\n\n.dn {\n    display: none;\n}\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"page-title\">\n    <h4>\n      <a routerLink=\"/admin\">Випуски</a>\n      <i class=\"material-icons\">keyboard_arrow_right</i>\n      {{ isNew ? 'Додати' : 'Редагувати' }} випуск\n    </h4>\n    <span>\n      <button *ngIf=\"!isNew\" class=\"btn btn-small red\" (click)=\"deleteTom()\">\n        <i class=\"material-icons\">delete</i>\n      </button>\n    </span>\n  </div>\n\n  <div class=\"row\">\n    <form class=\"col s12 l6\" [formGroup]=\"form\" (ngSubmit)=\"onSubmit()\">\n      <div class=\"input-field\">\n        <input formControlName=\"name\" id=\"name\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('name').invalid && form.get('name').touched }\">\n        <label for=\"name\">Назва</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('name').invalid && form.get('name').touched\">\n          <span *ngIf=\"form.get('name').errors['required']\">\n            Назва повинна бути зазначена.\n          </span>\n        </span>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"name_en\" id=\"name_en\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('name_en').invalid && form.get('name_en').touched }\">\n        <label for=\"name\">Title</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('name_en').invalid && form.get('name_en').touched\">\n          <span *ngIf=\"form.get('name_en').errors['required']\">\n            Title повинен бути зазначений.\n          </span>\n        </span>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"number\" id=\"number\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('number').invalid && form.get('number').touched }\">\n        <label for=\"number\">Номер</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('number').invalid && form.get('number').touched\">\n        <span *ngIf=\"form.get('number').errors['required']\">\n          Номер повинен бути зазначений.\n        </span>\n      </span>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"year\" id=\"year\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('year').invalid && form.get('year').touched }\">\n        <label for=\"year\">Рік</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('year').invalid && form.get('year').touched\">\n        <span *ngIf=\"form.get('year').errors['required']\">\n          Рік повинен бути зазначений.\n        </span>\n      </span>\n      </div>\n\n      <div class=\"input-field\">\n        <textarea formControlName=\"description\"  id=\"description\" class=\"materialize-textarea\"\n                  [ngClass]=\"{ 'invalid' : form.get('description').invalid && form.get('description').touched }\"\n                  #textArea>\n        </textarea>\n        <label for=\"description\">Опис</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('description').invalid && form.get('description').touched\">\n          <span *ngIf=\"form.get('description').errors['required']\">\n            Опис журналу повинен бути введений.\n          </span>\n        </span>\n      </div>\n\n      <div class=\"input-field\">\n        <textarea formControlName=\"description_en\"  id=\"description_en\" class=\"materialize-textarea\"\n                  [ngClass]=\"{ 'invalid' : form.get('description_en').invalid && form.get('description_en').touched }\"\n                  #textAreaEn>\n        </textarea>\n        <label for=\"description\">Description</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('description_en').invalid && form.get('description_en').touched\">\n          <span *ngIf=\"form.get('description_en').errors['required']\">\n            Description журналу повинен бути введений.\n          </span>\n        </span>\n      </div>\n\n\n\n      <div class=\"file-field input-field\">\n        <div class=\"btn\">\n          <span>Загрузити документ</span>\n          <input [disabled]=\"docValid\" (change)=\"onFileUpload($event)\" type=\"file\" #inputFile>\n        </div>\n        <div class=\"file-path-wrapper\">\n          <input  formControlName=\"file\" class=\"file-path validate\" type=\"text\">\n        </div>\n      </div>\n\n      <div>\n        <button type=\"submit\" class=\"waves-effect waves-light btn\" [disabled]=\"form.invalid || form.disabled || validFile\">\n          Зберегти\n        </button>\n      </div>\n    </form>\n  </div>\n\n</div>\n"
+module.exports = "<div class=\"container\">\n  <div class=\"page-title\">\n    <h4>\n      <a routerLink=\"/admin\">Випуски</a>\n      <i class=\"material-icons\">keyboard_arrow_right</i>\n      {{ isNew ? 'Додати' : 'Редагувати' }} випуск\n    </h4>\n    <span>\n      <button *ngIf=\"!isNew\" class=\"btn btn-small red\" (click)=\"deleteTom()\">\n        <i class=\"material-icons\">delete</i>\n      </button>\n    </span>\n  </div>\n\n  <div class=\"row\">\n    <form class=\"col s12 l6\" [formGroup]=\"form\" (ngSubmit)=\"onSubmit()\">\n      <div class=\"input-field\">\n        <input formControlName=\"name\" id=\"name\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('name').invalid && form.get('name').touched }\">\n        <label for=\"name\">Назва</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('name').invalid && form.get('name').touched\">\n          <span *ngIf=\"form.get('name').errors['required']\">\n            Назва повинна бути зазначена.\n          </span>\n        </span>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"name_en\" id=\"name_en\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('name_en').invalid && form.get('name_en').touched }\">\n        <label for=\"name\">Title</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('name_en').invalid && form.get('name_en').touched\">\n          <span *ngIf=\"form.get('name_en').errors['required']\">\n            Title повинен бути зазначений.\n          </span>\n        </span>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"number\" id=\"number\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('number').invalid && form.get('number').touched }\">\n        <label for=\"number\">Номер</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('number').invalid && form.get('number').touched\">\n        <span *ngIf=\"form.get('number').errors['required']\">\n          Номер повинен бути зазначений.\n        </span>\n      </span>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"year\" id=\"year\" type=\"text\"\n               [ngClass]=\"{ 'invalid' : form.get('year').invalid && form.get('year').touched }\">\n        <label for=\"year\">Рік</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('year').invalid && form.get('year').touched\">\n        <span *ngIf=\"form.get('year').errors['required']\">\n          Рік повинен бути зазначений.\n        </span>\n      </span>\n      </div>\n\n      <div class=\"input-field\">\n        <textarea formControlName=\"description\"  id=\"description\" class=\"materialize-textarea\"\n                  [ngClass]=\"{ 'invalid' : form.get('description').invalid && form.get('description').touched }\"\n                  #textArea>\n        </textarea>\n        <label for=\"description\">Опис</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('description').invalid && form.get('description').touched\">\n          <span *ngIf=\"form.get('description').errors['required']\">\n            Опис журналу повинен бути введений.\n          </span>\n        </span>\n      </div>\n\n      <div class=\"input-field\">\n        <textarea formControlName=\"description_en\"  id=\"description_en\" class=\"materialize-textarea\"\n                  [ngClass]=\"{ 'invalid' : form.get('description_en').invalid && form.get('description_en').touched }\"\n                  #textAreaEn>\n        </textarea>\n        <label for=\"description\">Description</label>\n        <span class=\"helper-text red-text\" *ngIf=\"form.get('description_en').invalid && form.get('description_en').touched\">\n          <span *ngIf=\"form.get('description_en').errors['required']\">\n            Description журналу повинен бути введений.\n          </span>\n        </span>\n      </div>\n\n      <div class=\"input-field\">\n        <input formControlName=\"document\" id=\"document\" type=\"text\" />\n        <label for=\"document\">Документ</label>\n      </div>\n\n      <div>\n        <button type=\"submit\" class=\"waves-effect waves-light btn\" [disabled]=\"form.invalid || form.disabled\">\n          Зберегти\n        </button>\n      </div>\n    </form>\n  </div>\n\n</div>\n"
 
 /***/ }),
 
@@ -2633,7 +2629,6 @@ var FormTomPageComponent = /** @class */ (function () {
         this.tomsService = tomsService;
         this.route = route;
         this.isNew = true;
-        this.validFile = false;
     }
     FormTomPageComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -2644,7 +2639,7 @@ var FormTomPageComponent = /** @class */ (function () {
             year: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](null, _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required),
             description: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](null, _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required),
             description_en: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](null, _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required),
-            file: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](null)
+            document: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](null)
         });
         this.form.disable();
         this.router.params
@@ -2665,7 +2660,7 @@ var FormTomPageComponent = /** @class */ (function () {
                     description: tom.description,
                     description_en: tom.description_en,
                     year: tom.year,
-                    file: tom.document
+                    document: tom.document
                 });
                 _shared_classes_materialize_service__WEBPACK_IMPORTED_MODULE_6__["MaterializeService"].updateTextInputs();
                 _shared_classes_materialize_service__WEBPACK_IMPORTED_MODULE_6__["MaterializeService"].textareaAuto(_this.textAreaRef);
@@ -2681,10 +2676,10 @@ var FormTomPageComponent = /** @class */ (function () {
         var obs$;
         this.form.disable();
         if (this.isNew) {
-            obs$ = this.tomsService.create(this.form.value.name, this.form.value.name_en, this.form.value.number, this.form.value.year, this.form.value.description, this.form.value.description_en, this.file);
+            obs$ = this.tomsService.create(this.form.value.name, this.form.value.name_en, this.form.value.number, this.form.value.year, this.form.value.description, this.form.value.description_en, this.form.value.document);
         }
         else {
-            obs$ = this.tomsService.update(this.tom.id, this.form.value.name, this.form.value.name_en, this.form.value.number, this.form.value.year, this.form.value.description, this.form.value.description_en, this.file);
+            obs$ = this.tomsService.update(this.tom.id, this.form.value.name, this.form.value.name_en, this.form.value.number, this.form.value.year, this.form.value.description, this.form.value.description_en, this.form.value.document);
         }
         obs$.subscribe(function (tom) {
             _this.tom = tom;
@@ -2694,29 +2689,6 @@ var FormTomPageComponent = /** @class */ (function () {
             _shared_classes_materialize_service__WEBPACK_IMPORTED_MODULE_6__["MaterializeService"].toast(error.error.message);
             _this.form.enable();
         });
-    };
-    FormTomPageComponent.prototype.onFileUpload = function (event) {
-        var file = event.target.files[0];
-        if (file.size > 35 * 1024 * 1024) {
-            _shared_classes_materialize_service__WEBPACK_IMPORTED_MODULE_6__["MaterializeService"].toast('Розмір файлу перевищує 25 Mb. Виберіть інший файл.');
-            this.validFile = true;
-        }
-        else {
-            if (file.type === 'application/pdf') {
-                var filetypes = /pdf|doc|docx|xls|xlsx|wps/;
-                if (filetypes.test(file.name.split('.')[1].toLowerCase())) {
-                    this.validFile = false;
-                    this.file = file;
-                }
-                else {
-                    _shared_classes_materialize_service__WEBPACK_IMPORTED_MODULE_6__["MaterializeService"].toast('Тип файлу не pdf. Завантежте інший файл.');
-                }
-            }
-            else {
-                _shared_classes_materialize_service__WEBPACK_IMPORTED_MODULE_6__["MaterializeService"].toast('Завантажте файл в pdf форматі.');
-                this.validFile = true;
-            }
-        }
     };
     FormTomPageComponent.prototype.deleteTom = function () {
         var _this = this;
@@ -2734,10 +2706,6 @@ var FormTomPageComponent = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('textAreaEn'),
         __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
     ], FormTomPageComponent.prototype, "textAreaEnRef", void 0);
-    __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('inputFile'),
-        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
-    ], FormTomPageComponent.prototype, "inputFileRef", void 0);
     FormTomPageComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-form-tom-page',

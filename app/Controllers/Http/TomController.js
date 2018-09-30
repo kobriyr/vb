@@ -1,9 +1,6 @@
 'use strict'
 
 const Tom = use('App/Models/Tom');
-const Helpers = use('Helpers');
-const fs = use('fs');
-const removeFile = Helpers.promisify(fs.unlink);
 
 class TomController {
     async index({ response }) {
@@ -25,7 +22,9 @@ class TomController {
     async show ({ params, response }) {
         const tom = await Tom.query()
                               .where('id', params.id )
-                              .with('articles')
+                              .with('articles', builder => {
+                                builder.orderBy('number')
+                              })
                               .first();
 
         return response.status(200).send(tom);
@@ -34,7 +33,7 @@ class TomController {
     async store ({ request, response }) {
         const tom = new Tom();
 
-        const { name, name_en, number, year, description, description_en } = request.body;
+        const { name, name_en, number, year, description, description_en, document } = request.body;
 
         tom.name = name;
         tom.name_en = name_en;
@@ -42,17 +41,7 @@ class TomController {
         tom.year = year;
         tom.description = description;
         tom.description_en = description_en;
-
-
-        if (request.file('file')) {
-            const file = request.file('file');
-
-            await file.move('public/pdf', {
-                name: `${Date.now()}_${file.clientName}`
-            });
-
-            tom.document = `public/pdf/${file.fileName}`
-        }
+        tom.document = `public/pdf/${document}.pdf`;
 
         await tom.save();
 
@@ -62,7 +51,7 @@ class TomController {
     async update({ params, request, response }) {
         const tom = await Tom.find(params.id);
 
-        const { name, name_en, number, year, description, description_en } = request.body;
+        const { name, name_en, number, year, description, description_en, document } = request.body;
 
         tom.name = name;
         tom.name_en = name_en;
@@ -70,20 +59,7 @@ class TomController {
         tom.year = year;
         tom.description = description;
         tom.description_en = description_en;
-
-        if (request.file('file')) {
-            const file = request.file('file');
-
-            if (tom.document) {
-                await removeFile(`./${tom.document}`);
-            }
-
-            await file.move('public/pdf', {
-                name: `${Date.now()}_${file.clientName}`
-            });
-
-            tom.document = `public/pdf/${file.fileName}`
-        }
+        tom.document = document
 
         await tom.save();
 
@@ -92,10 +68,6 @@ class TomController {
 
     async delete ({ params, response }) {
         const tom = await Tom.find(params.id);
-
-        if (tom.document) {
-            await removeFile(`./${tom.document}`);
-        }
 
         await tom.delete();
 
