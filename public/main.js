@@ -2401,7 +2401,7 @@ var ArticleService = /** @class */ (function () {
         if (summary_en) {
             fd.append('summary_en', summary_en);
         }
-        if (summary_en) {
+        if (references) {
             fd.append('references', references);
         }
         if (document) {
