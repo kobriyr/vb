@@ -15,7 +15,9 @@ class TomController {
 
     async indexWithArticles({ response }) {
         const toms = await Tom.query()
-          .with('articles')
+          .with('articles', builder => {
+            builder.orderBy('number')
+          })
           .fetch()
         return response.status(200).send(toms);
     }
