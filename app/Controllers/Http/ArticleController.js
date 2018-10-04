@@ -10,7 +10,11 @@ class ArticleController {
   }
 
   async show ({ params, response }) {
-    const article = await Article.find(params.id);
+    const article = await Article
+      .query()
+      .where('id', params.id)
+      .with('toms')
+      .first();
 
     return response.status(200).send(article);
   }
