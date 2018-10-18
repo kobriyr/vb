@@ -15,6 +15,7 @@ class TomController {
           .with('articles', builder => {
             builder.orderBy('number')
           })
+          .orderBy('number', 'desc')
           .fetch()
         return response.status(200).send(toms);
     }
