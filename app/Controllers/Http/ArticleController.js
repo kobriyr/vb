@@ -21,7 +21,7 @@ class ArticleController {
 
   async store ({ request, response }) {
     const { tom, author, author_en, number, title, title_en, pages,
-      key_words, key_words_en, summary, summary_en, doi, biography, references, document } = request.body;
+      key_words, key_words_en, summary, summary_en, doi, email, biography, biography_en, references, references_en, document } = request.body;
     const article = new Article();
 
     article.number = number;
@@ -35,8 +35,11 @@ class ArticleController {
     article.summary = summary;
     article.summary_en = summary_en;
     article.doi = doi;
+    article.email = email;
     article.biography = biography;
+    article.biography_en = biography_en;
     article.references = references;
+    article.references_en = references_en;
     article.document = `public/pdf/${document}.pdf`;
 
     await article.save();
@@ -49,7 +52,7 @@ class ArticleController {
     const article = await Article.find(params.id);
 
     const { author, author_en, number, title, title_en, pages,
-      key_words, key_words_en, summary, summary_en, doi, biography, references, document } = request.body;
+      key_words, key_words_en, summary, summary_en, doi, email, biography, biography_en, references, references_en, document } = request.body;
 
     article.number = number;
     article.author = author;
@@ -62,8 +65,11 @@ class ArticleController {
     article.summary = summary;
     article.summary_en = summary_en;
     article.doi = doi;
+    article.email = email;
     article.biography = biography;
+    article.biography_en = biography_en;
     article.references = references;
+    article.references_en = references_en;
     article.document = document;
 
     await article.save();
