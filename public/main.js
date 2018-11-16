@@ -183,6 +183,69 @@ var AboutPageComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/aims-and-scop-page/aims-and-scop-page.component.css":
+/*!*********************************************************************!*\
+  !*** ./src/app/aims-and-scop-page/aims-and-scop-page.component.css ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/aims-and-scop-page/aims-and-scop-page.component.html":
+/*!**********************************************************************!*\
+  !*** ./src/app/aims-and-scop-page/aims-and-scop-page.component.html ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p><b>«Волинський благовісник» (VB)</b> покликаний стати платформою для обміну наукових напрацювань між наукою та богослов’ям, забезпечуючи взаємну інтеграцію та інкорпорацію.</p>\n<p>Матеріали <b>«Волинського благовісника»</b> висвітлюють динаміку наукових досліджень у сфері богослів’я, літургіки, аполегетики, біблеїстики й археології, церковної історії та права, антропології, сакрального мистецтва, питань релігійної етики та проблем суспільно-соціальної площини.</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/aims-and-scop-page/aims-and-scop-page.component.ts":
+/*!********************************************************************!*\
+  !*** ./src/app/aims-and-scop-page/aims-and-scop-page.component.ts ***!
+  \********************************************************************/
+/*! exports provided: AimsAndScopPageComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AimsAndScopPageComponent", function() { return AimsAndScopPageComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var AimsAndScopPageComponent = /** @class */ (function () {
+    function AimsAndScopPageComponent() {
+    }
+    AimsAndScopPageComponent.prototype.ngOnInit = function () {
+    };
+    AimsAndScopPageComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-aims-and-scop-page',
+            template: __webpack_require__(/*! ./aims-and-scop-page.component.html */ "./src/app/aims-and-scop-page/aims-and-scop-page.component.html"),
+            styles: [__webpack_require__(/*! ./aims-and-scop-page.component.css */ "./src/app/aims-and-scop-page/aims-and-scop-page.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], AimsAndScopPageComponent);
+    return AimsAndScopPageComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/app-routing.module.ts":
 /*!***************************************!*\
   !*** ./src/app/app-routing.module.ts ***!
@@ -219,12 +282,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _article_page_article_page_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./article-page/article-page.component */ "./src/app/article-page/article-page.component.ts");
 /* harmony import */ var _about_article_page_about_article_page_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./about-article-page/about-article-page.component */ "./src/app/about-article-page/about-article-page.component.ts");
 /* harmony import */ var _en_about_article_page_en_about_article_page_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./en-about-article-page/en-about-article-page.component */ "./src/app/en-about-article-page/en-about-article-page.component.ts");
+/* harmony import */ var _aims_and_scop_page_aims_and_scop_page_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./aims-and-scop-page/aims-and-scop-page.component */ "./src/app/aims-and-scop-page/aims-and-scop-page.component.ts");
+/* harmony import */ var _en_aims_and_scop_page_en_aims_and_scop_page_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./en-aims-and-scop-page/en-aims-and-scop-page.component */ "./src/app/en-aims-and-scop-page/en-aims-and-scop-page.component.ts");
+/* harmony import */ var _open_access_statement_page_open_access_statement_page_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./open-access-statement-page/open-access-statement-page.component */ "./src/app/open-access-statement-page/open-access-statement-page.component.ts");
+/* harmony import */ var _en_open_access_statement_page_en_open_access_statement_page_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./en-open-access-statement-page/en-open-access-statement-page.component */ "./src/app/en-open-access-statement-page/en-open-access-statement-page.component.ts");
+/* harmony import */ var _archiving_page_archiving_page_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./archiving-page/archiving-page.component */ "./src/app/archiving-page/archiving-page.component.ts");
+/* harmony import */ var _en_archiving_page_en_archiving_page_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./en-archiving-page/en-archiving-page.component */ "./src/app/en-archiving-page/en-archiving-page.component.ts");
+/* harmony import */ var _plagiarism_policy_page_plagiarism_policy_page_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./plagiarism-policy-page/plagiarism-policy-page.component */ "./src/app/plagiarism-policy-page/plagiarism-policy-page.component.ts");
+/* harmony import */ var _en_plagiarism_policy_page_en_plagiarism_policy_page_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./en-plagiarism-policy-page/en-plagiarism-policy-page.component */ "./src/app/en-plagiarism-policy-page/en-plagiarism-policy-page.component.ts");
+/* harmony import */ var _review_policy_page_review_policy_page_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./review-policy-page/review-policy-page.component */ "./src/app/review-policy-page/review-policy-page.component.ts");
+/* harmony import */ var _en_review_policy_page_en_review_policy_page_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./en-review-policy-page/en-review-policy-page.component */ "./src/app/en-review-policy-page/en-review-policy-page.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -264,22 +347,32 @@ var routes = [
             { path: 'tom/:tom/article/:id', component: _article_page_article_page_component__WEBPACK_IMPORTED_MODULE_23__["ArticlePageComponent"] }
         ] },
     { path: 'ua', component: _shared_layouts_main_layout_main_layout_component__WEBPACK_IMPORTED_MODULE_6__["MainLayoutComponent"], children: [
-            { path: 'about', component: _about_page_about_page_component__WEBPACK_IMPORTED_MODULE_7__["AboutPageComponent"] },
+            { path: 'general-information', component: _about_page_about_page_component__WEBPACK_IMPORTED_MODULE_7__["AboutPageComponent"] },
             { path: 'editorial-board', component: _editorial_board_page_editorial_board_page_component__WEBPACK_IMPORTED_MODULE_9__["EditorialBoardPageComponent"] },
             { path: 'for-authors', component: _for_authors_page_for_authors_page_component__WEBPACK_IMPORTED_MODULE_10__["ForAuthorsPageComponent"] },
+            { path: 'review-policy', component: _review_policy_page_review_policy_page_component__WEBPACK_IMPORTED_MODULE_34__["ReviewPolicyPageComponent"] },
             { path: 'journal-numbers', component: _journal_numbers_page_journal_numbers_page_component__WEBPACK_IMPORTED_MODULE_11__["JournalNumbersPageComponent"] },
             { path: 'reviewing', component: _reviewing_page_reviewing_page_component__WEBPACK_IMPORTED_MODULE_12__["ReviewingPageComponent"] },
+            { path: 'aims-and-scopes', component: _aims_and_scop_page_aims_and_scop_page_component__WEBPACK_IMPORTED_MODULE_26__["AimsAndScopPageComponent"] },
+            { path: 'open-access-statement', component: _open_access_statement_page_open_access_statement_page_component__WEBPACK_IMPORTED_MODULE_28__["OpenAccessStatementPageComponent"] },
+            { path: 'archiving', component: _archiving_page_archiving_page_component__WEBPACK_IMPORTED_MODULE_30__["ArchivingPageComponent"] },
+            { path: 'plagiarism-policy', component: _plagiarism_policy_page_plagiarism_policy_page_component__WEBPACK_IMPORTED_MODULE_32__["PlagiarismPolicyPageComponent"] },
+            { path: ':id', component: _about_article_page_about_article_page_component__WEBPACK_IMPORTED_MODULE_24__["AboutArticlePageComponent"] },
             { path: '', component: _main_page_main_page_component__WEBPACK_IMPORTED_MODULE_8__["MainPageComponent"] },
-            { path: ':id', component: _about_article_page_about_article_page_component__WEBPACK_IMPORTED_MODULE_24__["AboutArticlePageComponent"] }
         ] },
     { path: '', component: _shared_layouts_en_main_layout_en_main_layout_component__WEBPACK_IMPORTED_MODULE_13__["EnMainLayoutComponent"], children: [
-            { path: 'about', component: _en_about_page_en_about_page_component__WEBPACK_IMPORTED_MODULE_14__["EnAboutPageComponent"] },
+            { path: 'general-information', component: _en_about_page_en_about_page_component__WEBPACK_IMPORTED_MODULE_14__["EnAboutPageComponent"] },
             { path: 'editorial-board', component: _en_editorial_board_page_en_editorial_board_page_component__WEBPACK_IMPORTED_MODULE_15__["EnEditorialBoardPageComponent"] },
             { path: 'for-authors', component: _en_for_authors_page_en_for_authors_page_component__WEBPACK_IMPORTED_MODULE_16__["EnForAuthorsPageComponent"] },
+            { path: 'review-policy', component: _en_review_policy_page_en_review_policy_page_component__WEBPACK_IMPORTED_MODULE_35__["EnReviewPolicyPageComponent"] },
             { path: 'journal-numbers', component: _en_journal_numbers_page_en_journal_numbers_page_component__WEBPACK_IMPORTED_MODULE_17__["EnJournalNumbersPageComponent"] },
             { path: 'reviewing', component: _en_reviewing_page_en_reviewing_page_component__WEBPACK_IMPORTED_MODULE_18__["EnReviewingPageComponent"] },
-            { path: '', component: _en_main_page_en_main_page_component__WEBPACK_IMPORTED_MODULE_19__["EnMainPageComponent"] },
-            { path: ':id', component: _en_about_article_page_en_about_article_page_component__WEBPACK_IMPORTED_MODULE_25__["EnAboutArticlePageComponent"] }
+            { path: 'aims-and-scopes', component: _en_aims_and_scop_page_en_aims_and_scop_page_component__WEBPACK_IMPORTED_MODULE_27__["EnAimsAndScopPageComponent"] },
+            { path: 'open-access-statement', component: _en_open_access_statement_page_en_open_access_statement_page_component__WEBPACK_IMPORTED_MODULE_29__["EnOpenAccessStatementPageComponent"] },
+            { path: 'archiving', component: _en_archiving_page_en_archiving_page_component__WEBPACK_IMPORTED_MODULE_31__["EnArchivingPageComponent"] },
+            { path: 'plagiarism-policy', component: _en_plagiarism_policy_page_en_plagiarism_policy_page_component__WEBPACK_IMPORTED_MODULE_33__["EnPlagiarismPolicyPageComponent"] },
+            { path: ':id', component: _en_about_article_page_en_about_article_page_component__WEBPACK_IMPORTED_MODULE_25__["EnAboutArticlePageComponent"] },
+            { path: '', component: _en_main_page_en_main_page_component__WEBPACK_IMPORTED_MODULE_19__["EnMainPageComponent"] }
         ] }
 ];
 var AppRoutingModule = /** @class */ (function () {
@@ -416,12 +509,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _en_about_article_page_en_about_article_page_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./en-about-article-page/en-about-article-page.component */ "./src/app/en-about-article-page/en-about-article-page.component.ts");
 /* harmony import */ var _search_en_pipe__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./search-en.pipe */ "./src/app/search-en.pipe.ts");
 /* harmony import */ var _safeHtml_pipe__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./safeHtml.pipe */ "./src/app/safeHtml.pipe.ts");
+/* harmony import */ var _aims_and_scop_page_aims_and_scop_page_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./aims-and-scop-page/aims-and-scop-page.component */ "./src/app/aims-and-scop-page/aims-and-scop-page.component.ts");
+/* harmony import */ var _en_aims_and_scop_page_en_aims_and_scop_page_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./en-aims-and-scop-page/en-aims-and-scop-page.component */ "./src/app/en-aims-and-scop-page/en-aims-and-scop-page.component.ts");
+/* harmony import */ var _open_access_statement_page_open_access_statement_page_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./open-access-statement-page/open-access-statement-page.component */ "./src/app/open-access-statement-page/open-access-statement-page.component.ts");
+/* harmony import */ var _en_open_access_statement_page_en_open_access_statement_page_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./en-open-access-statement-page/en-open-access-statement-page.component */ "./src/app/en-open-access-statement-page/en-open-access-statement-page.component.ts");
+/* harmony import */ var _archiving_page_archiving_page_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./archiving-page/archiving-page.component */ "./src/app/archiving-page/archiving-page.component.ts");
+/* harmony import */ var _en_archiving_page_en_archiving_page_component__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./en-archiving-page/en-archiving-page.component */ "./src/app/en-archiving-page/en-archiving-page.component.ts");
+/* harmony import */ var _plagiarism_policy_page_plagiarism_policy_page_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./plagiarism-policy-page/plagiarism-policy-page.component */ "./src/app/plagiarism-policy-page/plagiarism-policy-page.component.ts");
+/* harmony import */ var _en_plagiarism_policy_page_en_plagiarism_policy_page_component__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./en-plagiarism-policy-page/en-plagiarism-policy-page.component */ "./src/app/en-plagiarism-policy-page/en-plagiarism-policy-page.component.ts");
+/* harmony import */ var _review_policy_page_review_policy_page_component__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./review-policy-page/review-policy-page.component */ "./src/app/review-policy-page/review-policy-page.component.ts");
+/* harmony import */ var _en_review_policy_page_en_review_policy_page_component__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./en-review-policy-page/en-review-policy-page.component */ "./src/app/en-review-policy-page/en-review-policy-page.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -487,7 +600,17 @@ var AppModule = /** @class */ (function () {
                 _about_article_page_about_article_page_component__WEBPACK_IMPORTED_MODULE_29__["AboutArticlePageComponent"],
                 _en_about_article_page_en_about_article_page_component__WEBPACK_IMPORTED_MODULE_30__["EnAboutArticlePageComponent"],
                 _search_en_pipe__WEBPACK_IMPORTED_MODULE_31__["SearchEnPipe"],
-                _safeHtml_pipe__WEBPACK_IMPORTED_MODULE_32__["SafeHtmlPipe"]
+                _safeHtml_pipe__WEBPACK_IMPORTED_MODULE_32__["SafeHtmlPipe"],
+                _aims_and_scop_page_aims_and_scop_page_component__WEBPACK_IMPORTED_MODULE_33__["AimsAndScopPageComponent"],
+                _en_aims_and_scop_page_en_aims_and_scop_page_component__WEBPACK_IMPORTED_MODULE_34__["EnAimsAndScopPageComponent"],
+                _open_access_statement_page_open_access_statement_page_component__WEBPACK_IMPORTED_MODULE_35__["OpenAccessStatementPageComponent"],
+                _en_open_access_statement_page_en_open_access_statement_page_component__WEBPACK_IMPORTED_MODULE_36__["EnOpenAccessStatementPageComponent"],
+                _archiving_page_archiving_page_component__WEBPACK_IMPORTED_MODULE_37__["ArchivingPageComponent"],
+                _en_archiving_page_en_archiving_page_component__WEBPACK_IMPORTED_MODULE_38__["EnArchivingPageComponent"],
+                _plagiarism_policy_page_plagiarism_policy_page_component__WEBPACK_IMPORTED_MODULE_39__["PlagiarismPolicyPageComponent"],
+                _en_plagiarism_policy_page_en_plagiarism_policy_page_component__WEBPACK_IMPORTED_MODULE_40__["EnPlagiarismPolicyPageComponent"],
+                _review_policy_page_review_policy_page_component__WEBPACK_IMPORTED_MODULE_41__["ReviewPolicyPageComponent"],
+                _en_review_policy_page_en_review_policy_page_component__WEBPACK_IMPORTED_MODULE_42__["EnReviewPolicyPageComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -505,6 +628,69 @@ var AppModule = /** @class */ (function () {
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/archiving-page/archiving-page.component.css":
+/*!*************************************************************!*\
+  !*** ./src/app/archiving-page/archiving-page.component.css ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/archiving-page/archiving-page.component.html":
+/*!**************************************************************!*\
+  !*** ./src/app/archiving-page/archiving-page.component.html ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>Журнал використовує систему розподіленого архівного зберігання опублікованого матеріалу в численних бібліотеках та інформаційних центрах.</p>\n<p>Крім того, всі файли зберігаються в Національній бібліотеці України ім. Вернадського (м. Київ, Україна).</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/archiving-page/archiving-page.component.ts":
+/*!************************************************************!*\
+  !*** ./src/app/archiving-page/archiving-page.component.ts ***!
+  \************************************************************/
+/*! exports provided: ArchivingPageComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArchivingPageComponent", function() { return ArchivingPageComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ArchivingPageComponent = /** @class */ (function () {
+    function ArchivingPageComponent() {
+    }
+    ArchivingPageComponent.prototype.ngOnInit = function () {
+    };
+    ArchivingPageComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-archiving-page',
+            template: __webpack_require__(/*! ./archiving-page.component.html */ "./src/app/archiving-page/archiving-page.component.html"),
+            styles: [__webpack_require__(/*! ./archiving-page.component.css */ "./src/app/archiving-page/archiving-page.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ArchivingPageComponent);
+    return ArchivingPageComponent;
 }());
 
 
@@ -934,6 +1120,132 @@ var EnAboutPageComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/en-aims-and-scop-page/en-aims-and-scop-page.component.css":
+/*!***************************************************************************!*\
+  !*** ./src/app/en-aims-and-scop-page/en-aims-and-scop-page.component.css ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/en-aims-and-scop-page/en-aims-and-scop-page.component.html":
+/*!****************************************************************************!*\
+  !*** ./src/app/en-aims-and-scop-page/en-aims-and-scop-page.component.html ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p><b>VB</b> is intended to become a platform for the exchange of scientific achievements between science and theology, providing mutual integration and incorporation.</p>\n<p>Materials of <b>VB</b> cover the dynamics of scientific research in the fields of theology, liturgy, apolegetics, biblical and archeology, church history and law, anthropology, sacral art, issues of religious ethics and social problems.</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/en-aims-and-scop-page/en-aims-and-scop-page.component.ts":
+/*!**************************************************************************!*\
+  !*** ./src/app/en-aims-and-scop-page/en-aims-and-scop-page.component.ts ***!
+  \**************************************************************************/
+/*! exports provided: EnAimsAndScopPageComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EnAimsAndScopPageComponent", function() { return EnAimsAndScopPageComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var EnAimsAndScopPageComponent = /** @class */ (function () {
+    function EnAimsAndScopPageComponent() {
+    }
+    EnAimsAndScopPageComponent.prototype.ngOnInit = function () {
+    };
+    EnAimsAndScopPageComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-en-aims-and-scop-page',
+            template: __webpack_require__(/*! ./en-aims-and-scop-page.component.html */ "./src/app/en-aims-and-scop-page/en-aims-and-scop-page.component.html"),
+            styles: [__webpack_require__(/*! ./en-aims-and-scop-page.component.css */ "./src/app/en-aims-and-scop-page/en-aims-and-scop-page.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], EnAimsAndScopPageComponent);
+    return EnAimsAndScopPageComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/en-archiving-page/en-archiving-page.component.css":
+/*!*******************************************************************!*\
+  !*** ./src/app/en-archiving-page/en-archiving-page.component.css ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/en-archiving-page/en-archiving-page.component.html":
+/*!********************************************************************!*\
+  !*** ./src/app/en-archiving-page/en-archiving-page.component.html ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>The journal uses system for distributed archival storage of published content in numerous libraries and information centers.</p>\n<p>In addition, all files are stored in the Vernadsky National Library of Ukraine (Kyiv, Ukraine).</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/en-archiving-page/en-archiving-page.component.ts":
+/*!******************************************************************!*\
+  !*** ./src/app/en-archiving-page/en-archiving-page.component.ts ***!
+  \******************************************************************/
+/*! exports provided: EnArchivingPageComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EnArchivingPageComponent", function() { return EnArchivingPageComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var EnArchivingPageComponent = /** @class */ (function () {
+    function EnArchivingPageComponent() {
+    }
+    EnArchivingPageComponent.prototype.ngOnInit = function () {
+    };
+    EnArchivingPageComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-en-archiving-page',
+            template: __webpack_require__(/*! ./en-archiving-page.component.html */ "./src/app/en-archiving-page/en-archiving-page.component.html"),
+            styles: [__webpack_require__(/*! ./en-archiving-page.component.css */ "./src/app/en-archiving-page/en-archiving-page.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], EnArchivingPageComponent);
+    return EnArchivingPageComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/en-editorial-board-page/en-editorial-board-page.component.css":
 /*!*******************************************************************************!*\
   !*** ./src/app/en-editorial-board-page/en-editorial-board-page.component.css ***!
@@ -1025,7 +1337,7 @@ module.exports = "ul li{\n  display: list-item;\n  list-style-type: disc;\n  col
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p style=\"text-align: center\"><b>Dear colleagues!</b></p>\n<p>We invites you to submit a scientific article to the annual theological and historical scientific journal of Volyn Orthodox Theological Acacdemy <b>«VB»</b>(«Volynskyi Blahovisnyk»).</p>\n<p style=\"text-align: center\"><b>Requirements for the registration of materials</b></p>\n<p>The manuscript must be submitted to the address of the editorial board electronically in the <i>.doc</i> version of <i>Word 1997–2007</i>  and in the printed version, signed up by the author; typeface – <i>Times New Roman</i>; font size –14 with the interval of 1.5; the volume of the article – not less than 12 pages in A4 format (<i>the total article should contain not less than 25 000 characters with spaces</i>); the text should not contain forced hyphenation.</p>\n<p>The sequence of structural elements of the article: in the upper right corner - the author's name and surname, scientific degree, position, full name of the educational (scientific) institution in Ukrainian and English; below in the center – the title of the article; lower in the center – the abstract of the article and the keywords in Ukrainian and English (<i>the abstract must contain not less than 1 800 characters with spaces, it summarizes the current relevance of the article, its purpose, content, conclusions and prospects for further research</i>).</p>\n<b>The article should contain the following elements:</b>\n<ul>\n  <li><span>formulation of a research problem and its significance;</span></li>\n  <li><span>analysis of the research into this problem;</span></li>\n  <li><span>the goal and specific tasks of the article;</span></li>\n  <li><span>statement regarding the basic material of the research and the justification of the results obtained;</span></li>\n  <li><span>conclusions and prospects for further research.</span></li>\n</ul>\n<p><i>Bibliographic references</i> in the text to the source should be accompanied by underline references attached as follows: at the end of the sentence, which uses a quote, facts, dates, etc., the link number is highlighted by the corresponding digits, and at the bottom of the page under the line the source is given with the same number.</p>\n<p>At the end of the article the list of sources and literature is given, issued in accordance with State Standard of Ukraine 8302: 2015 «Information and documentation. Bibliographic links. General terms and rules of drafting».</p>\n<p>The text should be edited and verified, surnames, other proper names, and terms should be verified and unified. It is advisable to avoid abbreviations, and if necessary, decode them.</p>\n<p>The editorial board is not responsible for the scientific content of the articles and the mistakes made by the authors and undertakes to inform the participants about the results of consideration of applications and materials in due time.</p>\n<p>Reports are accepted  by e-mail at <ins>nauka@vpba.org</ins></p>\n"
+module.exports = "<p style=\"text-align: center\"><b>Dear colleagues!</b></p>\n<p>We invites you to submit a scientific article to the annual theological and historical scientific journal of Volyn Orthodox Theological Acacdemy <b>«VB»</b>(«Volynskyi Blahovisnyk»).</p>\n<p style=\"text-align: center\"><b>Requirements for the registration of materials</b></p>\n<p>The manuscript must be submitted to the address of the editorial board electronically in the <i>.doc</i> version of <i>Word 1997–2007</i>  and in the printed version, signed up by the author; typeface – <i>Times New Roman</i>; font size –14 with the interval of 1.5; the volume of the article – not less than 12 pages in A4 format (<i>the total article should contain not less than 25 000 characters with spaces</i>); the text should not contain forced hyphenation.</p>\n<p>The sequence of structural elements of the article: in the upper right corner - the author's name and surname, scientific degree, position, full name of the educational (scientific) institution in Ukrainian and English; below in the center – the title of the article; lower in the center – the abstract of the article and the keywords in Ukrainian and English (<i>the abstract must contain not less than 1 800 characters with spaces, it summarizes the current relevance of the article, its purpose, content, conclusions and prospects for further research</i>).</p>\n<b>The article should contain the following elements:</b>\n<ul>\n  <li><span>formulation of a research problem and its significance;</span></li>\n  <li><span>analysis of the research into this problem;</span></li>\n  <li><span>the goal and specific tasks of the article;</span></li>\n  <li><span>statement regarding the basic material of the research and the justification of the results obtained;</span></li>\n  <li><span>conclusions and prospects for further research.</span></li>\n</ul>\n<p><i>Bibliographic references</i> in the text to the source should be accompanied by underline references attached as follows: at the end of the sentence, which uses a quote, facts, dates, etc., the link number is highlighted by the corresponding digits, and at the bottom of the page under the line the source is given with the same number.</p>\n<p>At the end of the article the list of sources and literature is given, issued in accordance with State Standard of Ukraine 8302: 2015 «Information and documentation. Bibliographic links. General terms and rules of drafting».</p>\n<p>The text should be edited and verified, surnames, other proper names, and terms should be verified and unified. It is advisable to avoid abbreviations, and if necessary, decode them.</p>\n<p>The editorial board is not responsible for the scientific content of the articles and the mistakes made by the authors and undertakes to inform the participants about the results of consideration of applications and materials in due time.</p>\n<p>Reports are accepted  by e-mail at <ins>vb@vpba.edu.ua</ins></p>\n<p style=\"text-align: center\"><b>Payment for publication</b></p>\n<p>Publications are made on a free basis after the approval of the article by members of the editorial board. If the author wishes to have his article reviewed out of line, you must pay  200 $.</p>\n"
 
 /***/ }),
 
@@ -1183,7 +1495,7 @@ module.exports = "ul li{\n  display: list-item;\n  list-style-type: disc;\n  col
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"main-img hide-on-small-only\"></div>\n<div class=\"main-text\">\n  <p><i>Founded:</i>2013</p>\n  <p><i>Founder:</i> Volyn Orthodox Theological Academy of the Ukrainian Orthodox Church of Kyiv Patriarchate</p>\n  <p><i>Registered:  Ministry of Justice of Ukraine:</i>\n    Certificate КВ №22844–12744 ПР dated August 7, 2017</p>\n  <p><i>Annual periodical:</i> </p>\n  <p><i>Languages:</i> multilingual</p>\n  <p>ISSN 2519–4348 (Print)</p>\n  <i>Indexed and listed in:</i>\n  <ul>\n    <li><a href=\"https://scholar.google.com.ua/citations?user=vi1jLn4AAAAJ&hl=uk\">Google Scholar</a></li>\n    <li><a href=\"http://www.irbis-nbuv.gov.ua/cgi-bin/irbis_nbuv/cgiirbis_64.exe?Z21ID=&I21DBN=UJRN&P21DBN=UJRN&S21STN=1&S21REF=10&S21FMT=juu_all&C21COM=S&S21CNR=20&S21P01=0&S21P02=0&S21P03=I=&S21COLORTERMS=0&S21STR=%D0%96101428\">NBUV</a></li>\n  </ul>\n  <p>Readers have the opportunity to view the published scientific articles in the VB on the website of the journal\n    http: vb.vpba.edu.ua under the heading \"Journal numbers\", as well as to purchase a printed version of the journal\n    in the premises of the Volyn Orthodox Theological Academy (Lutsk, Hradnyi St. Outline, 5), or order by writing\n    to an e-mail: <ins>vb@vpba.edu.ua</ins></p>\n  <div class=\"adress\">\n    <p><i>Editorial Address:</i></p>\n    <p><b>Volyn Orthodox Theological Academy</b><br/>\n      Lutsk, Hradnyi uzviz, 5, Volyn region, Ukraine, 43025\n    </p>\n    <p><i>Web:</i> http://vb.vpba.edu.ua</p>\n    <p><i>Email: </i> <ins>vb@vpba.edu.ua</ins></p>\n    <p><i>Tel.:</i> (0332) 723212,  (0332) 726072</p>\n  </div>\n</div>\n"
+module.exports = "<div class=\"main-img hide-on-small-only\"></div>\n<div class=\"main-text\">\n  <p><i>Founded:</i>2013</p>\n  <p><i>Founder:</i> Volyn Orthodox Theological Academy of the Ukrainian Orthodox Church of Kyiv Patriarchate</p>\n  <p><i>Registered:  Ministry of Justice of Ukraine:</i>\n    Certificate КВ №22844–12744 ПР dated August 7, 2017</p>\n  <p><i>Annual periodical</i> </p>\n  <p><i>Languages:</i> multilingual</p>\n  <p>ISSN 2519–4348 (Print)</p>\n  <i>Indexed and listed in:</i>\n  <ul>\n    <li><a href=\"https://scholar.google.com.ua/citations?user=vi1jLn4AAAAJ&hl=uk\"><ins>Google Scholar</ins></a></li>\n    <li><a href=\"http://www.irbis-nbuv.gov.ua/cgi-bin/irbis_nbuv/cgiirbis_64.exe?Z21ID=&I21DBN=UJRN&P21DBN=UJRN&S21STN=1&S21REF=10&S21FMT=juu_all&C21COM=S&S21CNR=20&S21P01=0&S21P02=0&S21P03=I=&S21COLORTERMS=0&S21STR=%D0%96101428\"><ins>NBUV</ins></a></li>\n  </ul>\n  <p>Readers have the opportunity to view the published scientific articles in the VB on the website of the journal\n    http: vb.vpba.edu.ua under the heading \"Journal numbers\", as well as to purchase a printed version of the journal\n    in the premises of the Volyn Orthodox Theological Academy (Lutsk, Hradnyi St. Outline, 5), or order by writing\n    to an e-mail: <ins>vb@vpba.edu.ua</ins></p>\n  <div class=\"adress\">\n    <p><i>Editorial Address:</i></p>\n    <p><b>Volyn Orthodox Theological Academy</b><br/>\n      Lutsk, Hradnyi uzviz, 5, Volyn region, Ukraine, 43025\n    </p>\n    <p><i>Web:</i> http://vb.vpba.edu.ua</p>\n    <p><i>Email: </i> <ins>vb@vpba.edu.ua</ins></p>\n    <p><i>Tel.:</i> (0332) 723212,  (0332) 726072</p>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -1222,6 +1534,195 @@ var EnMainPageComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], EnMainPageComponent);
     return EnMainPageComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/en-open-access-statement-page/en-open-access-statement-page.component.css":
+/*!*******************************************************************************************!*\
+  !*** ./src/app/en-open-access-statement-page/en-open-access-statement-page.component.css ***!
+  \*******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".access-image {\n  height: 90px;\n  width: 250px;\n  margin: 0 auto;\n  background-image: url('/assets/images/open.png');\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center center;\n}\n"
+
+/***/ }),
+
+/***/ "./src/app/en-open-access-statement-page/en-open-access-statement-page.component.html":
+/*!********************************************************************************************!*\
+  !*** ./src/app/en-open-access-statement-page/en-open-access-statement-page.component.html ***!
+  \********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p><b>VB</b> follows the policy of the open access (Open Access). All the articles are located permanently and free of charge at once after the issue’s publication.</p>\n<p>The full textual access to the Journal’s scientific articles in the real time mode  is presented in the official site of the Journal in the Part <a routerLink=\"/journal-numbers\">«Journal numbers»</a>.</p>\n<p>The license policy of the Journal is compatible with the most number of policies of the open access and archiving of materials.</p>\n<p><b>VB</b> works on the license  Creative Commons Attribution International CC-BY. It gives an opportunity to read, to load, to copy out, to expand, to print, to search, to quote or to refer to the full text of the article in this Journal.</p>\n<div class=\"access-image\"></div>\n"
+
+/***/ }),
+
+/***/ "./src/app/en-open-access-statement-page/en-open-access-statement-page.component.ts":
+/*!******************************************************************************************!*\
+  !*** ./src/app/en-open-access-statement-page/en-open-access-statement-page.component.ts ***!
+  \******************************************************************************************/
+/*! exports provided: EnOpenAccessStatementPageComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EnOpenAccessStatementPageComponent", function() { return EnOpenAccessStatementPageComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var EnOpenAccessStatementPageComponent = /** @class */ (function () {
+    function EnOpenAccessStatementPageComponent() {
+    }
+    EnOpenAccessStatementPageComponent.prototype.ngOnInit = function () {
+    };
+    EnOpenAccessStatementPageComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-en-open-access-statement-page',
+            template: __webpack_require__(/*! ./en-open-access-statement-page.component.html */ "./src/app/en-open-access-statement-page/en-open-access-statement-page.component.html"),
+            styles: [__webpack_require__(/*! ./en-open-access-statement-page.component.css */ "./src/app/en-open-access-statement-page/en-open-access-statement-page.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], EnOpenAccessStatementPageComponent);
+    return EnOpenAccessStatementPageComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/en-plagiarism-policy-page/en-plagiarism-policy-page.component.css":
+/*!***********************************************************************************!*\
+  !*** ./src/app/en-plagiarism-policy-page/en-plagiarism-policy-page.component.css ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/en-plagiarism-policy-page/en-plagiarism-policy-page.component.html":
+/*!************************************************************************************!*\
+  !*** ./src/app/en-plagiarism-policy-page/en-plagiarism-policy-page.component.html ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p><b>VB</b> takes only the original materials for publication, the articles, that  haven’t  been published before and haven’t  been presented for publication into another journal.</p>\n<p>The manuscripts, in which the plagiarism or the textual borrowings without the references to the original source are revealed, are rejected by the editorial board before the article’s publication in the Journal.</p>\n<p>For testing of plagiarism software is used: AntiPlagiarism.NET.</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/en-plagiarism-policy-page/en-plagiarism-policy-page.component.ts":
+/*!**********************************************************************************!*\
+  !*** ./src/app/en-plagiarism-policy-page/en-plagiarism-policy-page.component.ts ***!
+  \**********************************************************************************/
+/*! exports provided: EnPlagiarismPolicyPageComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EnPlagiarismPolicyPageComponent", function() { return EnPlagiarismPolicyPageComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var EnPlagiarismPolicyPageComponent = /** @class */ (function () {
+    function EnPlagiarismPolicyPageComponent() {
+    }
+    EnPlagiarismPolicyPageComponent.prototype.ngOnInit = function () {
+    };
+    EnPlagiarismPolicyPageComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-en-plagiarism-policy-page',
+            template: __webpack_require__(/*! ./en-plagiarism-policy-page.component.html */ "./src/app/en-plagiarism-policy-page/en-plagiarism-policy-page.component.html"),
+            styles: [__webpack_require__(/*! ./en-plagiarism-policy-page.component.css */ "./src/app/en-plagiarism-policy-page/en-plagiarism-policy-page.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], EnPlagiarismPolicyPageComponent);
+    return EnPlagiarismPolicyPageComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/en-review-policy-page/en-review-policy-page.component.css":
+/*!***************************************************************************!*\
+  !*** ./src/app/en-review-policy-page/en-review-policy-page.component.css ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "ul li{\n  display: list-item;\n  list-style-type: disc;\n  color: #e9711c;\n}\n\nul li span{\n  color: #505050;\n}\n\nul {\n  list-style-type: disc;\n  padding-left: 40px;\n  margin: 5px 0;\n}\n\n.list-review {\n  margin-left: 25px;\n}\n"
+
+/***/ }),
+
+/***/ "./src/app/en-review-policy-page/en-review-policy-page.component.html":
+/*!****************************************************************************!*\
+  !*** ./src/app/en-review-policy-page/en-review-policy-page.component.html ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>Manuscripts submitted to the editorial board are subjected to a double-blind review process:</p>\n<div class=\"list-review\">\n  <span>- the personal data of the author/authors are not revealed to the reviewer;</span><br/>\n  <span>- the personal data of the reviewer are not revealed to the author/authors.</span>\n</div>\n<p>The scientific articles, being sent to the publishing house, pass through the initial control of the completeness and  correctness of their formation and correspondence to <a routerLink=\"/ua/for-authors\">the Requirements for registration</a>, presented in the site.</p>\n<p>The Responsible Editor defines the correspondence of the article to the Journal profile and directs it to the reviewing of the expert, the doctor or the candidate of sciences, having the scientific specialization, which is close to the article by its theme.</p>\n<p>The reviewing term is defined by the Responsible Editor in each separate case, taking into account the creation of conditions for the maximally operative publication of the article.</p>\n<p>The following problems should be revealed in the review:</p>\n<ul>\n  <li><span>the correspondence of the article contents to the name of the declared theme;</span></li>\n  <li><span>the article correspondence to the modern achievements of the scientific- theoretical thought;</span></li>\n  <li><span>the accessibility of the article to the readers, whom it is relied upon, from the view of the language, style, material location, the presence of tables, diagrams, drawings, etc;</span></li>\n  <li><span>the practicability of the article publication, taking into account the present publications on this theme;</span></li>\n  <li><span>the definition of the positive positions and drawbacks of the article, corrections and additions to be entered by the author;</span></li>\n  <li><span>the absence of borrowings from the works of the other investigators without the proper reference to the latest ones;</span></li>\n  <li><span>the conclusion on the possibility of the manuscript publication in the Journal : “recommended”, “recommended, taking into account the correction of the drawbacks, defined by the reviewer” or “not recommended”.</span></li>\n</ul>\n<p>The reviews are certified, according to the order, established in the institution, where the reviewer is working.\n  The presence of the positive review is not the enough reason for the article’s publication. The final decision\n  on the practicability of the publication is accepted by the Editorial Board. The articles of the authors without\n  the scientific degree and postgraduates are accepted with the review of the scientific leader or the expert with\n  the scientific degree in the indicated branch of knowledge. After the Editorial Board’s adoption  of the decision\n  on the article’s admission to publication, the Responsible Secretary informs the author on that and states the term of publication.\n  The originals of reviews are kept in the Editorial Board and in the publishing house of the Scientific Journal <b>VB</b>.</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/en-review-policy-page/en-review-policy-page.component.ts":
+/*!**************************************************************************!*\
+  !*** ./src/app/en-review-policy-page/en-review-policy-page.component.ts ***!
+  \**************************************************************************/
+/*! exports provided: EnReviewPolicyPageComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EnReviewPolicyPageComponent", function() { return EnReviewPolicyPageComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var EnReviewPolicyPageComponent = /** @class */ (function () {
+    function EnReviewPolicyPageComponent() {
+    }
+    EnReviewPolicyPageComponent.prototype.ngOnInit = function () {
+    };
+    EnReviewPolicyPageComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-en-review-policy-page',
+            template: __webpack_require__(/*! ./en-review-policy-page.component.html */ "./src/app/en-review-policy-page/en-review-policy-page.component.html"),
+            styles: [__webpack_require__(/*! ./en-review-policy-page.component.css */ "./src/app/en-review-policy-page/en-review-policy-page.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], EnReviewPolicyPageComponent);
+    return EnReviewPolicyPageComponent;
 }());
 
 
@@ -1309,7 +1810,7 @@ module.exports = "ul li{\n    display: list-item;\n    list-style-type: disc;\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p style=\"text-align: center\"><b>Шановні колеги!</b></p>\n<p>Запрошуємо Вас подати свою наукову статтю в щорічний богословсько-історичний науковий журнал Волинської православної богословської академії <b>«Волинський благовісник»</b>.</p>\n<p style=\"text-align: center\"><b>Вимоги до оформлення матеріалів</b></p>\n<p>Статтю потрібно надсилати в електронному варіанті в режимі <i>.doc</i> версії <i>Word 1997–2007 рр.;</i> гарнітура – <i>Times New Roman</i>; кегель – 14 з інтервалом 1,5; обсяг статті – не менше 12 сторінок форматом А4 (<i>загалом стаття має містити не менше 25 000 знаків з пробілами</i>); у тексті не має бути примусових переносів.</p>\n<p>Послідовність структурних елементів статті: у правому верхньому куті – ім'я та прізвище автора, науковий ступінь, посада, повна назва навчального (наукового) закладу українською та англійською мовами; нижче по центру – назва статті; ще нижче по центру – анотація статті і ключові слова українською та англійською мовами (<i>анотація повинна містити не менше 1 800 знаків з пробілами, в ній коротко викладається актуальність статті, мета, вміст, висновки і перспективи подальших досліджень</i>).</p>\n<b>Стаття має містити такі положення:</b>\n<ul>\n    <li><span>постановка наукової проблеми та її значення;</span></li>\n    <li><span>аналіз досліджень цієї проблеми;</span></li>\n    <li><span>мета і завдання статті;</span></li>\n    <li><span>виклад основного матеріалу й обґрунтування отриманих результатів дослідження;</span></li>\n    <li><span>висновки та перспективи подальшого дослідження.</span></li>\n</ul>\n<p><i>Бібліографічні посилання</i> в тексті на джерела слід супроводжувати підстрочними посиланнями, які подаються таким чином: в кінці речення, в якому використовується цитата, факти, дати тощо вгорі позначається номер посилання відповідними цифрами, а внизу сторінки під рискою приводять під тим же номером джерело.</p>\n<p>В кінці статті подається список джерел та літератури, оформлений згідно з ДСТУ 8302:2015 «Інформація та документація. Бібліографічне посилання. Загальні положення та правила складання», а також <b>References</b> – список використаної літератури, оформлений за міжнародним бібліографічним стандартом: назви періодичних україно- та російськомовних видань (журналів, збірників та ін.) подають транслітерацією, в дужках – англійською мовою.</p>\n<p>Текст має бути відредагований і перевірений, прізвища та інші власні назви, а також терміни мають бути звірені й уніфіковані. Бажано уникати абревіатур, а в разі потреби – розшифровувати їх.</p>\n<p>Редакційна колегія залишає за собою право відхиляти матеріали у разі їх невідповідності науковому спрямуванню журналу чи наявності чисельних редакційно-стилістичних огріхів, а також у разі невчасної подачі.</p>\n<p>Електронні версії статей просимо надсилати на адресу: <ins>nauka@vpba.org</ins></p>\n<p></p>\n"
+module.exports = "<p style=\"text-align: center\"><b>Шановні колеги!</b></p>\n<p>Запрошуємо Вас подати свою наукову статтю в щорічний богословсько-історичний науковий журнал Волинської православної богословської академії <b>«Волинський благовісник»</b>.</p>\n<p style=\"text-align: center\"><b>Вимоги до оформлення матеріалів</b></p>\n<p>Статтю потрібно надсилати в електронному варіанті в режимі <i>.doc</i> версії <i>Word 1997–2007 рр.;</i> гарнітура – <i>Times New Roman</i>; кегель – 14 з інтервалом 1,5; обсяг статті – не менше 12 сторінок форматом А4 (<i>загалом стаття має містити не менше 25 000 знаків з пробілами</i>); у тексті не має бути примусових переносів.</p>\n<p>Послідовність структурних елементів статті: у правому верхньому куті – ім'я та прізвище автора, науковий ступінь, посада, повна назва навчального (наукового) закладу українською та англійською мовами; нижче по центру – назва статті; ще нижче по центру – анотація статті і ключові слова українською та англійською мовами (<i>анотація повинна містити не менше 1 800 знаків з пробілами, в ній коротко викладається актуальність статті, мета, вміст, висновки і перспективи подальших досліджень</i>).</p>\n<b>Стаття має містити такі положення:</b>\n<ul>\n    <li><span>постановка наукової проблеми та її значення;</span></li>\n    <li><span>аналіз досліджень цієї проблеми;</span></li>\n    <li><span>мета і завдання статті;</span></li>\n    <li><span>виклад основного матеріалу й обґрунтування отриманих результатів дослідження;</span></li>\n    <li><span>висновки та перспективи подальшого дослідження.</span></li>\n</ul>\n<p><i>Бібліографічні посилання</i> в тексті на джерела слід супроводжувати підстрочними посиланнями, які подаються таким чином: в кінці речення, в якому використовується цитата, факти, дати тощо вгорі позначається номер посилання відповідними цифрами, а внизу сторінки під рискою приводять під тим же номером джерело.</p>\n<p>В кінці статті подається список джерел та літератури, оформлений згідно з ДСТУ 8302:2015 «Інформація та документація. Бібліографічне посилання. Загальні положення та правила складання», а також <b>References</b> – список використаної літератури, оформлений за міжнародним бібліографічним стандартом: назви періодичних україно- та російськомовних видань (журналів, збірників та ін.) подають транслітерацією, в дужках – англійською мовою.</p>\n<p>Текст має бути відредагований і перевірений, прізвища та інші власні назви, а також терміни мають бути звірені й уніфіковані. Бажано уникати абревіатур, а в разі потреби – розшифровувати їх.</p>\n<p>Редакційна колегія залишає за собою право відхиляти матеріали у разі їх невідповідності науковому спрямуванню журналу чи наявності чисельних редакційно-стилістичних огріхів, а також у разі невчасної подачі.</p>\n<p>Електронні версії статей просимо надсилати на адресу: <ins>vb@vpba.edu.ua</ins></p>\n<p style=\"text-align: center\"><b>Оплата за публікацію</b></p>\n<p>Публікації здійснюються на безкоштовній основі після затвердження статті членами редакційної колегії. У разі, якщо автор забажає, щоб його статтю розглянули поза чергою, необхідно сплатити 200 $.</p>\n"
 
 /***/ }),
 
@@ -1607,6 +2108,195 @@ var MainPageComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], MainPageComponent);
     return MainPageComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/open-access-statement-page/open-access-statement-page.component.css":
+/*!*************************************************************************************!*\
+  !*** ./src/app/open-access-statement-page/open-access-statement-page.component.css ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".access-image {\n  height: 90px;\n  width: 250px;\n  margin: 0 auto;\n  background-image: url('/assets/images/open.png');\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center center;\n}\n"
+
+/***/ }),
+
+/***/ "./src/app/open-access-statement-page/open-access-statement-page.component.html":
+/*!**************************************************************************************!*\
+  !*** ./src/app/open-access-statement-page/open-access-statement-page.component.html ***!
+  \**************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>«Волинський благовісник» (VB)  дотримується політики відкритого доступу (Open Access). Усі статті розміщуються безстроково і безкоштовно відразу після виходу номера.</p>\n<p>Повнотекстовий доступ в режимі реального часу до наукових статей журналу представлений на офіційному сайті журналу у розділі <a routerLink=\"/ua/journal-numbers\">Номери журналу</a>.</p>\n<p>Ліцензійна політика журналу сумісна з переважною більшістю політик відкритого доступу та архівування матеріалів.</p>\n<p>Журнал працює за ліцензією Creative Commons Attribution International CC-BY. Це дозволяє читати, завантажувати,\n  копіювати, поширювати, друкувати, шукати, цитувати або посилатися на повний текст статті в цьому журналі.</p>\n<div class=\"access-image\"></div>\n"
+
+/***/ }),
+
+/***/ "./src/app/open-access-statement-page/open-access-statement-page.component.ts":
+/*!************************************************************************************!*\
+  !*** ./src/app/open-access-statement-page/open-access-statement-page.component.ts ***!
+  \************************************************************************************/
+/*! exports provided: OpenAccessStatementPageComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OpenAccessStatementPageComponent", function() { return OpenAccessStatementPageComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var OpenAccessStatementPageComponent = /** @class */ (function () {
+    function OpenAccessStatementPageComponent() {
+    }
+    OpenAccessStatementPageComponent.prototype.ngOnInit = function () {
+    };
+    OpenAccessStatementPageComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-open-access-statement-page',
+            template: __webpack_require__(/*! ./open-access-statement-page.component.html */ "./src/app/open-access-statement-page/open-access-statement-page.component.html"),
+            styles: [__webpack_require__(/*! ./open-access-statement-page.component.css */ "./src/app/open-access-statement-page/open-access-statement-page.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], OpenAccessStatementPageComponent);
+    return OpenAccessStatementPageComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/plagiarism-policy-page/plagiarism-policy-page.component.css":
+/*!*****************************************************************************!*\
+  !*** ./src/app/plagiarism-policy-page/plagiarism-policy-page.component.css ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/plagiarism-policy-page/plagiarism-policy-page.component.html":
+/*!******************************************************************************!*\
+  !*** ./src/app/plagiarism-policy-page/plagiarism-policy-page.component.html ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p><b>«Волинський благовісник» (VB)</b>  приймає до публікації тільки оригінальні матеріали, статті  та рецензії на книги, які не були опубліковані раніше і не подавалася для публікації в інший журнал.</p>\n<p>Рукописи, в яких виявили плагіат чи текстові запозичення без посилань на першоджерело, відхиляються редакційною колегією до опублікування статті у журналі.</p>\n<p>Для перевірки на плагіат використовується програмне забезпечення: AntiPlagiarism.NET.</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/plagiarism-policy-page/plagiarism-policy-page.component.ts":
+/*!****************************************************************************!*\
+  !*** ./src/app/plagiarism-policy-page/plagiarism-policy-page.component.ts ***!
+  \****************************************************************************/
+/*! exports provided: PlagiarismPolicyPageComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PlagiarismPolicyPageComponent", function() { return PlagiarismPolicyPageComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var PlagiarismPolicyPageComponent = /** @class */ (function () {
+    function PlagiarismPolicyPageComponent() {
+    }
+    PlagiarismPolicyPageComponent.prototype.ngOnInit = function () {
+    };
+    PlagiarismPolicyPageComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-plagiarism-policy-page',
+            template: __webpack_require__(/*! ./plagiarism-policy-page.component.html */ "./src/app/plagiarism-policy-page/plagiarism-policy-page.component.html"),
+            styles: [__webpack_require__(/*! ./plagiarism-policy-page.component.css */ "./src/app/plagiarism-policy-page/plagiarism-policy-page.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], PlagiarismPolicyPageComponent);
+    return PlagiarismPolicyPageComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/review-policy-page/review-policy-page.component.css":
+/*!*********************************************************************!*\
+  !*** ./src/app/review-policy-page/review-policy-page.component.css ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "ul li{\n  display: list-item;\n  list-style-type: disc;\n  color: #e9711c;\n}\n\nul li span{\n  color: #505050;\n}\n\nul {\n  list-style-type: disc;\n  padding-left: 40px;\n  margin: 5px 0;\n}\n\n.list-review {\n  margin-left: 25px;\n}\n"
+
+/***/ }),
+
+/***/ "./src/app/review-policy-page/review-policy-page.component.html":
+/*!**********************************************************************!*\
+  !*** ./src/app/review-policy-page/review-policy-page.component.html ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>Подані на розгляд редакційної колегії матеріали проходять процедуру подвійного «сліпого» рецензування:</p>\n<div class=\"list-review\">\n  <span>- рецензенту не розкриваються особисті дані автора/авторів;</span><br/>\n  <span>- автору/авторам не розкриваються особисті дані рецензента.</span>\n</div>\n<p>Наукові статті, які поступають в редакцію, проходять також первинний контроль щодо комплектності та правильності їх оформлення і відповідності до <a routerLink=\"/ua/for-authors\">Вимоги до оформлення</a>, викладених на сайті.</p>\n<p>Відповідальний редактор визначає відповідність статті профілю журналу і направляє її на рецензування фахівцю, доктору чи кандидату наук, що має близьку до теми статті наукову спеціалізацію.</p>\n<p>Терміни рецензування в кожному окремому випадку визначаються відповідальним редактором з урахуванням створення умов для максимально оперативної публікації статті.</p>\n<p>У рецензії висвітлюються наступні питання:</p>\n<ul>\n  <li><span>відповідність змісту статті заявленій у назві темі;</span></li>\n  <li><span>відповідність статті сучасним досягненням науково-теоретичної думки;</span></li>\n  <li><span>доступність статті читачам, на яких вона розрахована, з точки зору мови, стилю, розташування матеріалу, наочності таблиць, діаграм, малюнків тощо;</span></li>\n  <li><span>доцільність публікації статті з урахуванням наявних публікацій з теми;</span></li>\n  <li><span>визначення позитивних сторін і недоліків статті, виправлень та доповнень, що мають бути внесені автором;</span></li>\n  <li><span>відсутність запозичень з робіт інших дослідників без належного посилання на останніх;</span></li>\n  <li><span>висновок про можливість опублікування рукопису в журналі: \"рекомендується\", \"рекомендується з урахуванням\n    виправлення зазначених рецензентом недоліків\" або \"не рекомендується\".</span></li>\n</ul>\n<p>Рецензії завіряються відповідно до порядку, встановленого в установі, де працює рецензент.\n  Наявність позитивної рецензії не є достатньою підставою для публікації статті.\n  Остаточне рішення про доцільність публікації приймається редакційною колегією.\n  Статті авторів без наукового ступеня та аспірантів приймаються з рецензією наукового керівника або фахівця\n  з науковим ступенем у зазначеній галузі знання. Після прийняття редколегією рішення про допуск статті до\n  публікації відповідальний секретар інформує про це автора і вказує терміни публікації.\n  Оригінали рецензій зберігаються в редакційній колегії і редакції наукового журналу <b>«Волинський благовісник» (VB)</b>.</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/review-policy-page/review-policy-page.component.ts":
+/*!********************************************************************!*\
+  !*** ./src/app/review-policy-page/review-policy-page.component.ts ***!
+  \********************************************************************/
+/*! exports provided: ReviewPolicyPageComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ReviewPolicyPageComponent", function() { return ReviewPolicyPageComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ReviewPolicyPageComponent = /** @class */ (function () {
+    function ReviewPolicyPageComponent() {
+    }
+    ReviewPolicyPageComponent.prototype.ngOnInit = function () {
+    };
+    ReviewPolicyPageComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-review-policy-page',
+            template: __webpack_require__(/*! ./review-policy-page.component.html */ "./src/app/review-policy-page/review-policy-page.component.html"),
+            styles: [__webpack_require__(/*! ./review-policy-page.component.css */ "./src/app/review-policy-page/review-policy-page.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ReviewPolicyPageComponent);
+    return ReviewPolicyPageComponent;
 }());
 
 
@@ -2048,7 +2738,7 @@ var AuthLayoutComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".page-flexbox-wrapper {\n  display: flex;\n  min-height: 100vh;\n  flex-direction: column;\n}\n\nmain {\n  flex: 1 0 auto;\n  background-color: #f1f1f1;\n}\n\n.nav-extended {\n  background-color: #A32202;\n}\n\n.nav-extended .nav-wrapper {\n  min-height: 120px;\n  flex-direction: row;\n  justify-content: space-between;\n  padding-left: 20px;\n}\n\n.brand-gerb {\n  height: 80px;\n  width: 80px;\n  background-image: url('/assets/images/gerb.png');\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center center;\n  float:left;\n  margin-top: 20px;\n}\n\n.brand-disc {\n  font-size: 20px;\n  font-family: ArnoPro-Subhead;\n  line-height: 1.2;\n  color: white;\n  padding-top: 5px;\n}\n\n.brand-title {\n  font-size: 20px;\n  font-family: ArnoPro-SmbdSubhead;\n  line-height: 1.2;\n  text-transform: uppercase;\n  color: white;\n  border-bottom: 1px solid;\n}\n\n.brand-title-main {\n  font-size: 38px;\n}\n\n.brand-title-add {\n  font-size: 24px;\n}\n\n.nav-content{\n  min-height: 50px;\n  background-color:\t#DA7B03;\n  color: white;\n}\n\n.main-menu, .main-menu li, .main-menu li a {\n  min-height: 50px;\n  font-family: ArnoPro-Subhead;\n  font-size: 18px;\n  color: white;\n  text-align: center;\n}\n\n.row {\n  margin-bottom: 0;\n  display: flex;\n  justify-content: center;\n\n}\n\n.main-menu\n{\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n\n.text-info {\n  margin: 40px auto;\n  font-family: ArnoPro-SmText;\n  font-size: 18px;\n  color: #505050;\n  background-color: white;\n  padding: 40px;\n}\n\n.link-active {\n  border-bottom: 4px solid #b14a01;\n}\n\n.page-footer {\n  padding-top: 0;\n  background-color: #12172A;\n  font-family: ArnoPro-SmText;\n  font-size: 15px;\n\n}\n\n.container {\n  width: 90%;\n  max-width: initial;\n}\n\n.lang-block {\n  width: 40px;\n  height: 60px;\n\n\n}\n\n.lang {\n  display: flex;\n  height: 50%;\n  line-height: 1;\n  justify-content: center;\n  align-items: center;\n  border: 2px solid white;\n}\n\n.lang:first-child {\n  border-bottom: 1px solid white;\n}\n\n.lang:last-child {\n  border-top: 1px solid white;\n}\n\n.lang:hover {\n  background-color: #007398;\n  border: 2px solid #007398;\n}\n\n.sb-search {\n  position: absolute;\n  width: 0%;\n  min-width: 50px;\n  height: 50px;\n  right: 0;\n  overflow: hidden;\n  transition: width 0.3s;\n  -webkit-backface-visibility: hidden;\n}\n\n.sb-search-input {\n  position: absolute;\n  top: 0;\n  right: 0px;\n  border: none;\n  outline: none;\n  background: #DA7B03 !important;\n  width: 100%;\n  height: 50px !important;\n  margin: 0;\n  z-index: 10;\n  font-family: inherit;\n  font-size: 20px;\n  color: #2c3e50;\n  text-indent: 20px;\n\n}\n\ninput[type=\"search\"].sb-search-input {\n  -webkit-appearance: none;\n  -webkit-border-radius: 0;\n}\n\n.sb-search-input::-webkit-input-placeholder {\n  color: white;\n}\n\n.sb-search-input:-moz-placeholder {\n  color: white;\n}\n\n.sb-search-input::-moz-placeholder {\n  color: white;\n}\n\n.sb-search-input:-ms-input-placeholder {\n  color: white;\n}\n\n.sb-icon-search,\n.sb-search-submit  {\n  width: 50px;\n  height: 50px;\n  display: block;\n  position: absolute;\n  right: 0;\n  top: 0;\n  padding: 0;\n  margin: 0;\n  line-height: 50px;\n  text-align: center;\n  cursor: pointer;\n}\n\n.sb-search-submit {\n  background: #fff; /* IE needs this */\n  -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)\"; /* IE 8 */\n  filter: alpha(opacity=0); /* IE 5-7 */\n  opacity: 0;\n  color: transparent;\n  color:red;\n  border: none;\n  outline: none;\n  z-index: -1;\n}\n\n.sb-icon-search {\n  color: #fff;\n  background:  #0073a3;\n  z-index: 90;\n  font-size: 22px;\n  font-family: 'icomoon';\n  speak: none;\n  font-style: normal;\n  font-weight: normal;\n  font-variant: normal;\n  text-transform: none;\n  -webkit-font-smoothing: antialiased;\n}\n\n.sb-icon-search i {\n  line-height: 50px;\n  height: 50px;\n}\n\n.sb-icon-search:before {\n  content: \"\";\n}\n\n.sb-search.sb-search-open,\n.no-js .sb-search {\n  width: 100%;\n}\n\n.sb-search.sb-search-open .sb-icon-search,\n.no-js .sb-search .sb-icon-search {\n  background: #0073a3;\n  color: #fff;\n  z-index: 11;\n}\n\n.sb-search.sb-search-open .sb-search-submit,\n.no-js .sb-search .sb-search-submit {\n  /*    z-index: 90;*/\n}\n\n.wrap-search {\n  display: none;\n  position: relative;\n  width: 100%;\n  background-color: white;\n}\n\n.wrap-search ul {\n  margin: 0;\n}\n\n.wrap-search ul a{\n  color: #DA7B03;\n  font-family: ArnoPro-SmText;\n}\n\n.admin-link {\n  color: #DA7B03;\n  display: block;\n  float: left;\n  padding-right: 5px;\n}\n\n.admin-link i {\n  font-size: 16px;\n}\n\n#dropdown1 {\n  background-color: #f09934;\n  color: #f1f1f1;\n  top: -50px;\n}\n\n#dropdown1 li:hover {\n  background-color: #f1f1f1;\n}\n\n#dropdown1 li:hover a{\n  color: #f09934;\n}\n\n#arrow-drop-down {\n  line-height: 50px;\n  height: 50px;\n}\n"
+module.exports = ".page-flexbox-wrapper {\n  display: flex;\n  min-height: 100vh;\n  flex-direction: column;\n}\n\nmain {\n  flex: 1 0 auto;\n  background-color: #f1f1f1;\n}\n\n.nav-extended {\n  background-color: #A32202;\n}\n\n.nav-extended .nav-wrapper {\n  min-height: 120px;\n  flex-direction: row;\n  justify-content: space-between;\n}\n\n.brand-gerb {\n  height: 120px;\n  width: 125px;\n  background-image: url('/assets/images/gerb.png');\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center center;\n  float:left;\n}\n\n.brand-disc {\n  font-size: 20px;\n  font-family: ArnoPro-Subhead;\n  line-height: 1.2;\n  color: white;\n  padding-top: 5px;\n}\n\n.brand-title {\n  font-size: 20px;\n  font-family: ArnoPro-SmbdSubhead;\n  line-height: 1.2;\n  text-transform: uppercase;\n  color: white;\n  border-bottom: 1px solid;\n}\n\n.brand-title-main {\n  font-size: 38px;\n}\n\n.brand-title-add {\n  font-size: 24px;\n}\n\n.nav-content{\n  min-height: 50px;\n  background-color:\t#DA7B03;\n  color: white;\n}\n\n.main-menu, .main-menu li, .main-menu li a {\n  min-height: 50px;\n  font-family: ArnoPro-Subhead;\n  font-size: 18px;\n  color: white;\n  text-align: center;\n}\n\n.row {\n  margin-bottom: 0;\n  display: flex;\n  justify-content: center;\n\n}\n\n.main-menu\n{\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n\n.text-info {\n  margin: 40px auto;\n  font-family: ArnoPro-SmText;\n  font-size: 18px;\n  color: #505050;\n  background-color: white;\n  padding: 40px;\n}\n\n.link-active {\n  border-bottom: 4px solid #b14a01;\n}\n\n.page-footer {\n  padding-top: 0;\n  background-color: #12172A;\n  font-family: ArnoPro-SmText;\n  font-size: 15px;\n\n}\n\n.container {\n  width: 90%;\n  max-width: initial;\n}\n\n.lang-block {\n  width: 40px;\n  height: 60px;\n\n\n}\n\n.lang {\n  display: flex;\n  height: 50%;\n  line-height: 1;\n  justify-content: center;\n  align-items: center;\n  border: 2px solid white;\n}\n\n.lang:first-child {\n  border-bottom: 1px solid white;\n}\n\n.lang:last-child {\n  border-top: 1px solid white;\n}\n\n.lang:hover {\n  background-color: #0073a3;\n  border: 2px solid #0073a3;\n}\n\n.sb-search {\n  position: absolute;\n  width: 0%;\n  min-width: 50px;\n  height: 50px;\n  right: 0;\n  overflow: hidden;\n  transition: width 0.3s;\n  -webkit-backface-visibility: hidden;\n}\n\n.sb-search-input {\n  position: absolute;\n  top: 0;\n  right: 0px;\n  border: none;\n  outline: none;\n  background: #DA7B03 !important;\n  width: 100%;\n  height: 50px !important;\n  margin: 0;\n  z-index: 10;\n  font-family: inherit;\n  font-size: 20px;\n  color: #2c3e50;\n  text-indent: 20px;\n\n}\n\ninput[type=\"search\"].sb-search-input {\n  -webkit-appearance: none;\n  -webkit-border-radius: 0;\n}\n\n.sb-search-input::-webkit-input-placeholder {\n  color: white;\n}\n\n.sb-search-input:-moz-placeholder {\n  color: white;\n}\n\n.sb-search-input::-moz-placeholder {\n  color: white;\n}\n\n.sb-search-input:-ms-input-placeholder {\n  color: white;\n}\n\n.sb-icon-search,\n.sb-search-submit  {\n  width: 50px;\n  height: 50px;\n  display: block;\n  position: absolute;\n  right: 0;\n  top: 0;\n  padding: 0;\n  margin: 0;\n  line-height: 50px;\n  text-align: center;\n  cursor: pointer;\n}\n\n.sb-search-submit {\n  background: #fff; /* IE needs this */\n  -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)\"; /* IE 8 */\n  filter: alpha(opacity=0); /* IE 5-7 */\n  opacity: 0;\n  color: transparent;\n  color:red;\n  border: none;\n  outline: none;\n  z-index: -1;\n}\n\n.sb-icon-search {\n  color: #fff;\n  background: #0073a3;\n  z-index: 90;\n  font-size: 22px;\n  font-family: 'icomoon';\n  speak: none;\n  font-style: normal;\n  font-weight: normal;\n  font-variant: normal;\n  text-transform: none;\n  -webkit-font-smoothing: antialiased;\n}\n\n.sb-icon-search i {\n  line-height: 50px;\n  height: 50px;\n}\n\n.sb-icon-search:before {\n  content: \"\";\n}\n\n.sb-search.sb-search-open,\n.no-js .sb-search {\n  width: 100%;\n}\n\n.sb-search.sb-search-open .sb-icon-search,\n.no-js .sb-search .sb-icon-search {\n  background: #0073a3;\n  color: #fff;\n  z-index: 11;\n}\n\n.sb-search.sb-search-open .sb-search-submit,\n.no-js .sb-search .sb-search-submit {\n  /*    z-index: 90;*/\n}\n\n.wrap-search {\n  display: none;\n  position: relative;\n  width: 100%;\n  background-color: white;\n}\n\n.wrap-search ul {\n  margin: 0;\n}\n\n.wrap-search ul a{\n  color: #DA7B03;\n  font-family: ArnoPro-SmText;\n}\n\n.admin-link {\n  color: #DA7B03;\n  display: block;\n  float: left;\n  padding-right: 5px;\n}\n\n.admin-link i {\n  font-size: 16px;\n}\n\n#dropdown1, #dropdown2 {\n  background-color: #f09934;\n  color: #f1f1f1;\n  top: -50px;\n}\n\n#dropdown1 li:hover , #dropdown2 li:hover {\n  background-color: #f1f1f1;\n}\n\n#dropdown1 li:hover a, #dropdown2 li:hover a{\n  color: #f09934;\n}\n\n#arrow-drop-down, #arrow-drop-down_1 {\n  line-height: 50px;\n  height: 50px;\n}\n\n.licence {\n  color: #DA7B03;\n}\n\n"
 
 /***/ }),
 
@@ -2059,7 +2749,7 @@ module.exports = ".page-flexbox-wrapper {\n  display: flex;\n  min-height: 100vh
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"page-flexbox-wrapper\">\n  <nav class=\"nav-extended\">\n    <div class=\"container\">\n      <a routerLink=\"/\"><div class=\"brand-gerb\"></div></a>\n      <div class=\"nav-wrapper valign-wrapper\">\n        <div class=\"brand-text\">\n          <div class=\"brand-title\">\n            <div class=\"brand-title-main\">VB \t&bull; <span class=\"brand-title-add\">Volynskyi Blahovisnyk</span></div>\n          </div>\n          <div class=\"brand-disc\">\n            annual theological and historical scientific journal<br/>\n            Volyn Orthodox Theological Academy of the UOC-KP</div>\n        </div>\n        <div class=\"lang-block\">\n          <a routerLink=\"/\" class=\"lang\">EN</a>\n          <a routerLink=\"/ua\" class=\"lang\">UA</a>\n        </div>\n      </div>\n    </div>\n    <div class=\"nav-content\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <ul class=\"main-menu\">\n            <li><a routerLink=\"/about\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">About journal</a></li>\n            <li><a routerLink=\"/editorial-board\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">Editorial Board</a></li>\n            <li><a class=\"dropdown-trigger valign-wrapper\" data-target=\"dropdown1\" #dropdown>For authors<i class=\"material-icons right\" id=\"arrow-drop-down\">arrow_drop_down</i></a></li>\n            <li><a routerLink=\"/journal-numbers\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">Journal numbers</a></li>\n            <li><a routerLink=\"/reviewing\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">Publication Ethics</a></li>\n          </ul>\n          <div id=\"sb-search\" class=\"sb-search \" >\n                <form>\n                    <input class=\"sb-search-input \" [(ngModel)]=\"query\" placeholder=\"Enter your search term...\" type=\"search\" value=\"\" name=\"search\" id=\"search\" autocomplete=\"off\">\n                    <input class=\"sb-search-submit\" type=\"submit\"  value=\"\">\n                    <span class=\"sb-icon-search\"><i class=\"material-icons\">search</i></span>\n                </form>\n          </div>\n        </div>\n      </div>\n    </div>\n  </nav>\n\n  <div class=\"wrap-search\">\n    <ul class=\"collection\">\n      <a href=\"{{ article.id }}\" class=\"collection-item\" *ngFor=\"let article of articles | searchEn: query\">\n        {{article.author_en}}. {{article.title_en}}.\n      </a>\n    </ul>\n  </div>\n\n  <main>\n    <div class=\"container text-info\">\n      <router-outlet></router-outlet>\n    </div>\n\n  </main>\n\n  <footer class=\"page-footer\">\n    <div class=\"footer-copyright\">\n      <div class=\"container\">\n        <a href=\"/admin\" class=\"admin-link\"><i class=\"material-icons\">laptop_mac</i></a>© 2018 Volyn Orthodox Theology Academy. (The site is in developer mode)\n      </div>\n    </div>\n  </footer>\n</div>\n\n<ul id=\"dropdown1\" class=\"dropdown-content\">\n  <li><a routerLink=\"/for-authors\">Requirements for registration</a></li>\n  <li><a href=\"#!\">Review policy</a></li>\n</ul>\n"
+module.exports = "<div class=\"page-flexbox-wrapper\">\n  <nav class=\"nav-extended\">\n    <div class=\"container\">\n      <a routerLink=\"/\"><div class=\"brand-gerb\"></div></a>\n      <div class=\"nav-wrapper valign-wrapper\">\n        <div class=\"brand-text\">\n          <div class=\"brand-title\">\n            <div class=\"brand-title-main\">VB \t&bull; <span class=\"brand-title-add\">Volynskyi Blahovisnyk</span></div>\n          </div>\n          <div class=\"brand-disc\">\n            annual theological and historical scientific journal<br/>\n            Volyn Orthodox Theological Academy of the UOC-KP</div>\n        </div>\n        <div class=\"lang-block\">\n          <a routerLink=\"/\" class=\"lang\">EN</a>\n          <a routerLink=\"/ua\" class=\"lang\">UA</a>\n        </div>\n      </div>\n    </div>\n    <div class=\"nav-content\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <ul class=\"main-menu\">\n            <li><a class=\"dropdown-trigger valign-wrapper\" data-target=\"dropdown2\" #dropdown1>About journal<i class=\"material-icons right\" id=\"arrow-drop-down_1\">arrow_drop_down</i></a></li>\n            <li><a routerLink=\"/editorial-board\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">Editorial Board</a></li>\n            <li><a class=\"dropdown-trigger valign-wrapper\" data-target=\"dropdown1\" #dropdown>For authors<i class=\"material-icons right\" id=\"arrow-drop-down\">arrow_drop_down</i></a></li>\n            <li><a routerLink=\"/journal-numbers\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">Journal numbers</a></li>\n            <li><a routerLink=\"/reviewing\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">Publication Ethics</a></li>\n          </ul>\n          <div id=\"sb-search\" class=\"sb-search \" >\n                <form>\n                    <input class=\"sb-search-input \" [(ngModel)]=\"query\" placeholder=\"Enter your search term...\" type=\"search\" value=\"\" name=\"search\" id=\"search\" autocomplete=\"off\">\n                    <input class=\"sb-search-submit\" type=\"submit\"  value=\"\">\n                    <span class=\"sb-icon-search\"><i class=\"material-icons\">search</i></span>\n                </form>\n          </div>\n        </div>\n      </div>\n    </div>\n  </nav>\n\n  <div class=\"wrap-search\">\n    <ul class=\"collection\">\n      <a href=\"{{ article.id }}\" class=\"collection-item\" *ngFor=\"let article of articles | searchEn: query\">\n        {{article.author_en}}. {{article.title_en}}.\n      </a>\n    </ul>\n  </div>\n\n  <main>\n    <div class=\"container text-info\">\n      <router-outlet></router-outlet>\n    </div>\n\n  </main>\n\n  <footer class=\"page-footer\">\n    <div class=\"footer-copyright\">\n      <div class=\"container\">\n        <strong><a href=\"http://creativecommons.org/licenses/by/4.0/\" target=\"_blank\" rel=\"license noopener\"><img style=\"border-width: 0;\" src=\"https://i.creativecommons.org/l/by/4.0/80x15.png\" alt=\"License Creative Commons\"></a>&nbsp;<a href=\"http://creativecommons.org/licenses/by/4.0/\" target=\"_blank\" rel=\"license noopener\" class=\"licence\">Creative Commons «Attribution» 4.0</a>&nbsp;WorldWide.</strong><br/>\n        <a href=\"/admin\" class=\"admin-link\"><i class=\"material-icons\">laptop_mac</i></a>© 2018 Volyn Orthodox Theology Academy. (The site is in developer mode)\n      </div>\n    </div>\n  </footer>\n</div>\n\n<ul id=\"dropdown1\" class=\"dropdown-content\">\n  <li><a routerLink=\"/for-authors\">Requirements for registration</a></li>\n  <li><a routerLink=\"/review-policy\">Peer-review process</a></li>\n</ul>\n\n<ul id=\"dropdown2\" class=\"dropdown-content\">\n  <li><a routerLink=\"/general-information\">General information</a></li>\n  <li><a routerLink=\"/aims-and-scopes\">Aims and Scope</a></li>\n  <li><a routerLink=\"/open-access-statement\">Open-access Statement</a></li>\n  <li><a routerLink=\"/archiving\">Archiving</a></li>\n  <li><a routerLink=\"/plagiarism-policy\">Plagiarism policy</a></li>\n</ul>\n"
 
 /***/ }),
 
@@ -2166,7 +2856,7 @@ var EnMainLayoutComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".page-flexbox-wrapper {\n    display: flex;\n    min-height: 100vh;\n    flex-direction: column;\n}\n\nmain {\n    flex: 1 0 auto;\n    background-color: #f1f1f1;\n}\n\n.nav-extended {\n    background-color: #A32202;\n}\n\n.nav-extended .nav-wrapper {\n    min-height: 120px;\n    flex-direction: row;\n    justify-content: space-between;\n    padding-left: 20px;\n}\n\n.brand-gerb {\n    height: 80px;\n    width: 80px;\n    background-image: url('/assets/images/gerb.png');\n    background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center center;\n    float:left;\n    margin-top: 20px;\n}\n\n.brand-disc {\n  font-size: 20px;\n  font-family: ArnoPro-Subhead;\n  line-height: 1.2;\n  color: white;\n  padding-top: 5px;\n}\n\n.brand-title {\n  font-size: 20px;\n  font-family: ArnoPro-SmbdSubhead;\n  line-height: 1.2;\n  text-transform: uppercase;\n  color: white;\n  border-bottom: 1px solid;\n}\n\n.brand-title-main {\n  font-size: 38px;\n}\n\n.brand-title-add {\n  font-size: 24px;\n}\n\n.nav-content{\n    min-height: 50px;\n    background-color:\t#DA7B03;\n    color: white;\n}\n\n.main-menu, .main-menu li, .main-menu li a {\n    min-height: 50px;\n    font-family: ArnoPro-Subhead;\n    font-size: 18px;\n    color: white;\n    text-align: center;\n}\n\n.row {\n    margin-bottom: 0;\n    display: flex;\n  justify-content: center;\n\n}\n\n.main-menu\n{\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n}\n\n.text-info {\n    margin: 40px auto;\n    font-family: ArnoPro-SmText;\n    font-size: 18px;\n    color: #505050;\n    background-color: white;\n    padding: 40px;\n}\n\n.link-active {\n    border-bottom: 4px solid #b14a01;\n}\n\n.page-footer {\n    padding-top: 0;\n    background-color: #12172A;\n    font-family: ArnoPro-SmText;\n    font-size: 15px;\n\n}\n\n.container {\n    width: 90%;\n    max-width: initial;\n}\n\n.lang-block {\n    width: 40px;\n    height: 60px;\n\n\n}\n\n.lang {\n    display: flex;\n    height: 50%;\n    line-height: 1;\n    justify-content: center;\n    align-items: center;\n    border: 2px solid white;\n}\n\n.lang:first-child {\n    border-bottom: 1px solid white;\n}\n\n.lang:last-child {\n    border-top: 1px solid white;\n}\n\n.lang:hover {\nbackground-color: #007398;\n    border: 2px solid #007398;\n}\n\n.sb-search {\n  position: absolute;\n  width: 0%;\n  min-width: 50px;\n  height: 50px;\n  right: 0;\n  overflow: hidden;\n  transition: width 0.3s;\n  -webkit-backface-visibility: hidden;\n}\n\n.sb-search-input {\n  position: absolute;\n  top: 0;\n  right: 0px;\n  border: none;\n  outline: none;\n  background: #DA7B03 !important;\n  width: 100%;\n  height: 50px !important;\n  margin: 0;\n  z-index: 10;\n  font-family: inherit;\n  font-size: 20px;\n  color: #2c3e50;\n  text-indent: 20px;\n\n}\n\ninput[type=\"search\"].sb-search-input {\n  -webkit-appearance: none;\n  -webkit-border-radius: 0;\n}\n\n.sb-search-input::-webkit-input-placeholder {\n  color: white;\n}\n\n.sb-search-input:-moz-placeholder {\n  color: white;\n}\n\n.sb-search-input::-moz-placeholder {\n  color: white;\n}\n\n.sb-search-input:-ms-input-placeholder {\n  color: white;\n}\n\n.sb-icon-search,\n.sb-search-submit  {\n  width: 50px;\n  height: 50px;\n  display: block;\n  position: absolute;\n  right: 0;\n  top: 0;\n  padding: 0;\n  margin: 0;\n  line-height: 50px;\n  text-align: center;\n  cursor: pointer;\n}\n\n.sb-search-submit {\n  background: #fff; /* IE needs this */\n  -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)\"; /* IE 8 */\n  filter: alpha(opacity=0); /* IE 5-7 */\n  opacity: 0;\n  color: transparent;\n  color:red;\n  border: none;\n  outline: none;\n  z-index: -1;\n}\n\n.sb-icon-search {\n  color: #fff;\n  background: #0073a3;\n  z-index: 90;\n  font-size: 22px;\n  font-family: 'icomoon';\n  speak: none;\n  font-style: normal;\n  font-weight: normal;\n  font-variant: normal;\n  text-transform: none;\n  -webkit-font-smoothing: antialiased;\n}\n\n.sb-icon-search i {\n  line-height: 50px;\n  height: 50px;\n}\n\n.sb-icon-search:before {\n  content: \"\";\n}\n\n.sb-search.sb-search-open,\n.no-js .sb-search {\n  width: 100%;\n}\n\n.sb-search.sb-search-open .sb-icon-search,\n.no-js .sb-search .sb-icon-search {\n  background: #0073a3;\n  color: #fff;\n  z-index: 11;\n}\n\n.sb-search.sb-search-open .sb-search-submit,\n.no-js .sb-search .sb-search-submit {\n  /*    z-index: 90;*/\n}\n\n.wrap-search {\n  display: none;\n  position: relative;\n  width: 100%;\n  background-color: white;\n}\n\n.wrap-search ul {\n  margin: 0;\n}\n\n.wrap-search ul a{\n   color: #DA7B03;\n   font-family: ArnoPro-SmText;\n }\n\n.admin-link {\n   color: #DA7B03;\n   display: block;\n   float: left;\n   padding-right: 5px;\n }\n\n.admin-link i {\n  font-size: 16px;\n}\n\n#dropdown1 {\n  background-color: #f09934;\n  color: #f1f1f1;\n  top: -50px;\n}\n\n#dropdown1 li:hover {\n  background-color: #f1f1f1;\n}\n\n#dropdown1 li:hover a{\n  color: #f09934;\n}\n\n#arrow-drop-down {\n  line-height: 50px;\n  height: 50px;\n}\n"
+module.exports = ".page-flexbox-wrapper {\n    display: flex;\n    min-height: 100vh;\n    flex-direction: column;\n}\n\nmain {\n    flex: 1 0 auto;\n    background-color: #f1f1f1;\n}\n\n.nav-extended {\n    background-color: #A32202;\n}\n\n.nav-extended .nav-wrapper {\n    min-height: 120px;\n    flex-direction: row;\n    justify-content: space-between;\n}\n\n.brand-gerb {\n  height: 120px;\n  width: 125px;\n  background-image: url('/assets/images/gerb.png');\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center center;\n  float:left;\n}\n\n.brand-disc {\n  font-size: 20px;\n  font-family: ArnoPro-Subhead;\n  line-height: 1.2;\n  color: white;\n  padding-top: 5px;\n}\n\n.brand-title {\n  font-size: 20px;\n  font-family: ArnoPro-SmbdSubhead;\n  line-height: 1.2;\n  text-transform: uppercase;\n  color: white;\n  border-bottom: 1px solid;\n}\n\n.brand-title-main {\n  font-size: 38px;\n}\n\n.brand-title-add {\n  font-size: 24px;\n}\n\n.nav-content{\n    min-height: 50px;\n    background-color:\t#DA7B03;\n    color: white;\n}\n\n.main-menu, .main-menu li, .main-menu li a {\n    min-height: 50px;\n    font-family: ArnoPro-Subhead;\n    font-size: 18px;\n    color: white;\n    text-align: center;\n}\n\n.row {\n    margin-bottom: 0;\n    display: flex;\n  justify-content: center;\n\n}\n\n.main-menu\n{\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n}\n\n.text-info {\n    margin: 40px auto;\n    font-family: ArnoPro-SmText;\n    font-size: 18px;\n    color: #505050;\n    background-color: white;\n    padding: 40px;\n}\n\n.link-active {\n    border-bottom: 4px solid #b14a01;\n}\n\n.page-footer {\n    padding-top: 0;\n    background-color: #12172A;\n    font-family: ArnoPro-SmText;\n    font-size: 15px;\n\n}\n\n.container {\n    width: 90%;\n    max-width: initial;\n}\n\n.lang-block {\n    width: 40px;\n    height: 60px;\n\n\n}\n\n.lang {\n    display: flex;\n    height: 50%;\n    line-height: 1;\n    justify-content: center;\n    align-items: center;\n    border: 2px solid white;\n}\n\n.lang:first-child {\n    border-bottom: 1px solid white;\n}\n\n.lang:last-child {\n    border-top: 1px solid white;\n}\n\n.lang:hover {\nbackground-color: #0073a3;\n    border: 2px solid #0073a3;\n}\n\n.sb-search {\n  position: absolute;\n  width: 0%;\n  min-width: 50px;\n  height: 50px;\n  right: 0;\n  overflow: hidden;\n  transition: width 0.3s;\n  -webkit-backface-visibility: hidden;\n}\n\n.sb-search-input {\n  position: absolute;\n  top: 0;\n  right: 0px;\n  border: none;\n  outline: none;\n  background: #DA7B03 !important;\n  width: 100%;\n  height: 50px !important;\n  margin: 0;\n  z-index: 10;\n  font-family: inherit;\n  font-size: 20px;\n  color: #2c3e50;\n  text-indent: 20px;\n\n}\n\ninput[type=\"search\"].sb-search-input {\n  -webkit-appearance: none;\n  -webkit-border-radius: 0;\n}\n\n.sb-search-input::-webkit-input-placeholder {\n  color: white;\n}\n\n.sb-search-input:-moz-placeholder {\n  color: white;\n}\n\n.sb-search-input::-moz-placeholder {\n  color: white;\n}\n\n.sb-search-input:-ms-input-placeholder {\n  color: white;\n}\n\n.sb-icon-search,\n.sb-search-submit  {\n  width: 50px;\n  height: 50px;\n  display: block;\n  position: absolute;\n  right: 0;\n  top: 0;\n  padding: 0;\n  margin: 0;\n  line-height: 50px;\n  text-align: center;\n  cursor: pointer;\n}\n\n.sb-search-submit {\n  background: #fff; /* IE needs this */\n  -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)\"; /* IE 8 */\n  filter: alpha(opacity=0); /* IE 5-7 */\n  opacity: 0;\n  color: transparent;\n  color:red;\n  border: none;\n  outline: none;\n  z-index: -1;\n}\n\n.sb-icon-search {\n  color: #fff;\n  background: #0073a3;\n  z-index: 90;\n  font-size: 22px;\n  font-family: 'icomoon';\n  speak: none;\n  font-style: normal;\n  font-weight: normal;\n  font-variant: normal;\n  text-transform: none;\n  -webkit-font-smoothing: antialiased;\n}\n\n.sb-icon-search i {\n  line-height: 50px;\n  height: 50px;\n}\n\n.sb-icon-search:before {\n  content: \"\";\n}\n\n.sb-search.sb-search-open,\n.no-js .sb-search {\n  width: 100%;\n}\n\n.sb-search.sb-search-open .sb-icon-search,\n.no-js .sb-search .sb-icon-search {\n  background: #0073a3;\n  color: #fff;\n  z-index: 11;\n}\n\n.sb-search.sb-search-open .sb-search-submit,\n.no-js .sb-search .sb-search-submit {\n  /*    z-index: 90;*/\n}\n\n.wrap-search {\n  display: none;\n  position: relative;\n  width: 100%;\n  background-color: white;\n}\n\n.wrap-search ul {\n  margin: 0;\n}\n\n.wrap-search ul a{\n   color: #DA7B03;\n   font-family: ArnoPro-SmText;\n }\n\n.admin-link {\n   color: #DA7B03;\n   display: block;\n   float: left;\n   padding-right: 5px;\n }\n\n.admin-link i {\n  font-size: 16px;\n}\n\n#dropdown1, #dropdown2 {\n  background-color: #f09934;\n  color: #f1f1f1;\n  top: -50px;\n}\n\n#dropdown1 li:hover , #dropdown2 li:hover {\n  background-color: #f1f1f1;\n}\n\n#dropdown1 li:hover a, #dropdown2 li:hover a{\n  color: #f09934;\n}\n\n#arrow-drop-down, #arrow-drop-down_1 {\n  line-height: 50px;\n  height: 50px;\n}\n\n.licence {\n  color: #DA7B03;\n}\n"
 
 /***/ }),
 
@@ -2177,7 +2867,7 @@ module.exports = ".page-flexbox-wrapper {\n    display: flex;\n    min-height: 1
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"page-flexbox-wrapper\">\n<nav class=\"nav-extended\">\n        <div class=\"container\">\n            <a routerLink=\"/ua\"><div class=\"brand-gerb hide-on-small-only\"></div></a>\n            <div class=\"nav-wrapper valign-wrapper\">\n                <div class=\"brand-text\">\n                  <div class=\"brand-title\">\n                    <div class=\"brand-title-main\">VB \t&bull; <span class=\"brand-title-add\">Волинський благовісник</span></div>\n                  </div>\n                  <div class=\"brand-disc\">щорічний богословсько-історичний науковий журнал<br/>\n                    Волинської православної богословської академії УПЦ КП</div>\n                </div>\n                <div class=\"lang-block\">\n                    <a routerLink=\"/\" class=\"lang\">EN</a>\n                    <a routerLink=\"/ua\" class=\"lang\">UA</a>\n                </div>\n            </div>\n        </div>\n        <div class=\"nav-content\">\n            <div class=\"container\">\n                <div class=\"row\">\n                    <ul class=\"main-menu\">\n                        <li><a routerLink=\"/ua/about\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">Про журнал</a></li>\n                        <li><a routerLink=\"/ua/editorial-board\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">Редакційна колегія</a></li>\n                        <li><a class=\"dropdown-trigger valign-wrapper\" data-target=\"dropdown1\" #dropdown>Авторам<i class=\"material-icons right\" id=\"arrow-drop-down\">arrow_drop_down</i></a></li>\n                        <li><a routerLink=\"/ua/journal-numbers\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">Номери журналу</a></li>\n                        <li><a routerLink=\"/ua/reviewing\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">Публікацій етика</a></li>\n                    </ul>\n                    <div id=\"sb-search\" class=\"sb-search \" >\n                          <form>\n                              <input class=\"sb-search-input \" [(ngModel)]=\"query\" placeholder=\"Введіть дані для пошуку ...\" type=\"search\" value=\"\" name=\"search\" id=\"search\" autocomplete=\"off\">\n                              <input class=\"sb-search-submit\" type=\"submit\"  value=\"\">\n                              <span class=\"sb-icon-search\"><i class=\"material-icons\">search</i></span>\n                          </form>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </nav>\n    <div class=\"wrap-search\">\n      <ul class=\"collection\">\n        <a href=\"/ua/{{ article.id }}\" class=\"collection-item\" *ngFor=\"let article of articles | search: query\">\n          {{article.author}}. {{article.title}}.\n        </a>\n      </ul>\n    </div>\n\n<main>\n    <div class=\"container text-info\">\n        <router-outlet></router-outlet>\n    </div>\n\n</main>\n\n    <footer class=\"page-footer\">\n        <div class=\"footer-copyright\">\n            <div class=\"container\">\n                <a href=\"/admin\" class=\"admin-link\"><i class=\"material-icons\">laptop_mac</i></a>© 2018 Волинська православна богословська академія. (Сайт знаходиться в режимі розробки)\n            </div>\n        </div>\n    </footer>\n</div>\n\n<ul id=\"dropdown1\" class=\"dropdown-content\">\n  <li><a routerLink=\"/ua/for-authors\">Вимоги до оформлення</a></li>\n  <li><a href=\"#!\">Політика рецензування</a></li>\n</ul>\n"
+module.exports = "<div class=\"page-flexbox-wrapper\">\n<nav class=\"nav-extended\">\n        <div class=\"container\">\n            <a routerLink=\"/ua\"><div class=\"brand-gerb hide-on-small-only\"></div></a>\n            <div class=\"nav-wrapper valign-wrapper\">\n                <div class=\"brand-text\">\n                  <div class=\"brand-title\">\n                    <div class=\"brand-title-main\">VB \t&bull; <span class=\"brand-title-add\">Волинський благовісник</span></div>\n                  </div>\n                  <div class=\"brand-disc\">щорічний богословсько-історичний науковий журнал<br/>\n                    Волинської православної богословської академії УПЦ КП</div>\n                </div>\n                <div class=\"lang-block\">\n                    <a routerLink=\"/\" class=\"lang\">EN</a>\n                    <a routerLink=\"/ua\" class=\"lang\">UA</a>\n                </div>\n            </div>\n        </div>\n        <div class=\"nav-content\">\n            <div class=\"container\">\n                <div class=\"row\">\n                    <ul class=\"main-menu\">\n                        <li><a class=\"dropdown-trigger valign-wrapper\" data-target=\"dropdown2\" #dropdown1>Про журнал<i class=\"material-icons right\" id=\"arrow-drop-down_1\">arrow_drop_down</i></a></li>\n                        <li><a routerLink=\"/ua/editorial-board\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">Редакційна колегія</a></li>\n                        <li><a class=\"dropdown-trigger valign-wrapper\" data-target=\"dropdown1\" #dropdown>Авторам<i class=\"material-icons right\" id=\"arrow-drop-down\">arrow_drop_down</i></a></li>\n                        <li><a routerLink=\"/ua/journal-numbers\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">Номери журналу</a></li>\n                        <li><a routerLink=\"/ua/reviewing\" routerLinkActive=\"link-active\" class=\"valign-wrapper\">Публікацій етика</a></li>\n                    </ul>\n                    <div id=\"sb-search\" class=\"sb-search \" >\n                          <form>\n                              <input class=\"sb-search-input \" [(ngModel)]=\"query\" placeholder=\"Введіть дані для пошуку ...\" type=\"search\" value=\"\" name=\"search\" id=\"search\" autocomplete=\"off\">\n                              <input class=\"sb-search-submit\" type=\"submit\"  value=\"\">\n                              <span class=\"sb-icon-search\"><i class=\"material-icons\">search</i></span>\n                          </form>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </nav>\n    <div class=\"wrap-search\">\n      <ul class=\"collection\">\n        <a href=\"/ua/{{ article.id }}\" class=\"collection-item\" *ngFor=\"let article of articles | search: query\">\n          {{article.author}}. {{article.title}}.\n        </a>\n      </ul>\n    </div>\n\n<main>\n    <div class=\"container text-info\">\n        <router-outlet></router-outlet>\n    </div>\n\n</main>\n\n    <footer class=\"page-footer\">\n        <div class=\"footer-copyright\">\n            <div class=\"container\">\n              <strong><a href=\"http://creativecommons.org/licenses/by/4.0/\" target=\"_blank\" rel=\"license noopener\"><img style=\"border-width: 0;\" src=\"https://i.creativecommons.org/l/by/4.0/80x15.png\" alt=\"License Creative Commons\"></a>&nbsp;<a href=\"http://creativecommons.org/licenses/by/4.0/\" target=\"_blank\" rel=\"license noopener\" class=\"licence\">Creative Commons «Attribution» 4.0</a>&nbsp;WorldWide.</strong><br/>\n              <a href=\"/admin\" class=\"admin-link\"><i class=\"material-icons\">laptop_mac</i></a>© 2018 Волинська православна богословська академія. (Сайт знаходиться в режимі розробки)\n            </div>\n        </div>\n    </footer>\n</div>\n\n<ul id=\"dropdown1\" class=\"dropdown-content\">\n  <li><a routerLink=\"/ua/for-authors\">Вимоги до оформлення</a></li>\n  <li><a routerLink=\"/ua/review-policy\">Політика рецензування</a></li>\n</ul>\n\n<ul id=\"dropdown2\" class=\"dropdown-content\">\n  <li><a routerLink=\"/ua/general-information\">Загальна інформація</a></li>\n  <li><a routerLink=\"/ua/aims-and-scopes\">Цілі та проблематика</a></li>\n  <li><a routerLink=\"/ua/open-access-statement\">Відкритий доступ</a></li>\n  <li><a routerLink=\"/ua/archiving\">Архівування</a></li>\n  <li><a routerLink=\"/ua/plagiarism-policy\">Політика щодо плагіату</a></li>\n</ul>\n"
 
 /***/ }),
 
@@ -3053,7 +3743,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/fill/projects/vb/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /home/fill/Documents/projects/vb/src/main.ts */"./src/main.ts");
 
 
 /***/ })
