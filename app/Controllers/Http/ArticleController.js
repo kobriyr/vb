@@ -21,7 +21,10 @@ class ArticleController {
 
   async store ({ request, response }) {
     const { tom, author, author_en, number, title, title_en, pages,
-      key_words, key_words_en, summary, summary_en, doi, email, biography, biography_en, references, references_en, document } = request.body;
+      key_words, key_words_en, summary, summary_en, doi, email,
+      biography, biography_en, references, references_en, document
+    } = request.body;
+
     const article = new Article();
 
     article.number = number;
@@ -52,7 +55,9 @@ class ArticleController {
     const article = await Article.find(params.id);
 
     const { author, author_en, number, title, title_en, pages,
-      key_words, key_words_en, summary, summary_en, doi, email, biography, biography_en, references, references_en, document } = request.body;
+      key_words, key_words_en, summary, summary_en, doi, email,
+      biography, biography_en, references, references_en, document
+    } = request.body;
 
     article.number = number;
     article.author = author;

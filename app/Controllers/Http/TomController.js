@@ -4,9 +4,10 @@ const Tom = use('App/Models/Tom');
 
 class TomController {
     async index({ response }) {
-        const queryToms = await Tom.all();
+        const toms = await Tom.query()
+          .orderBy('number', 'desc')
+          .fetch();
 
-        const toms = queryToms.toJSON();
         return response.status(200).send(toms);
     }
 
