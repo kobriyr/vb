@@ -38,6 +38,15 @@ Route.group(() => {
   Route.post('/', 'ArticleController.store')
 }).prefix('api/articles');
 
+Route.group(() => {
+  Route.get('/', 'PageController.index')
+  Route.get('/url/:url', 'PageController.getByURL')
+  Route.get('/:id', 'PageController.show')
+  Route.put('/:id', 'PageController.update')
+  Route.delete('/:id', 'PageController.delete')
+  Route.post('/', 'PageController.store')
+}).prefix('api/pages');
+
 Route.get('public/pdf/:name', ( { request, response } ) => {
   response.download(`public/pdf/${request.params.name}`);
 });
