@@ -44,6 +44,14 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
+font-awesome@4.7.0
+(OFL-1.1 AND MIT)
+(OFL-1.1 AND MIT)
+
+froala-editor@2.9.1
+https://www.froala.com/wysiwyg-editor/pricing
+https://www.froala.com/wysiwyg-editor/pricing
+
 style-loader@0.21.0
 MIT
 Copyright JS Foundation and other contributors
@@ -92,6 +100,10 @@ MIT
 MIT
 
 @angular/router@6.0.9
+MIT
+MIT
+
+angular-froala-wysiwyg@2.9.1-1
 MIT
 MIT
 
