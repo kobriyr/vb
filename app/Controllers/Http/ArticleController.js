@@ -16,6 +16,10 @@ class ArticleController {
       .with('toms')
       .first();
 
+    article.views += 1
+
+    await article.save()
+
     return response.status(200).send(article);
   }
 
