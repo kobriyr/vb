@@ -662,10 +662,10 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/roman/WebstormProjects/vb_ui/src/styles.css */"./src/styles.css");
-__webpack_require__(/*! /home/roman/WebstormProjects/vb_ui/node_modules/froala-editor/css/froala_editor.pkgd.min.css */"./node_modules/froala-editor/css/froala_editor.pkgd.min.css");
-__webpack_require__(/*! /home/roman/WebstormProjects/vb_ui/node_modules/froala-editor/css/froala_style.min.css */"./node_modules/froala-editor/css/froala_style.min.css");
-module.exports = __webpack_require__(/*! /home/roman/WebstormProjects/vb_ui/node_modules/font-awesome/css/font-awesome.css */"./node_modules/font-awesome/css/font-awesome.css");
+__webpack_require__(/*! /home/roman/Документи/projects/vb_ui/src/styles.css */"./src/styles.css");
+__webpack_require__(/*! /home/roman/Документи/projects/vb_ui/node_modules/froala-editor/css/froala_editor.pkgd.min.css */"./node_modules/froala-editor/css/froala_editor.pkgd.min.css");
+__webpack_require__(/*! /home/roman/Документи/projects/vb_ui/node_modules/froala-editor/css/froala_style.min.css */"./node_modules/froala-editor/css/froala_style.min.css");
+module.exports = __webpack_require__(/*! /home/roman/Документи/projects/vb_ui/node_modules/font-awesome/css/font-awesome.css */"./node_modules/font-awesome/css/font-awesome.css");
 
 
 /***/ })
